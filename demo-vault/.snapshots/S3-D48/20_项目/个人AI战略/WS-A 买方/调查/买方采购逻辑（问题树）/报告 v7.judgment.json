@@ -1,0 +1,672 @@
+{
+ "report": "报告 v7.md",
+ "keyed": {
+  "E1": "[[微软推出 Microsoft 365 生产力套件 E7 企业版订阅：捆绑多项 AI 功能，每用户每月 90.45 美元起#^c1]]",
+  "E2": "[[日立が全グループのパソコン17万台にレノボ採用、運用もアウトソース#^c1]]",
+  "E3": "[[2025 款联想 ThinkPad P16v 笔记本开售：可选 U7-255H U9-285H，至高匹配 RTX P#^c6]]",
+  "E4": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c6]]",
+  "E5": "[[WS-A 专家访谈（模拟）#^e5]]",
+  "E6": "[[CIOs say AI is outpacing governance, Thoughtworks finds#^c3]]",
+  "E7": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c5]]",
+  "E8": "[[联想集团联合IDC发布2025年《全球首席信息官（CIO）报告》#^c2]]",
+  "E9": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c1]]",
+  "E10": "[[20_项目/个人AI战略/会议/2026-10-16 高层周会（模拟）#^m1]]",
+  "E11": "[[20_项目/个人AI战略/会议/2026-10-16 高层周会（模拟）#^m3]]",
+  "E12": "[[20_项目/个人AI战略/决策/W1决定-AI PC渗透不作为付费意愿证据]]",
+  "E13": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c1]]",
+  "E14": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c4]]",
+  "E15": "[[云之龙咨询集团有限公司WPS AI智能办公平台技术服务项目（GXZC2026-C3-001075-YZLZ）竞争性磋商公#^c5]]",
+  "E16": "[[Lenovo 的 TruScale Device as a Service#^c3]]",
+  "E17": "[[Gartner 2026-02 内存涨价压低出货#^c2]]",
+  "E18": "[[日立が全グループのパソコン17万台にレノボ採用、運用もアウトソース#^c4]]",
+  "E19": "[[挑選 AI 前你該知道的事：企業使用者的 AI 評估指南 - AI 正加速成為企業流程的一部分，而企業內部使用者（財務、#^c5]]",
+  "E20": "[[企业AI决策权归谁？治理滞后于应用普及#^c2]]",
+  "E21": "[[AI Sprawl Is Shadow IT Why Your ITAM Program Is Already Beh#^c4]]",
+  "E22": "[[国家金融监督管理总局#^c2]]",
+  "E23": "[[挑選 AI 前你該知道的事：企業使用者的 AI 評估指南 - AI 正加速成為企業流程的一部分，而企業內部使用者（財務、#^c3]]",
+  "E24": "[[挑選 AI 前你該知道的事：企業使用者的 AI 評估指南 - AI 正加速成為企業流程的一部分，而企業內部使用者（財務、#^c1]]",
+  "E25": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c1]]",
+  "E26": "[[CIO需打造AI部署透明化管理体系#^c4]]",
+  "E27": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c4]]",
+  "E28": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c2]]",
+  "E29": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c3]]",
+  "E30": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c5]]",
+  "E31": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c6]]",
+  "E32": "[[WS-A 专家访谈（模拟）#^e4]]",
+  "E33": "[[CIO需打造AI部署透明化管理体系#^c1]]",
+  "E34": "[[CIO需打造AI部署透明化管理体系#^c3]]",
+  "E35": "[[对话100位CIO：如何在2025年自研和采购AI#^c6]]",
+  "E36": "[[对话100位CIO：如何在2025年自研和采购AI#^c1]]",
+  "E37": "[[企业AI决策权归谁？治理滞后于应用普及#^c3]]",
+  "E38": "[[企业AI决策权归谁？治理滞后于应用普及#^c4]]",
+  "E39": "[[企业AI决策权归谁？治理滞后于应用普及#^c5]]",
+  "E40": "[[企业AI决策权归谁？治理滞后于应用普及#^c6]]",
+  "E41": "[[CIOs say AI is outpacing governance, Thoughtworks finds#^c4]]",
+  "E42": "[[CIOs say AI is outpacing governance, Thoughtworks finds#^c5]]",
+  "E43": "[[CIOs say AI is outpacing governance, Thoughtworks finds#^c6]]",
+  "E44": "[[CIOs say AI is outpacing governance, Thoughtworks finds#^c2]]",
+  "E45": "[[Who actually controls enterprise AI - Advertisement#^c5]]",
+  "E46": "[[Global CIO Survey 2026#^c2]]",
+  "E47": "[[Global CIO Survey 2026#^c1]]",
+  "E48": "[[Global CIO Survey 2026#^c3]]",
+  "E49": "[[Who actually controls enterprise AI - Advertisement#^c4]]",
+  "E50": "[[Global CIO Survey 2026#^c4]]",
+  "E51": "[[WS-A 专家访谈（模拟）#^e1]]",
+  "E52": "[[WS-A 专家访谈（模拟）#^e2]]",
+  "E53": "[[国家金融监督管理总局#^c1]]",
+  "E54": "[[IDC调查：CIO预算制定指南，2025——企业智能投资与安全影响#^c4]]",
+  "E55": "[[WS-A 专家访谈（模拟）#^e6]]",
+  "E56": "[[安全顾虑正在拖慢自主AI落地，CIO们如何应对#^c1]]",
+  "E57": "[[CIOs warn AI adoption is outpacing governance skills#^c1]]",
+  "E58": "[[CIOs warn AI adoption is outpacing governance skills - Logic#^c5]]",
+  "E59": "[[联想集团联合IDC发布2025年《全球首席信息官（CIO）报告》#^c3]]",
+  "E60": "[[联想集团联合IDC发布2025年《全球首席信息官（CIO）报告》-联想乐享知识库#^c2]]",
+  "E61": "[[联想集团联合IDC发布2025年《全球首席信息官（CIO）报告》#^c6]]",
+  "E62": "[[联想集团联合IDC发布2025年《全球首席信息官（CIO）报告》-联想乐享知识库#^c6]]",
+  "E63": "[[陈旧的现代化改造引发安全担忧，拖累 AI 计划#^c1]]",
+  "E64": "[[CIOs warn AI adoption is outpacing governance skills#^c2]]",
+  "E65": "[[CIOs warn AI adoption is outpacing governance skills#^c6]]",
+  "E66": "[[CIOs warn AI adoption is outpacing governance skills#^c5]]",
+  "E67": "[[CIOs warn AI adoption is outpacing governance skills#^c3]]",
+  "E68": "[[CIOs warn AI adoption is outpacing governance skills - Logic#^c3]]",
+  "E69": "[[CIOs warn AI adoption is outpacing governance skills - Logic#^c4]]",
+  "E70": "[[CIOs warn AI adoption is outpacing governance skills - Logic#^c2]]",
+  "E71": "[[CIOs warn AI adoption is outpacing governance skills - Logic#^c1]]",
+  "E72": "[[CIOs warn AI adoption is outpacing governance skills - Logic#^c6]]",
+  "E73": "[[CIO Survey 2026 AI Adoption, Governance, and Cybersecurity#^c1]]",
+  "E74": "[[JJ202600176便携式计算机网上竞价成交公告#^c4]]",
+  "E75": "[[企业办公电脑采购实战：2026年商用PC选型5步法#^c5]]",
+  "E76": "[[挑選 AI 前你該知道的事：企業使用者的 AI 評估指南 - AI 正加速成為企業流程的一部分，而企業內部使用者（財務、#^c4]]",
+  "E77": "[[邮储银行大模型安全测评工具采购项目公开招标公告 - 邮储银行大模型安全测评工具采购项目公开招标公告#^c4]]",
+  "E78": "[[Gartner IT-Ausgaben steigen 2026 auf 6,37 Billionen Dollar#^c4]]",
+  "E79": "[[企业买AI，从“尝鲜”变成“算账” - 以前企业采购人工智能大模型，大多只是抱着试一试的心态：这笔费用归在创新预算里，简#^c5]]",
+  "E80": "[[日立が全グループのパソコン17万台にレノボ採用、運用もアウトソース#^c2]]",
+  "E81": "[[对话100位CIO：如何在2025年自研和采购AI#^c5]]",
+  "E82": "[[企业买AI，从“尝鲜”变成“算账” - 以前企业采购人工智能大模型，大多只是抱着试一试的心态：这笔费用归在创新预算里，简#^c2]]",
+  "E83": "[[联想 TruScale DaaS for AI PCs 页面#^c2]]",
+  "E84": "[[WS-A 专家访谈（模拟）#^e3]]",
+  "E85": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c3]]",
+  "E86": "[[企业买AI，从“尝鲜”变成“算账” - 以前企业采购人工智能大模型，大多只是抱着试一试的心态：这笔费用归在创新预算里，简#^c3]]",
+  "E87": "[[日立、17万3000台の社内PCをサブスク調達、レノボに運用を委託 IT Leaders#^c5]]",
+  "E88": "[[Investing.com 2026-01 摩根士丹利CIO调查AI未抬高IT预算#^c1]]",
+  "E89": "[[Investing.com 2026-01 摩根士丹利CIO调查AI未抬高IT预算#^c4]]",
+  "E90": "[[Investing.com 2026-01 摩根士丹利CIO调查AI未抬高IT预算#^c3]]",
+  "E91": "[[跟大侠学创新 （前沿实践）探索你未曾联想的联想（11）：联想与降本增效#^c3]]",
+  "E92": "[[APAC enterprises to boost AI spend by 15% in 2026#^c2]]",
+  "E93": "[[APAC enterprises to boost AI spend by 15% in 2026#^c1]]",
+  "E94": "[[Gartner IT-Ausgaben steigen 2026 auf 6,37 Billionen Dollar#^c1]]",
+  "E95": "[[Gartner IT-Ausgaben steigen 2026 auf 6,37 Billionen Dollar#^c5]]",
+  "E96": "[[レノボ、日立グループに最大17万3,000台規模のPC運用をDaaSで提供｜Infoseekニュース - ×#^c4]]",
+  "E97": "[[レノボ、日立グループに最大17万3,000台規模のPC運用をDaaSで提供｜Infoseekニュース - ×#^c5]]",
+  "E98": "[[同样配置两份报价为什么差这么多，怎么看出报价中的猫腻？#^c1]]",
+  "E99": "[[企业办公电脑采购实战：2026年商用PC选型5步法#^c1]]",
+  "E100": "[[Cheap enterprise PCs Not anytime soon — analysts - Cheap en#^c2]]",
+  "E101": "[[Cheap enterprise PCs Not anytime soon — analysts - Cheap en#^c4]]",
+  "E102": "[[HP AI PC出貨占比衝46%2027年上看70%、記憶體漲價壓力第4季估觸底#^c1]]",
+  "E103": "[[HP AI PC出貨占比衝46%2027年上看70%、記憶體漲價壓力第4季估觸底#^c3]]",
+  "E104": "[[HP 2026-08 FY26Q3 财报电话会#^c4]]",
+  "E105": "[[The Register 2024-11 企业不买溢价AI PC#^c2]]",
+  "E106": "[[HP AI PC出貨占比衝46%2027年上看70%、記憶體漲價壓力第4季估觸底#^c2]]",
+  "E107": "[[PC shipments are falling, but manufacturers are making more#^c6]]",
+  "E108": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c3]]",
+  "E109": "[[IDC调查：CIO预算制定指南，2025——企业智能投资与安全影响#^c2]]",
+  "E110": "[[电脑卖不动，但联想们更赚钱了#^c4]]",
+  "E111": "[[销量下滑却赚得更多！PC厂商依靠高价实现增收#^c5]]",
+  "E112": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c6]]"
+ },
+ "claims": [
+  {
+   "claimId": "C1",
+   "label": "H1",
+   "conditions": [
+    {
+     "n": 1,
+     "label": "①",
+     "text": "员工端 AI 工具要进公司机队，必须由 IT 登记、下发策略、接入身份与日志；员工自己装、自己订阅不算企业已采购",
+     "status": "成立",
+     "keys": [
+      "E15",
+      "E14",
+      "E19"
+     ],
+     "note": "监管要求与机队部署都把接入放在 IT 侧[E15][E14][E19]"
+    },
+    {
+     "n": 2,
+     "label": "②",
+     "text": "能查到决策方的采购案例里，拍板的是 IT / 技术负责人，不是业务线自采或员工报销后补审批",
+     "status": "证据不足",
+     "keys": [
+      "E20",
+      "E6"
+     ],
+     "note": "只查到 C 级影响力和预算统计，缺采购案例的拍板记录[E20][E6]"
+    },
+    {
+     "n": 3,
+     "label": "③",
+     "text": "「影子 AI」数据能被「IT 事后发现并收紧」解释通，而不是只能被解释成「IT 已被架空」",
+     "status": "证据不足",
+     "keys": [
+      "E21",
+      "E5"
+     ],
+     "note": "缺「IT 事后发现并收紧」的证据，现有材料只说明看不见[E21][E5]"
+    }
+   ],
+   "verdict": "需要修改",
+   "judgment": {
+    "verdict": "需要修改",
+    "rebutted": [],
+    "revised_statement": null,
+    "revised_assertions": [],
+    "support_lines": [],
+    "counter_lines": [],
+    "reasoning": "（从报告正文读回）",
+    "challenge_responses": [],
+    "model_knowledge": [],
+    "so_what": [
+     "所以联想对 IT 讲准入和管理栈，对业务线和高层要讲可量化的价值与价格。"
+    ],
+    "gaps": [],
+    "expert_questions": [],
+    "conditions": [
+     {
+      "n": 1,
+      "status": "成立",
+      "keys": [
+       "E15",
+       "E14",
+       "E19"
+      ],
+      "note": "监管要求与机队部署都把接入放在 IT 侧[E15][E14][E19]"
+     },
+     {
+      "n": 2,
+      "status": "证据不足",
+      "keys": [
+       "E20",
+       "E6"
+      ],
+      "note": "只查到 C 级影响力和预算统计，缺采购案例的拍板记录[E20][E6]"
+     },
+     {
+      "n": 3,
+      "status": "证据不足",
+      "keys": [
+       "E21",
+       "E5"
+      ],
+      "note": "缺「IT 事后发现并收紧」的证据，现有材料只说明看不见[E21][E5]"
+     }
+    ],
+    "answer": "准入是否由 IT 拍板，还缺证据决策与预算多半分散在 IT、业务线、高层[E6]，缺采购案例",
+    "reasons": [],
+    "changed": "改成 IT 管准入和日志，决策与预算由 IT、业务线、高层分担",
+    "short_statement": ""
+   }
+  },
+  {
+   "claimId": "C2",
+   "label": "H2-1",
+   "conditions": [
+    {
+     "n": 1,
+     "label": "①",
+     "text": "企业评审把管理与治理写成资格条款或一票否决，而不只是众多考虑因素之一",
+     "status": "证据不足",
+     "keys": [
+      "E4",
+      "E53"
+     ],
+     "note": "受监管行业把供应商准入与安全管理写成要求[E4]；企业采购文件原文还缺[E53]"
+    },
+    {
+     "n": 2,
+     "label": "②",
+     "text": "未采购或未规模部署的原因里，管理与安全占主要位置，而不是被价格或生产力压过",
+     "status": "不成立",
+     "keys": [
+      "E8",
+      "E54"
+     ],
+     "note": "主要绊脚石是 ROI、数据与人才[E8]，定价首要障碍是成本与效益不确定[E54]"
+    },
+    {
+     "n": 3,
+     "label": "③",
+     "text": "「AI 能力更强但管不住」的产品确实拿不到规模采购（被否、被延后、被限制在试点），而不只是厂商宣称可管",
+     "status": "证据不足",
+     "keys": [
+      "E55"
+     ],
+     "note": "缺「能力更强但管不住被否或延后」的实际结果证据[E55]"
+    }
+   ],
+   "verdict": "需要修改",
+   "judgment": {
+    "verdict": "需要修改",
+    "rebutted": [],
+    "revised_statement": null,
+    "revised_assertions": [],
+    "support_lines": [],
+    "counter_lines": [],
+    "reasoning": "（从报告正文读回）",
+    "challenge_responses": [],
+    "model_knowledge": [],
+    "so_what": [
+     "所以联想押管理栈只在受监管行业拿得到准入，一般企业要靠成本与体验说话（推断）"
+    ],
+    "gaps": [],
+    "expert_questions": [],
+    "conditions": [
+     {
+      "n": 1,
+      "status": "证据不足",
+      "keys": [
+       "E4",
+       "E53"
+      ],
+      "note": "受监管行业把供应商准入与安全管理写成要求[E4]；企业采购文件原文还缺[E53]"
+     },
+     {
+      "n": 2,
+      "status": "不成立",
+      "keys": [
+       "E8",
+       "E54"
+      ],
+      "note": "主要绊脚石是 ROI、数据与人才[E8]，定价首要障碍是成本与效益不确定[E54]"
+     },
+     {
+      "n": 3,
+      "status": "证据不足",
+      "keys": [
+       "E55"
+      ],
+      "note": "缺「能力更强但管不住被否或延后」的实际结果证据[E55]"
+     }
+    ],
+    "answer": "受监管行业是准入要求[E4]；一般企业主要障碍不是管理安全，出局证据还缺[E8]",
+    "reasons": [],
+    "changed": "改成：受监管行业是准入要求；一般企业主要障碍是成本与人才，可管只是门槛",
+    "short_statement": ""
+   }
+  },
+  {
+   "claimId": "C3",
+   "label": "H2-2",
+   "conditions": [
+    {
+     "n": 1,
+     "label": "①",
+     "text": "过了资格线之后的评审，权重落在价格 / TCO、生态集成、生产力或交付能力上",
+     "status": "证据不足",
+     "keys": [
+      "E74",
+      "E7"
+     ],
+     "note": "只有整机打包保修与全保要求[E74]，都属 C 级，缺 A/B 级权重证据[E7]"
+    },
+    {
+     "n": 2,
+     "label": "②",
+     "text": "管理能力在候选之间拉不开差距（平台或芯片侧已把它做成标配），买方不再为它单列价格",
+     "status": "成立",
+     "keys": [
+      "E13",
+      "E7",
+      "E22",
+      "E19"
+     ],
+     "note": "监管把日志审计与访问控制列为基线[E13]；整机报价未单列管理[E7][E22][E19]"
+    },
+    {
+     "n": 3,
+     "label": "③",
+     "text": "买方最终多付的钱能对应到可量化的收益或风险下降，而不是「管理功能更强」",
+     "status": "证据不足",
+     "keys": [
+      "E75"
+     ],
+     "note": "可量化收益只见 vPro 省 45 分钟一条[E75]；还缺 A/B 级证据"
+    }
+   ],
+   "verdict": "需要修改",
+   "judgment": {
+    "verdict": "需要修改",
+    "rebutted": [],
+    "revised_statement": null,
+    "revised_assertions": [],
+    "support_lines": [],
+    "counter_lines": [],
+    "reasoning": "（从报告正文读回）",
+    "challenge_responses": [],
+    "model_knowledge": [],
+    "so_what": [
+     "所以联想不该把可管理当溢价卖点，要把它做成随设备交付的默认能力，靠机队与服务收钱（推断）"
+    ],
+    "gaps": [],
+    "expert_questions": [],
+    "conditions": [
+     {
+      "n": 1,
+      "status": "证据不足",
+      "keys": [
+       "E74",
+       "E7"
+      ],
+      "note": "只有整机打包保修与全保要求[E74]，都属 C 级，缺 A/B 级权重证据[E7]"
+     },
+     {
+      "n": 2,
+      "status": "成立",
+      "keys": [
+       "E13",
+       "E7",
+       "E22",
+       "E19"
+      ],
+      "note": "监管把日志审计与访问控制列为基线[E13]；整机报价未单列管理[E7][E22][E19]"
+     },
+     {
+      "n": 3,
+      "status": "证据不足",
+      "keys": [
+       "E75"
+      ],
+      "note": "可量化收益只见 vPro 省 45 分钟一条[E75]；还缺 A/B 级证据"
+     }
+    ],
+    "answer": "多半按价格与换机周期定胜负[E5]，管理只管准入、不单列价[E7]；多付对应收益还缺证据",
+    "reasons": [],
+    "changed": "改成：管理只管准入，过关后按价格与换机周期选，不单列管理价",
+    "short_statement": ""
+   }
+  },
+  {
+   "claimId": "C4",
+   "label": "H3-1",
+   "conditions": [
+    {
+     "n": 1,
+     "label": "①",
+     "text": "软件与服务侧存在可查的计费单元和真实成交（席位价、订阅费、DaaS / 管理服务合同），而不只是厂商宣传",
+     "status": "成立",
+     "keys": [
+      "E1",
+      "E2"
+     ],
+     "note": "席位价 90.45 美元起[E1]，DaaS 有具名买家[E2]"
+    },
+    {
+     "n": 2,
+     "label": "②",
+     "text": "企业 AI 新增支出在科目上向软件 / 服务倾斜，而不是平摊或往硬件走",
+     "status": "证据不足",
+     "keys": [
+      "E16",
+      "E33",
+      "E78"
+     ],
+     "note": "订阅打包收费有据[E16]；科目是否向软件倾斜只见到反证[E33][E78]"
+    },
+    {
+     "n": 3,
+     "label": "③",
+     "text": "这笔钱是新增的，而不是从既有软件预算里挤出来的——否则「能变现」只是左手换右手",
+     "status": "证据不足",
+     "keys": [
+      "E79",
+      "E80"
+     ],
+     "note": "持续追加只有厂商口径[E79]；具名 DaaS 成交是 PC 存量替换[E80]"
+    }
+   ],
+   "verdict": "需要修改",
+   "judgment": {
+    "verdict": "需要修改",
+    "rebutted": [],
+    "revised_statement": null,
+    "revised_assertions": [],
+    "support_lines": [],
+    "counter_lines": [],
+    "reasoning": "（从报告正文读回）",
+    "challenge_responses": [],
+    "model_knowledge": [],
+    "so_what": [
+     "所以联想该把管理能力打包进席位与 DaaS 合同收费，别指望单独的新增预算（推断）。"
+    ],
+    "gaps": [],
+    "expert_questions": [],
+    "conditions": [
+     {
+      "n": 1,
+      "status": "成立",
+      "keys": [
+       "E1",
+       "E2"
+      ],
+      "note": "席位价 90.45 美元起[E1]，DaaS 有具名买家[E2]"
+     },
+     {
+      "n": 2,
+      "status": "证据不足",
+      "keys": [
+       "E16",
+       "E33",
+       "E78"
+      ],
+      "note": "订阅打包收费有据[E16]；科目是否向软件倾斜只见到反证[E33][E78]"
+     },
+     {
+      "n": 3,
+      "status": "证据不足",
+      "keys": [
+       "E79",
+       "E80"
+      ],
+      "note": "持续追加只有厂商口径[E79]；具名 DaaS 成交是 PC 存量替换[E80]"
+     }
+    ],
+    "answer": "席位与 DaaS 有可查单价和真实成交[E1][E2]；钱是不是新增、是否记软件科目，还缺证据",
+    "reasons": [],
+    "changed": "改成：席位与 DaaS 计费单元可查；新增性和软件科目倾斜待证",
+    "short_statement": ""
+   }
+  },
+  {
+   "claimId": "C5",
+   "label": "H3-2",
+   "conditions": [
+    {
+     "n": 1,
+     "label": "①",
+     "text": "同代同配置（内存 / 存储 / 屏幕 / 保修一致）的机型之间，价差能由可解释的配置项吃完，找不到「AI 能力」这一项单独计价",
+     "status": "成立",
+     "keys": [
+      "E3",
+      "E7",
+      "E98",
+      "E99"
+     ],
+     "note": "价差落在内存、硬盘、屏、显卡与保修上，未见 AI 条目[E3][E7][E98][E99]"
+    },
+    {
+     "n": 2,
+     "label": "②",
+     "text": "买方在配置选择上不为 AI 能力付钱：即使有带 NPU 的机型，采购理由写的是换机、性能、价格，不是 AI",
+     "status": "证据不足",
+     "keys": [
+      "E100",
+      "E101",
+      "E102",
+      "E103"
+     ],
+     "note": "成本推动换机、AI 涨价抑制采用有据[E100]；还缺第二个独立来源的采购理由记录[E101][E102][E103]"
+    },
+    {
+     "n": 3,
+     "label": "③",
+     "text": "厂商「AI PC 溢价」的说法要么缺买方证据，要么只是平均售价上涨（由内存涨价推动），不是 AI 溢价",
+     "status": "证据不足",
+     "keys": [
+      "E100",
+      "E101",
+      "E104",
+      "E105"
+     ],
+     "note": "AI PC 涨价被归因内存与零部件[E100]；还缺第三方拆分均价上涨的证据[E101][E104][E105]"
+    }
+   ],
+   "verdict": "需要修改",
+   "judgment": {
+    "verdict": "需要修改",
+    "rebutted": [],
+    "revised_statement": null,
+    "revised_assertions": [],
+    "support_lines": [],
+    "counter_lines": [],
+    "reasoning": "（从报告正文读回）",
+    "challenge_responses": [],
+    "model_knowledge": [],
+    "so_what": [
+     "所以联想不要把 AI 溢价写进硬件价格，提价要靠配置、保修与服务[E7]"
+    ],
+    "gaps": [],
+    "expert_questions": [],
+    "conditions": [
+     {
+      "n": 1,
+      "status": "成立",
+      "keys": [
+       "E3",
+       "E7",
+       "E98",
+       "E99"
+      ],
+      "note": "价差落在内存、硬盘、屏、显卡与保修上，未见 AI 条目[E3][E7][E98][E99]"
+     },
+     {
+      "n": 2,
+      "status": "证据不足",
+      "keys": [
+       "E100",
+       "E101",
+       "E102",
+       "E103"
+      ],
+      "note": "成本推动换机、AI 涨价抑制采用有据[E100]；还缺第二个独立来源的采购理由记录[E101][E102][E103]"
+     },
+     {
+      "n": 3,
+      "status": "证据不足",
+      "keys": [
+       "E100",
+       "E101",
+       "E104",
+       "E105"
+      ],
+      "note": "AI PC 涨价被归因内存与零部件[E100]；还缺第三方拆分均价上涨的证据[E101][E104][E105]"
+     }
+    ],
+    "answer": "同配置价差能由配置项吃完，价格里没有 NPU 单独条目[E3]；买方是否单独付钱多半不会，还缺证据[E7]",
+    "reasons": [],
+    "changed": "价差可由配置项吃完、无 AI 单独条目；买方付费与溢价拆分仍证据不足",
+    "short_statement": ""
+   }
+  },
+  {
+   "claimId": "C6",
+   "label": "H3-3",
+   "conditions": [
+    {
+     "n": 1,
+     "label": "①",
+     "text": "换机预算和终端价格确实收紧，原因可追溯到内存与存储成本，而且企业的行为是延长换机周期或降配置（不是照常换）",
+     "status": "成立",
+     "keys": [
+      "E9",
+      "E17",
+      "E108"
+     ],
+     "note": "PC 价格涨 17%，企业推迟硬件升级[E9][E17][E108]"
+    },
+    {
+     "n": 2,
+     "label": "②",
+     "text": "CIO 侧存在可查的降本与证明价值的压力，而且这种压力落到 PC / 终端预算上，不只是云和软件",
+     "status": "证据不足",
+     "keys": [
+      "E109",
+      "E54"
+     ],
+     "note": "压力落到 PC 终端预算这一半还缺证据；AI 支出要与降本目标匹配[E109][E54]"
+    },
+    {
+     "n": 3,
+     "label": "③",
+     "text": "能给出可量化收益的项目确实获批，只有「AI」标签的项目确实没获批——两个方向都要有证据，否则是循环论证",
+     "status": "证据不足",
+     "keys": [
+      "E110",
+      "E111"
+     ],
+     "note": "量化收益获批的正例还缺；只有「AI」标签的促不成换机[E110][E111]"
+    }
+   ],
+   "verdict": "需要修改",
+   "judgment": {
+    "verdict": "需要修改",
+    "rebutted": [],
+    "revised_statement": null,
+    "revised_assertions": [],
+    "support_lines": [],
+    "counter_lines": [],
+    "reasoning": "（从报告正文读回）",
+    "challenge_responses": [],
+    "model_knowledge": [],
+    "so_what": [
+     "所以联想不能靠 AI PC 标签拿溢价，得用可量化的成本或风险数字进客户的审批材料（推断）。"
+    ],
+    "gaps": [],
+    "expert_questions": [],
+    "conditions": [
+     {
+      "n": 1,
+      "status": "成立",
+      "keys": [
+       "E9",
+       "E17",
+       "E108"
+      ],
+      "note": "PC 价格涨 17%，企业推迟硬件升级[E9][E17][E108]"
+     },
+     {
+      "n": 2,
+      "status": "证据不足",
+      "keys": [
+       "E109",
+       "E54"
+      ],
+      "note": "压力落到 PC 终端预算这一半还缺证据；AI 支出要与降本目标匹配[E109][E54]"
+     },
+     {
+      "n": 3,
+      "status": "证据不足",
+      "keys": [
+       "E110",
+       "E111"
+      ],
+      "note": "量化收益获批的正例还缺；只有「AI」标签的促不成换机[E110][E111]"
+     }
+    ],
+    "answer": "换机预算收紧已证实[E9]；AI 支出多半要绑定可量化的成本节省或风险降低才过会，还缺批与不批的实例",
+    "reasons": [],
+    "changed": "改成：涨价已推高终端价格、企业推迟换机；获批条件待验证",
+    "short_statement": ""
+   }
+  }
+ ],
+ "source": "body"
+}

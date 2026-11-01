@@ -1,0 +1,445 @@
+{
+ "report": "报告 v1.md",
+ "entries": [
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "分三层管控，开放层员工自选IT不管，统一纳管只在更窄条件下成立"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "独立AI预算常由业务部门自出，预算不全在IT一侧"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求AI统一管理并建立外部引入准入机制，支持IT把关"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "管太死员工绕开、可管理只是门槛，管控价值被否定"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求身份管理、行为监测与日志审计等基础设施，支持IT登记与留痕"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求访问策略与用户认证访问控制，支持统一纳管条件"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "模型算法投用前须数据安全审查，支持机构统一把关"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "高风险生成式AI应用须向监管报告，属机构层面统一准入"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "称80%的AI支出在IT预算之外，但口径是全部AI支出，不限于员工端"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "明确说决策在中央组、预算不在，直指「预算归IT」这一半"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "平台选择与重大投资需三方共同决定，不是IT单独拍板"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[Shadow AI Sprawl When Every Department Builds Its Own AI Is#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "印证员工自带未授权工具使用，符合「可绕开IT使用」这一半"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[AI Sprawl Is Shadow IT Why Your ITAM Program Is Already Beh#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "员工使用未批准工具，与「可绕开IT使用」一致，未涉采购"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[AI Sprawl Is Shadow IT Why Your ITAM Program Is Already Beh#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "称企业无感知、无监督无控制，削弱「IT事后发现并收紧」的解释"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者称管太死会逼出影子IT，采购只看价格和换机周期"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "称存在业务部门自出的AI预算，预算并非都归IT"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "三层管控要求走企业版、SSO、日志落地，支持IT把住入口"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "主张决策权应靠近业务结果，与决策归IT相反"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[Shadow AI Sprawl When Every Department Builds Its Own AI Is#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "称无工单、无审批、IT不在流程内，指向绕开IT的获取"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[挑選 AI 前你該知道的事：企業使用者的 AI 評估指南 - AI 正加速成為企業流程的一部分，而企業內部使用者（財務、#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web1",
+   "reason": "称AI导入是业务流程专案而非IT专案，削弱IT主导采购的前提"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[挑選 AI 前你該知道的事：企業使用者的 AI 評估指南 - AI 正加速成為企業流程的一部分，而企業內部使用者（財務、#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web1",
+   "reason": "称财务、营运等业务使用者自行选用AI方案，指向业务线主导选型"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[挑選 AI 前你該知道的事：企業使用者的 AI 評估指南 - AI 正加速成為企業流程的一部分，而企業內部使用者（財務、#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "强调可控治理是导入前提，呼应IT登记、下发策略的成立条件"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[挑選 AI 前你該知道的事：企業使用者的 AI 評估指南 - AI 正加速成為企業流程的一部分，而企業內部使用者（財務、#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "无治理不能导入，支持进机队须经治理框架把关的条件"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "八成AI支出在IT预算之外，直接冲击「预算归属IT」"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c5]]",
+   "stance": "refutes",
+   "core": true,
+   "partial": true,
+   "round": "counter",
+   "reason": "决策在中央组、预算不在，直接否定预算归属前提"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[Enterprise AI Overruns Hit 46.9% Is the Reckoning in FY2027#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "业务线承担预算，预算权扩散到CIO之外"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[Enterprise AI Overruns Hit 46.9% Is the Reckoning in FY2027#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "预示采购与审批关卡将显性化，方向合条件(2)"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "重大投入需三方共同决策，非IT单方拍板"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "决策与监督收归公司领导层，非业务线自采"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[AI Sprawl Is Shadow IT Why Your ITAM Program Is Already Beh#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "印证员工可绕过IT使用，但未涉采购付款"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[AI Sprawl Is Shadow IT Why Your ITAM Program Is Already Beh#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "称组织无感知无监督，削弱「IT事后发现并收紧」"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[Enterprise AI Overruns Hit 46.9% Is the Reckoning in FY2027#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "业务线已在承担部分AI账单，购买力移出IT"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[The LOB Takeover How Finance, Legal, and Ops Are Seizing En#^c1]]",
+   "stance": "refutes",
+   "core": true,
+   "partial": false,
+   "round": "counter",
+   "reason": "直接断言2026年IT不再是企业AI主要买家，冲击核心前提；但口径泛指企业AI，非员工端机队"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[The LOB Takeover How Finance, Legal, and Ops Are Seizing En#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "财务团队直接与厂商签约，说明业务线能走到采购付款一步"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[The LOB Takeover How Finance, Legal, and Ops Are Seizing En#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "运营负责人绕过正式IT申请自行采购，削弱IT把关门径"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[The LOB Takeover How Finance, Legal, and Ops Are Seizing En#^c5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "称采购不等IT签字，直接否掉IT审批为前提的说法"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[The LOB Takeover How Finance, Legal, and Ops Are Seizing En#^c6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "称财务AI由厂商面向CFO销售而非CIO，指向预算归属业务侧"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[Enterprise AI Overruns Hit 46.9% Is the Reckoning in FY2027#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "提示不应假定CIO仍是主要买单方，动摇预算归属前提；但为建议非证据"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[APAC enterprises to boost AI spend by 15% in 2026#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "强调IT部门之外发起的项目重要，暗示业务侧主导AI落地"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[The LOB Takeover How Finance, Legal, and Ops Are Seizing En#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "法务部门用自身预算部署AI，说明业务线持有AI预算"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[对话100位CIO：如何在2025年自研和采购AI#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "「集中IT与业务部门预算支付AI」支持支出集中、非员工自付报销"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[BCG Finds 80 Percent of Enterprise AI Spending Happens Outsi#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web2",
+   "reason": "称八成企业AI支出由业务部门审批管理，动摇预算归属IT这一前提"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[BCG Finds 80 Percent of Enterprise AI Spending Happens Outsi#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web2",
+   "reason": "明言CIO职责已不同于传统IT预算所有权，暗示IT不掌钱"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[BCG Finds 80 Percent of Enterprise AI Spending Happens Outsi#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web2",
+   "reason": "称趋势不因CIO意愿改变，暗示IT难收回预算主导权"
+  }
+ ]
+}

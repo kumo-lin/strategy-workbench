@@ -1,0 +1,342 @@
+{
+ "report": "报告 v5.md",
+ "keyed": {
+  "E1": "[[数位时代 2026-10 AI换机潮落空#^c2]]",
+  "E2": "[[Microsoft 2026-10 Windows混合智能#^c3]]",
+  "E3": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c4]]",
+  "E4": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c3]]",
+  "E5": "[[联想 2026-08 FY26-27 Q1 业绩#^c2]]",
+  "E6": "[[联想 2026-08 FY26-27 Q1 业绩#^c5]]",
+  "E7": "[[20_项目/个人AI战略/会议/2026-10-16 高层周会（模拟）#^m1]]",
+  "E8": "[[What's new in Microsoft Intune - Microsoft Intune - - Hardwa#^c4]]",
+  "E9": "[[In our Intune environment, a Dell Pro AI PC powered by an AM#^c6]]",
+  "E10": "[[Enterprise Laptop Manufacturer Selection Guide#^c2]]",
+  "E11": "[[Lenovo 的 TruScale Device as a Service#^c2]]",
+  "E12": "[[Lenovo 的 TruScale Device as a Service#^c4]]",
+  "E13": "[[Gartner 2026-02 内存涨价压低出货#^c4]]",
+  "E14": "[[联想搞钱的方式，变了-钛媒体官方网站#^c3]]",
+  "E15": "[[Gartner 2025-08 AI PC 份额预测#^c3]]",
+  "E16": "[[摩根斯坦利3Q26 CIO调查：硬件支出加速主要受涨价和提前采购驱动，DELL表现最佳 - 清空#^c3]]",
+  "E17": "[[联想 2026-08 FY26-27 Q1 业绩#^c3]]",
+  "E18": "[[联想 2026-08 FY26-27 Q1 业绩#^c1]]",
+  "E19": "[[WS-A 专家访谈（模拟）#^e5]]",
+  "E20": "[[WS-A 专家访谈（模拟）#^e3]]",
+  "E21": "[[WS-A 专家访谈（模拟）#^e4]]",
+  "E22": "[[WS-A 专家访谈（模拟）#^e2]]",
+  "E23": "[[联想基础设施业务终于赚钱了 - 热门：#^c1]]",
+  "E24": "[[联想搞钱的方式，变了-钛媒体官方网站#^c4]]",
+  "E25": "[[联想基础设施业务终于赚钱了 - 热门：#^c3]]",
+  "E26": "[[服务器、服务利润率反超PC、手机等，外资投行集体看多，联想是如何切换利润引擎的？-证券之星 - 服务器、服务利润率反超P#^c3]]",
+  "E27": "[[服务器、服务利润率反超PC、手机等，外资投行集体看多，联想是如何切换利润引擎的？-证券之星 - 服务器、服务利润率反超P#^c1]]",
+  "E28": "[[4400亿的联想，在赚什么钱？ - 4400亿的联想，在赚什么钱？#^c4]]",
+  "E29": "[[4400亿的联想，在赚什么钱？ - 4400亿的联想，在赚什么钱？#^c6]]",
+  "E30": "[[Windows 11 som grunnlag for administrerte AI-opplevelser - T#^c4]]",
+  "E31": "[[Add AMD Ryzen PRO processor-powered Dell Pro AI PCs to your#^c4]]",
+  "E32": "[[Intel vPro Fleet Services in Intune Managing a Device…#^c2]]",
+  "E33": "[[Mi az a Microsoft Intune - Microsoft Intune - Ugrás a fő ta#^c1]]",
+  "E34": "[[Enterprise Laptop Manufacturer Selection Guide#^c4]]",
+  "E35": "[[Microsoft Intune, Agent 365'i nasıl destekler - Ana içeriğe#^c2]]",
+  "E36": "[[Enterprise Laptop Manufacturer Selection Guide#^c1]]",
+  "E37": "[[In our Intune environment, a Dell Pro AI PC powered by an AM#^c5]]",
+  "E38": "[[Intel vPro® AI PC fleet management & hardware security#^c4]]",
+  "E39": "[[Intel vPro® AI PC fleet management & hardware security#^c5]]",
+  "E40": "[[Intel vPro® AI PC fleet management & hardware security#^c3]]",
+  "E41": "[[Intel vPro® AI PC fleet management & hardware security#^c6]]",
+  "E42": "[[Intel vPro® The PC Platform for AI#^c4]]",
+  "E43": "[[Intel vPro® The PC Platform for AI#^c2]]",
+  "E44": "[[Intel vPro® The PC Platform for AI#^c5]]",
+  "E45": "[[Intel vPro® The PC Platform for AI#^c6]]",
+  "E46": "[[Intel vPro® The PC Platform for AI#^c1]]",
+  "E47": "[[Intel vPro 产品页#^c2]]",
+  "E48": "[[Intel vPro 产品页#^c3]]",
+  "E49": "[[What's new in Microsoft Intune - Microsoft Intune - - Hardwa#^c5]]",
+  "E50": "[[Comment Microsoft Intune prend-il en charge l’agent 365 -#^c2]]",
+  "E51": "[[Che cos'è Microsoft Intune - Microsoft Intune - Ignora e pa#^c1]]",
+  "E52": "[[WS-A 专家访谈（模拟）#^e6]]",
+  "E53": "[[WS-A 专家访谈（模拟）#^e1]]",
+  "E54": "[[In our Intune environment, a Dell Pro AI PC powered by an AM#^c4]]",
+  "E55": "[[In our Intune environment, a Dell Pro AI PC powered by an AM#^c1]]",
+  "E56": "[[In our Intune environment, a Dell Pro AI PC powered by an AM#^c2]]",
+  "E57": "[[In our Intune environment, a Dell Pro AI PC powered by an AM#^c3]]",
+  "E58": "[[Intel vPro Fleet Services in Intune Managing a Device…#^c6]]",
+  "E59": "[[Add AMD Ryzen PRO processor-powered Dell Pro AI PCs to your#^c2]]",
+  "E60": "[[Add AMD Ryzen PRO processor-powered Dell Pro AI PCs to your#^c3]]",
+  "E61": "[[Add AMD Ryzen PRO processor-powered Dell Pro AI PCs to your#^c5]]",
+  "E62": "[[Add AMD Ryzen PRO processor-powered Dell Pro AI PCs to your#^c6]]",
+  "E63": "[[Enterprise Laptop Manufacturer Selection Guide#^c3]]",
+  "E64": "[[Enterprise Laptop Manufacturer Selection Guide#^c5]]",
+  "E65": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c1]]",
+  "E66": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c6]]",
+  "E67": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c1]]",
+  "E68": "[[国家金融监督管理总局#^c1]]",
+  "E69": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c4]]",
+  "E70": "[[安全顾虑正在拖慢自主AI落地，CIO们如何应对#^c5]]",
+  "E71": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c2]]"
+ },
+ "claims": [
+  {
+   "claimId": "C1",
+   "label": "H1",
+   "conditions": [
+    {
+     "n": 1,
+     "label": "①",
+     "text": "分析机构或财报显示联想的优势在于能整合和管理的设备类别多、商用渠道大、服务收入占比高",
+     "status": "证据不足",
+     "keys": [
+      "E5",
+      "E6",
+      "E14"
+     ],
+     "note": "渠道与机队大成立[E5]、服务增35%[E6]；服务收入占比高缺证据[E14]"
+    },
+    {
+     "n": 2,
+     "label": "②",
+     "text": "换机预算吃紧时，买方看重的是机队运行成本而不是 AI 硬件能力",
+     "status": "成立",
+     "keys": [
+      "E1",
+      "E13",
+      "E15"
+     ],
+     "note": "换机由Windows 10停更驱动，不为AI功能采购[E1]；涨价推迟渗透[E13][E15]"
+    }
+   ],
+   "verdict": "需要修改",
+   "judgment": {
+    "verdict": "需要修改",
+    "rebutted": [],
+    "revised_statement": null,
+    "revised_assertions": [],
+    "support_lines": [],
+    "counter_lines": [],
+    "reasoning": "（从报告正文读回）",
+    "challenge_responses": [],
+    "model_knowledge": [],
+    "so_what": [
+     "所以联想该把差异化押在机队与服务层，用自研整合加微软合作，别把溢价押在AI硬件上。"
+    ],
+    "gaps": [],
+    "expert_questions": [],
+    "conditions": [
+     {
+      "n": 1,
+      "status": "证据不足",
+      "keys": [
+       "E5",
+       "E6",
+       "E14"
+      ],
+      "note": "渠道与机队大成立[E5]、服务增35%[E6]；服务收入占比高缺证据[E14]"
+     },
+     {
+      "n": 2,
+      "status": "成立",
+      "keys": [
+       "E1",
+       "E13",
+       "E15"
+      ],
+      "note": "换机由Windows 10停更驱动，不为AI功能采购[E1]；涨价推迟渗透[E13][E15]"
+     }
+    ],
+    "answer": "多半押管理/服务层，用自研整合层加微软生态合作；买方为运行成本买单不为AI[E1]；服务占比还缺证据",
+    "reasons": [],
+    "changed": "改成押管理/服务层靠机队与渠道，不靠服务收入占比高",
+    "short_statement": ""
+   }
+  },
+  {
+   "claimId": "C2",
+   "label": "H2",
+   "conditions": [
+    {
+     "n": 1,
+     "label": "①",
+     "text": "微软官方材料显示它在配置、身份、数据边界上已有可用的管控",
+     "status": "成立",
+     "keys": [
+      "E2",
+      "E30",
+      "E31"
+     ],
+     "note": "微软官方称 Intune 与 Agent 365 可设策略并治理 agent[E2][E30][E31]"
+    },
+    {
+     "n": 2,
+     "label": "②",
+     "text": "能看到微软管不到的部分（非 Windows 设备、没走配置路径的 agent、硬件层）",
+     "status": "证据不足",
+     "keys": [
+      "E32",
+      "E33",
+      "E34",
+      "E35"
+     ],
+     "note": "硬件层缺口有带外中断[E32]；非 Windows 分支被 Intune 多平台覆盖推翻，要再拆[E33][E34][E35]"
+    },
+    {
+     "n": 3,
+     "label": "③",
+     "text": "其他 PC 厂商在这几块没有明显领先联想",
+     "status": "证据不足",
+     "keys": [
+      "E36",
+      "E9",
+      "E37",
+      "E10"
+     ],
+     "note": "联想自己有完整带外[E36]；HP、戴尔也已完整，门户还更早接入，要再拆[E9][E37][E10]"
+    }
+   ],
+   "verdict": "需要修改",
+   "judgment": {
+    "verdict": "需要修改",
+    "rebutted": [],
+    "revised_statement": null,
+    "revised_assertions": [],
+    "support_lines": [],
+    "counter_lines": [],
+    "reasoning": "（从报告正文读回）",
+    "challenge_responses": [],
+    "model_knowledge": [],
+    "so_what": [
+     "所以联想不能把带外和机队整合当差异化（推断）[E37]，要在随设备交付的服务上找出路"
+    ],
+    "gaps": [],
+    "expert_questions": [],
+    "conditions": [
+     {
+      "n": 1,
+      "status": "成立",
+      "keys": [
+       "E2",
+       "E30",
+       "E31"
+      ],
+      "note": "微软官方称 Intune 与 Agent 365 可设策略并治理 agent[E2][E30][E31]"
+     },
+     {
+      "n": 2,
+      "status": "证据不足",
+      "keys": [
+       "E32",
+       "E33",
+       "E34",
+       "E35"
+      ],
+      "note": "硬件层缺口有带外中断[E32]；非 Windows 分支被 Intune 多平台覆盖推翻，要再拆[E33][E34][E35]"
+     },
+     {
+      "n": 3,
+      "status": "证据不足",
+      "keys": [
+       "E36",
+       "E9",
+       "E37",
+       "E10"
+      ],
+      "note": "联想自己有完整带外[E36]；HP、戴尔也已完整，门户还更早接入，要再拆[E9][E37][E10]"
+     }
+    ],
+    "answer": "微软管住配置和身份[E2]；联想只剩随设备交付的服务多半能差异化，还缺证据",
+    "reasons": [],
+    "changed": "微软已覆盖配置与身份；机队整合与硬件层已被拉平，只剩随设备交付的服务待验证",
+    "short_statement": ""
+   }
+  },
+  {
+   "claimId": "C3",
+   "label": "H3",
+   "conditions": [
+    {
+     "n": 1,
+     "label": "①",
+     "text": "联想官方材料里看不到面向企业 IT 的 Qira 管理能力，或能力还在规划中",
+     "status": "证据不足",
+     "keys": [
+      "E65",
+      "E66"
+     ],
+     "note": "联想官方文档里没看到 Qira 的企业 IT 管理能力，只有单一来源称可下发策略[E65][E66]"
+    },
+    {
+     "n": 2,
+     "label": "②",
+     "text": "找不到企业规模部署或采购 Qira 的案例",
+     "status": "证据不足",
+     "keys": [
+      "E3",
+      "E4"
+     ],
+     "note": "个人版按人月 4.99 美元售卖，企业部署或采购案例仍缺[E3][E4]"
+    },
+    {
+     "n": 3,
+     "label": "③",
+     "text": "受监管行业对员工端 agent 的要求，Qira 目前满足不了，要靠管理层补",
+     "status": "证据不足",
+     "keys": [
+      "E67",
+      "E66",
+      "E68"
+     ],
+     "note": "监管要求日志审计与追责[E67]；Qira 满足不了只看到规划证据[E66][E68]"
+    }
+   ],
+   "verdict": "证据不足",
+   "judgment": {
+    "verdict": "证据不足",
+    "rebutted": [],
+    "revised_statement": null,
+    "revised_assertions": [],
+    "support_lines": [],
+    "counter_lines": [],
+    "reasoning": "（从报告正文读回）",
+    "challenge_responses": [],
+    "model_knowledge": [],
+    "so_what": [
+     "所以联想押管理栈要先给 Qira 补上可管可审，再谈企业版售卖。"
+    ],
+    "gaps": [],
+    "expert_questions": [],
+    "conditions": [
+     {
+      "n": 1,
+      "status": "证据不足",
+      "keys": [
+       "E65",
+       "E66"
+      ],
+      "note": "联想官方文档里没看到 Qira 的企业 IT 管理能力，只有单一来源称可下发策略[E65][E66]"
+     },
+     {
+      "n": 2,
+      "status": "证据不足",
+      "keys": [
+       "E3",
+       "E4"
+      ],
+      "note": "个人版按人月 4.99 美元售卖，企业部署或采购案例仍缺[E3][E4]"
+     },
+     {
+      "n": 3,
+      "status": "证据不足",
+      "keys": [
+       "E67",
+       "E66",
+       "E68"
+      ],
+      "note": "监管要求日志审计与追责[E67]；Qira 满足不了只看到规划证据[E66][E68]"
+     }
+    ],
+    "answer": "企业买方一侧依据还缺：个人版按人月 4.99 美元[E3]，企业版按设备计价仅单一来源[E4]。",
+    "reasons": [],
+    "changed": "还判断不了，缺官方管理文档和企业部署案例",
+    "short_statement": ""
+   }
+  }
+ ],
+ "source": "body"
+}

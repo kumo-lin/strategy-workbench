@@ -1,0 +1,2115 @@
+{
+ "report": "报告 v2.md",
+ "entries": [
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[摩根斯坦利3Q26 CIO调查：硬件支出加速主要受涨价和提前采购驱动，DELL表现最佳 - 清空#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "支出加速源于周期因素而非AI需求，间接说明买方非为AI买单"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者称随PC采购对「单价很敏感」，只为降管理成本小幅溢价"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者称采购「最后还是看价格和换机周期」，管理只是门槛"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[Gartner 2025-08 AI PC 份额预测#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "AI PC采用因关税与采购暂停而放缓，非AI能力驱动"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[数位时代 2026-10 AI换机潮落空#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "换机推力是Win10停更，「不代表企業是為了AI功能而採購」"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[Gartner 2026-02 内存涨价压低出货#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "AI PC涨价推迟渗透至2028，价格因素压过AI能力"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[摩根斯坦利3Q26 CIO调查：硬件支出加速主要受涨价和提前采购驱动，DELL表现最佳 - 清空#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "七成CIO预算持平或下降，本地AI部署变化不大"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者称可管理性是「门槛，不是加分项」，拍板看价格与换机周期"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[摩根斯坦利3Q26 CIO调查：硬件支出加速主要受涨价和提前采购驱动，DELL表现最佳 - 清空#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "增长源于ASP上涨与采购提前，而非AI结构性需求"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[摩根斯坦利3Q26 CIO调查：硬件支出加速主要受涨价和提前采购驱动，DELL表现最佳 - 清空#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "多数CIO因涨价调整或提前预算，显示成本主导采购"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[Gartner 2026-02 内存涨价压低出货#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "企业因成本延长PC使用寿命15%，看重机队运行成本"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "买方先问数据、日志、与Intune集成与权限，而非AI算力"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[跟大侠学创新 （前沿实践）探索你未曾联想的联想（11）：联想与降本增效#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "TruScale DaaS交付AI设备，体现设备即服务能力"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[跟大侠学创新 （前沿实践）探索你未曾联想的联想（11）：联想与降本增效#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "联想为EaaS首位客户，说明服务包已落地"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[跟大侠学创新 （前沿实践）探索你未曾联想的联想（11）：联想与降本增效#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "数千用户经TruScale DaaS换机，机队覆盖有实例但规模小"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[跟大侠学创新 （前沿实践）探索你未曾联想的联想（11）：联想与降本增效#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "CFS中心定制并部署软件，体现整合交付能力"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[跟大侠学创新 （前沿实践）探索你未曾联想的联想（11）：联想与降本增效#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "捆绑高级支持与三年上门，服务附加能力"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想基础设施业务终于赚钱了 - 热门：#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "联想主推AI原生设备，重心偏端侧而非服务层"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想基础设施业务终于赚钱了 - 热门：#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "Qira覆盖PC、平板、手机、穿戴，设备类别广"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想 2026-08 FY26-27 Q1 业绩#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "TruScale同比增35%，服务层为增长引擎，A级"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想搞钱的方式，变了-钛媒体官方网站#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "运维与项目方案占SSG收入62.4%，服务占比高"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想 2026-08 FY26-27 Q1 业绩#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "PC份额24.2%且领先扩大，机队与渠道基础大"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想 2026-08 FY26-27 Q1 业绩#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "管理服务加项目方案超SSG收入62%创新高，A级"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想搞钱的方式，变了-钛媒体官方网站#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "该服务业务增28%、利润率24.2%，盈利强"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想搞钱的方式，变了-钛媒体官方网站#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "该服务业务规模不大，服务收入占比有限"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想搞钱的方式，变了-钛媒体官方网站#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "下半年PC出货或降约15%，硬件预算承压"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想搞钱的方式，变了-钛媒体官方网站#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "运维与解决方案占SSG收入62.4%，指向服务占比高"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想搞钱的方式，变了-钛媒体官方网站#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "服务收入28.8亿美元、利润率24.2%，体量与盈利支撑服务层"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想搞钱的方式，变了-钛媒体官方网站#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "「PC仍然是最大基本盘」，资产主体在硬件而非服务层"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想基础设施业务终于赚钱了 - 热门：#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "高端PC占比达50%且增29%，端侧溢价需求确实存在"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "仅在降低管理成本时愿小幅溢价，独立AI预算盘子很小"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": true,
+   "partial": false,
+   "round": "counter",
+   "reason": "「管住不是价值」「管理只是门槛」，拿可管理溢价行不通"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想 2026-08 FY26-27 Q1 业绩#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "AI PC份额25.1%全球第一，端侧资产同样领先"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[Lenovo 的 TruScale Device as a Service#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "官方称方案含服务、TruScale DaaS与端到端整合"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想 2026-08 FY26-27 Q1 业绩#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "IDG收入171亿美元远超服务，资产仍以硬件为主"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想 2026-08 FY26-27 Q1 业绩#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "全球PC份额24.2%领先，构成机队与商用渠道基础"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想 2026-08 FY26-27 Q1 业绩#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "TruScale同比增长35%，订阅服务层在扩张"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[Lenovo 的 TruScale Device as a Service#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "TruScale DaaS管设备生命周期，正对应服务层"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想搞钱的方式，变了-钛媒体官方网站#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "预计下半年PC出货降约15%，换机预算趋于吃紧"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "要求并入Intune/SCCM，自研独立控制台反成麻烦"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "refutes",
+   "core": true,
+   "partial": false,
+   "round": "counter",
+   "reason": "可管理性是门槛不是加分项，最后看价格与换机周期"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想 2026-08 FY26-27 Q1 业绩#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "管理与项目解决方案合计超62%SSG收入，创新高"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[Lenovo 的 TruScale Device as a Service#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "订阅式装置生命周期管理服务，正对应服务层"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[Lenovo 的 TruScale Device as a Service#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "每月可预测付费的订阅模式，属服务层收入"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[Lenovo 的 TruScale Device as a Service#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "DaaS超越传统装置，服务层能力在延伸"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[联想搞钱的方式，变了-钛媒体官方网站#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "该业务「规模不大」，服务收入难称资产集中"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[服务器、服务利润率反超PC、手机等，外资投行集体看多，联想是如何切换利润引擎的？-证券之星 - 服务器、服务利润率反超P#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "利润引擎采用ISG与SSG合并口径，ISG硬件贡献更大，服务层作用被混合"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[4400亿的联想，在赚什么钱？ - 4400亿的联想，在赚什么钱？#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "SSG收入29亿美元、利润率24.2%，显示服务业务有规模且毛利高"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[4400亿的联想，在赚什么钱？ - 4400亿的联想，在赚什么钱？#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "SSG体量小，但增长快、毛利高，支持服务层是优势所在"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[4400亿的联想，在赚什么钱？ - 4400亿的联想，在赚什么钱？#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "营收基石仍是IDG硬件171亿，服务收入占比小，属更窄条件"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[4400亿的联想，在赚什么钱？ - 4400亿的联想，在赚什么钱？#^c6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "市场定价转向AI服务器订单与基础设施盈利，指向押硬件层"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[服务器、服务利润率反超PC、手机等，外资投行集体看多，联想是如何切换利润引擎的？-证券之星 - 服务器、服务利润率反超P#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "把服务器与服务合并计算，利润超越PC主要可由硬件解释"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[服务器、服务利润率反超PC、手机等，外资投行集体看多，联想是如何切换利润引擎的？-证券之星 - 服务器、服务利润率反超P#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "SSG利润率24.2%为三业务最高，支持服务层赚钱效率优势"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[服务器、服务利润率反超PC、手机等，外资投行集体看多，联想是如何切换利润引擎的？-证券之星 - 服务器、服务利润率反超P#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "SSG六成以上为非硬件收入，支持服务层资产属性"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[服务器、服务利润率反超PC、手机等，外资投行集体看多，联想是如何切换利润引擎的？-证券之星 - 服务器、服务利润率反超P#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "SSG打包硬件与部署运维，体现整合加服务层能力"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[4400亿的联想，在赚什么钱？ - 4400亿的联想，在赚什么钱？#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "SSG承担高毛利经常性收入，支持服务层定位"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Intel vPro® AI PC fleet management & hardware security#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "在 Intel 芯片层面就能远程管理大规模设备并恢复故障，联想在硬件层面并不独占这一能力"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Intel vPro® AI PC fleet management & hardware security#^c5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "vPro 随机附带，且可从 Intune 部署，带外能力对所有厂商通用"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Intel vPro® The PC Platform for AI#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "在 Intel 芯片层面即可远程管理机队、恢复故障，联想在硬件层面不独占"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Intel vPro® The PC Platform for AI#^c5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "该说法是 Intel 自称唯一提供全托管 SaaS；硬件托管能力归于 Intel，而非联想"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[In our Intune environment, a Dell Pro AI PC powered by an AM#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "HP 已能经 Intune 门户下发 BIOS 策略，联想在固件层不领先"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "refutes",
+   "core": true,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访人称可管理性只是准入门槛、同行间拉不开差距，拍板时看价格"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[In our Intune environment, a Dell Pro AI PC powered by an AM#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "戴尔已有独立的带外管理控制台，带外并不是联想独有"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "买家要求能在 BIOS 或设备管理层统一开关，说明硬件层控制确有需求"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者只愿为降低管理成本小幅溢价，多一套控制台不算差异化"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Intel vPro® AI PC fleet management & hardware security#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "AI 遥测运维属于 Intel 芯片层能力，各 OEM 都能用，联想不独占"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Intel vPro® The PC Platform for AI#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "AI 遥测运维属于 Intel 芯片层能力，各 OEM 都能用，联想不独占"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Intel vPro® The PC Platform for AI#^c6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "Intel 在 Intune 内有独家 Partner Portal，联想只能经由这一通道接入集成"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[In our Intune environment, a Dell Pro AI PC powered by an AM#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "三台机器的带内管理统一通过 Intune 与 Entra 完成，带内管理没有厂商差异"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[In our Intune environment, a Dell Pro AI PC powered by an AM#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "戴尔门户已接入 Intune，说明戴尔在管理集成上并不落后"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[In our Intune environment, a Dell Pro AI PC powered by an AM#^c5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "测试时联想根本没有合作门户，在管理集成上反而落后"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Intel vPro 产品页#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "无论操作系统状态如何都能带外访问，这是 Intel 的通用能力，并非联想独有"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Intel vPro 产品页#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "统一从 Intune 部署，说明入口在微软侧且该能力厂商通用"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Intel vPro® AI PC fleet management & hardware security#^c6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "带外仍要求网络连接，且 Wi-Fi 需为已知网络，能力只在窄条件下成立"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Intel vPro® The PC Platform for AI#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "无论操作系统状态如何都能带外访问，这是 Intel 的通用能力，并非联想独有"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[In our Intune environment, a Dell Pro AI PC powered by an AM#^c6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "联想 BIOS 策略要手工下载再发布到 Intune，集成程度不如对手门户"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Microsoft 2026-10 Windows混合智能#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "微软官方称 Intune 与 Agent 365 可设策略、监控风险并治理 agent，说明集中配置层已覆盖"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者要求由企业统一下发策略，并在 BIOS 或设备管理层关闭，同时日志可导出，说明硬件层仍有差异空间"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[What's new in Microsoft Intune - Microsoft Intune - - Hardwa#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "官方说明这些设置只覆盖经 Intune 或 MDE 纳管的 Windows 设备，边界清晰"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Microsoft 2026-10 Windows混合智能#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "微软称 Windows 提供企业期望的安全与可管理性，支持管控已覆盖这一说法"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Microsoft 2026-10 Windows混合智能#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "MXC 在 Windows 11 正式可用，运行时限定了 agent 能访问的文件和网络，数据边界层已覆盖"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Intel vPro Fleet Services in Intune Managing a Device…#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "该 C 级来源指出，agent 依附于 Windows，系统一停摆它就失效，暴露了操作系统以下的缺口"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者称现有资料很少讲清出问题后的追溯链条，审计追责层尚无证据，说明微软覆盖不全"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Microsoft 2026-10 Windows混合智能#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "官方称容器管访问权限、身份标明是哪个 agent 行动，支持身份与数据边界两层已覆盖"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Intel vPro® AI PC fleet management & hardware security#^c5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "Intel vPro Fleet Services 随每台 vPro 免费提供、可从 Intune 下发，硬件层并非联想独有"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Intel vPro Fleet Services in Intune Managing a Device…#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "设备断电或系统无法启动时 Intune 可见性中断，支持存在带外管理缺口"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Intel vPro Fleet Services in Intune Managing a Device…#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "Intune 从 OS 向上管合规、策略与应用，说明 OS 以下不在其管控内"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Intel vPro Fleet Services in Intune Managing a Device…#^c6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "Dell、HP、Surface 的 OEM 门户与 Intel vPro 并列，硬件管理非联想独有"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[What's new in Microsoft Intune - Microsoft Intune - - Hardwa#^c5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "Intune 已纳管 Windows、Android、iOS、macOS，跨设备类整合的门槛被拉平"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Intel vPro® AI PC fleet management & hardware security#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "vPro 可从带外远程恢复故障设备，说明存在 OS 之外的硬件层"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Intel vPro Fleet Services in Intune Managing a Device…#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "称 OS 级工具天生存在覆盖缺口，直接支持「微软有管不到的部分」"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Intel vPro Fleet Services in Intune Managing a Device…#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "硬件能力需单独激活才可达，支持硬件层须靠厂商随设备交付服务"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者称可管理性只是门槛、最终看价格与合同，差异化的价值有限"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "只在能降低管理成本时才愿小幅溢价，差异化价值附条件"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": true,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者称管得太死员工会绕开、管住本身不是价值，直接挑战核心前提"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Add AMD Ryzen PRO processor-powered Dell Pro AI PCs to your#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web1",
+   "reason": "三套系统均有带外和带内管理，削弱联想硬件层独特性"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Add AMD Ryzen PRO processor-powered Dell Pro AI PCs to your#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web1",
+   "reason": "戴尔已有AMD带外管理控制台，联想带外并非独有"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Add AMD Ryzen PRO processor-powered Dell Pro AI PCs to your#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "三款设备均用Intune加Entra做带内管理，证明微软管控可用"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Add AMD Ryzen PRO processor-powered Dell Pro AI PCs to your#^c5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web1",
+   "reason": "戴尔AMD管理与Intel vPro相当，说明带外能力已商品化"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Add AMD Ryzen PRO processor-powered Dell Pro AI PCs to your#^c6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web1",
+   "reason": "厂商测试称戴尔OOB不逊，削弱联想硬件层差异化"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Enterprise Laptop Manufacturer Selection Guide#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "联想DMC具备完整带外管理，支撑其硬件层能力主张"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Enterprise Laptop Manufacturer Selection Guide#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web1",
+   "reason": "惠普已有完整带外管理方案，联想不具独占优势"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Enterprise Laptop Manufacturer Selection Guide#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web1",
+   "reason": "戴尔Command加AMT实现完整带外，联想优势被摊平"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Enterprise Laptop Manufacturer Selection Guide#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "微软Intune带外仅限部分机型且依赖云，留下硬件层空间"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[Enterprise Laptop Manufacturer Selection Guide#^c5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web1",
+   "reason": "DASH是开放标准，带外管理并非联想专有"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Windows 11 som grunnlag for administrerte AI-opplevelser - T#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "官方称 Agent 365 可治理、保护并纳管 AI agent，支持条件(1)"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Windows 11 come base per le esperienze di IA gestite - Train#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "意大利语同页，称 Agent 365 治理与纳管 agent，支持条件(1)"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Windows 11 som grunnlag for administrerte AI-opplevelser - T#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "称 Intune 管理设备、应用与访问策略，支持条件(1)"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Windows 11 come base per le esperienze di IA gestite - Train#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "同页意大利语，称 Intune 管设备与应用及访问策略，支持条件(1)"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "客户要求把开关下到BIOS与设备管理层、把日志接入SIEM，可见硬件层是微软云端管控的缺口"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Microsoft 2026-10 Windows混合智能#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "微软官方表示，Agent 365与Intune可以设策略、监控风险并治理agent"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Microsoft 2026-10 Windows混合智能#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "微软官方称Windows提供企业期待的安全与可管理性"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Microsoft 2026-10 Windows混合智能#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "微软官方称MXC在运行时限制agent可访问的文件与网络，覆盖数据边界"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "受访者说不「管得太死」，员工会绕过去，且可管理只是门槛而非加分项"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Microsoft 2026-10 Windows混合智能#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "微软官方称隔离控制agent的访问范围，身份能区分agent行为与用户行为"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "受访者说可管理只是「门槛，不是加分项」，最后靠价格与合同打包决定"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "受访者指出，agent自主行动后，审计与责任追溯链条仍是空白，覆盖并不完整"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "受访者承认策略清楚但「落地是另一回事」，数据分级执行不到位"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Microsoft Intune, Agent 365'i nasıl destekler - Ana içeriğe#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "官方称 Agent 365 依托 Intune 做 agent 治理，佐证微软具备集中管理能力"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Microsoft Intune, Agent 365'i nasıl destekler - Ana içeriğe#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "agent 部署复用 Intune 的既有工作流，说明集中配置这一层已覆盖"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Microsoft Intune, Agent 365'i nasıl destekler - Ana içeriğe#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "微软自述设备态势入治理，说明设备层也被它纳入，联想可差异化的范围更窄"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Microsoft Intune, Agent 365'i nasıl destekler - Ana içeriğe#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "条件访问只放行合规且被 Intune 托管的设备，说明身份与数据边界有可用管控"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Microsoft Intune, Agent 365'i nasıl destekler - Ana içeriğe#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "宣称从身份、数据到设备端到端治理，正面支持微软已覆盖多层"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Comment Microsoft Intune prend-il en charge l’agent 365 -#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "与第 3 条同源，是法语版；同样说明设备态势被纳入治理"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Comment Microsoft Intune prend-il en charge l’agent 365 -#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "与第 4 条同源，是法语版；同样说明身份与数据边界有可用管控"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Comment Microsoft Intune prend-il en charge l’agent 365 -#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "与第 5 条同源，是法语版；同样宣称端到端治理覆盖三层"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Microsoft Intune, Agent 365'i nasıl destekler - Ana içeriğe#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "官方承认这些工具可绕过既有身份、数据与安全管控，覆盖并非无死角"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Comment Microsoft Intune prend-il en charge l’agent 365 -#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "这是第 9 条的法语版本，同样承认这些工具可绕过身份与数据管控"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Mi az a Microsoft Intune - Microsoft Intune - Ugrás a fő ta#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web2",
+   "reason": "Intune 支持 Linux、macOS、Android 等非 Windows 设备，「跨设备类别」并非微软管不到"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Che cos'è Microsoft Intune - Microsoft Intune - Ignora e pa#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web2",
+   "reason": "与匈牙利语条目同文同源，同样说明 Intune 已覆盖多类非 Windows 平台"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Mi az a Microsoft Intune - Microsoft Intune - Ugrás a fő ta#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "Intune 管理整台设备含设置、安全和应用，可直接支持集中配置层已被覆盖"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Mi az a Microsoft Intune - Microsoft Intune - Ugrás a fő ta#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "MAM 只管工作应用及其中数据，说明应用级数据边界可用"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Che cos'è Microsoft Intune - Microsoft Intune - Ignora e pa#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "意大利语同文条目，同样证明整机配置与安全由 Intune 管理"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Che cos'è Microsoft Intune - Microsoft Intune - Ignora e pa#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "同文条目，说明微软具备应用层数据边界管控"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Che cos'è Microsoft Intune - Microsoft Intune - Ignora e pa#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "策略与应用分配以 Entra 安全组为基础，身份与集中配置已打通"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Che cos'è Microsoft Intune - Microsoft Intune - Ignora e pa#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "按用户或设备组定向、签入时下发配置，集中部署配置层成立"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Mi az a Microsoft Intune - Microsoft Intune - Ugrás a fő ta#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "身份由 Microsoft Entra ID 承载，支持身份层已被覆盖"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[Mi az a Microsoft Intune - Microsoft Intune - Ugrás a fő ta#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "设备与应用状态回流条件访问，资源访问边界由微软侧控制"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "C级单一来源称Qira Business已把企业要求做成一等特性，动摇条件(1)"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "C级来源给出企业版按设备月订阅价，说明已有企业侧定价与售卖形态"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "个人版按用户月费售卖，佐证当前重心在个人订阅而非企业采购"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者列出数据、开关、策略下发、日志进SIEM等硬门槛，企业评审前须先满足"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[联想基础设施业务终于赚钱了 - 热门：#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "变现靠高端设备增值服务，指向设备打包而非企业单独采购"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者给出设备预算、软件预算与独立AI预算三条路径，肯小幅溢价但附条件"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者明言管得太死会催生影子IT，可管理不是价值、不能溢价"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[国家金融监督管理总局#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管要求设定功能边界、权限与可追溯，正是Qira需补的管理层"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者要求走企业版、SSO、日志落地，说明企业门槛高于个人体验"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者指出agent追责与审计链条是缺口，现有材料未讲清"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[国家金融监督管理总局#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管要求日志长期留存，Qira若无可导出日志则过不了评审"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[国家金融监督管理总局#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管要求人工复核与推理路径留存，指向Qira缺失的审计能力"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[国家金融监督管理总局#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管禁止个人信息用于训练，对应企业IT首问的数据去向条件"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[国家金融监督管理总局#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管要求防范越权与工具滥用，属Qira进企业评审前须满足项"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c1]]",
+   "stance": "refutes",
+   "core": true,
+   "partial": false,
+   "round": "kb",
+   "reason": "C级单一来源称经Device Intelligence可策略下发并留审计日志，直击条件(1)"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "SOC 2、ISO 27001、FedRAMP均为2026至2027年计划，合规能力尚在规划"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者强调可管理只是门槛不是加分项，拍板看价格与合同打包"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[国家金融监督管理总局#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管要求高风险场景须报告，说明受监管行业使用门槛更高"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "企业版仅处于预览招募阶段，尚无规模部署或采购证据"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "指出责任归属与审计追溯缺口，支持监管要求Qira尚不满足"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管要求日志审计、身份管理，员工端agent须具备"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求可验证可审核可追溯，构成企业准入门槛"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求对供应商准入与安全管理，支撑企业采购安全门槛"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "谁使用谁负责，要求权责可追溯，个人版难满足"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求访问控制与数据分级管理，属企业侧硬性要求"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求投用前数据安全审查与可解释性，属准入门槛"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者要求企业版、SSO、日志落地，个人版进不去"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者列出统一策略、日志入SIEM等IT可管要求"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求功能边界、权限与责任可追溯，属评审要求"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "禁止个人信息用于训练，构成数据边界要求"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "同前，人机协同权限与责任可追溯要求"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "同前，个人信息不得用于训练的数据边界要求"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[安全顾虑正在拖慢自主AI落地，CIO们如何应对#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求每个agent可追踪审计并归属责任人"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "指管太死致影子IT，可管理只是门槛非卖点"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "关键决策须人工复核并留痕，属追溯要求"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "同前，人工复核与推理路径留痕要求"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求定期审计且周期不超六个月，构成门槛"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "可管理只是门槛，过审后不比价，难支撑溢价"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "日志保存不低于业务存续期，属审计要求"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "同前，日志留存期限要求"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[安全顾虑正在拖慢自主AI落地，CIO们如何应对#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "安全风险是规模化最大障碍，支持先解决可管理"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "预算池有限，仅在有条件时愿小幅溢价"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求防范越权、工具滥用等，员工端agent须满足"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "同前，智能体安全保障要求"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[安全顾虑正在拖慢自主AI落地，CIO们如何应对#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "77%CIO视安全风险为规模化最大障碍"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[安全顾虑正在拖慢自主AI落地，CIO们如何应对#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "多数受访者因安全顾虑推迟AI采用"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[安全顾虑正在拖慢自主AI落地，CIO们如何应对#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "无法回答数据与操作边界即未准备好规模化"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "称 Qira Business 把企业要求设计成一等功能，直接削弱「看不到企业IT管理能力」。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "Qira Business 有按设备/月的独立订阅价和批量折扣，说明企业侧已有报价依据。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "受访者称企业评审先问数据、统一下发开关、日志进SIEM、权限边界，印证管理能力是门槛。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[联想基础设施业务终于赚钱了 - 热门：#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "只讲跨PC、平板、手机的个人跨设备助手，指向个人体验定位。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "Qira Personal 按用户每月4.99美元计费，是个人订阅而非企业采购。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "受访者称「管得太死」会逼出影子IT，可管理只是门槛不是加分项，削弱管理栈押注的价值。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "指出agent代做动作的责任与审计追溯缺口，印证受监管行业要求目前满足不了。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "企业侧要求企业版、SSO、日志落到自己这边，说明进入评审需先具备管理能力。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "称愿为「可管的个人AI」小幅溢价，但仅限降本前提，预算依据只是很窄地存在。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[国家金融监督管理总局#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "监管要求日志保存不低于业务存续期，属企业端agent的硬性门槛。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "同一监管口径的日志留存要求，同样构成企业评审门槛。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "受访者称可管理「是门槛，不是加分项」，不会因此多付钱，弱化押注管理栈的商业回报。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[国家金融监督管理总局#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "监管要求明确AI功能边界、数据权限与可追溯责任，企业侧要求高于Qira现状。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "同口径的人机协同与权限、可追溯要求，支持受监管行业门槛判断。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "称经Lenovo Device Intelligence实现策略执行与审计日志，说明企业IT管理能力已有表述。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "SOC 2、ISO 27001、FedRAMP 均为2026-2027未来时点，企业级资质尚未落地。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[国家金融监督管理总局#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "要求人工复核并保留推理路径与触发记录，企业审计门槛Qira未见对应能力。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[国家金融监督管理总局#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "监管禁止个人信息用于模型训练，正对应买方必问的数据不回流要求。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[国家金融监督管理总局#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "监管要求防范越权、工具滥用等智能体风险，构成企业端agent的硬要求。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[国家金融监督管理总局#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "高风险场景使用生成式AI须向监管报告，抬高受监管行业采购门槛。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "谁使用谁负责、压实主体责任，要求企业侧具备可管可控能力。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "同口径的人工复核与可追溯要求，支持企业评审门槛判断。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "同一监管口径禁止个人数据用于训练，对应买方数据流向关切。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "同一监管口径要求防范智能体越权与工具滥用，属企业侧硬性要求。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[联想基础设施业务终于赚钱了 - 热门：#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "称靠高端设备增值智能服务打开利润空间，指向设备打包与个人体验变现。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "企业版仅处预览申请阶段，说明尚无规模化部署或采购案例。"
+  }
+ ]
+}

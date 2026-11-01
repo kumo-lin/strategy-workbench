@@ -1,0 +1,21 @@
+node_modules/
+.next/
+out/
+build/
+coverage/
+test-results/
+playwright-report/
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+
+# secrets — fill .env.local yourself (see .env.example)
+.env.local
+.env*.local
+
+# local scratch
+.scratch/
+
+# Obsidian per-user workspace state inside the demo vault
+demo-vault/.obsidian/workspace*.json
+demo-vault/.trash/

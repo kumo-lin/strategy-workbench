@@ -1,0 +1,327 @@
+{
+ "version": 1,
+ "tree": {
+  "core_question": "用户为什么会持续使用个人 AI（而不是试用一阵就流失）？",
+  "decision_options": "窄押高频任务并重算留存口径 / 押系统入口与跨设备默认 / 占位不重投，等代际曲线",
+  "day1_answer": "先按任务窄押：2027 年把留存预算押在办公与信息整理这类高频重复任务上，入口与跨设备降为待验证的次优先，不按覆盖设备数铺开。",
+  "split_basis": "选这四问是因为答案不同会直接改写 2027 投什么；价格与免费替代并入口径检验；监管只作上线约束，不改变投入方向；竞争视角（最强对手是否已占高频任务）交给竞争 Workspace，本树不重复；少了任务分层就答不出押哪类用户和场景。",
+  "subquestions": [
+   {
+    "question": "现有留存数据本身可信吗：付费流失是否就是使用流失？",
+    "hypothesis": {
+     "statement": "同任务同入口下，付费留存下跌伴随使用频次上升，付费流失不等于使用流失。",
+     "falsifier": "同一用户 ID 下付费下降且调用频次同步下降，即付费流失就是使用流失。",
+     "conditions": [
+      "付费状态与调用日志可按用户匹配",
+      "免费与付费形态任务可比"
+     ],
+     "known_by": [],
+     "to_verify": [
+      {
+       "what": "免费层扩大后付费降而使用升的公开案例",
+       "where": "上网",
+       "support": "同任务同入口付费降、使用升",
+       "counter": "付费降且使用同步降"
+      },
+      {
+       "what": "核实《RevenueCat 2026 State of Subscription Apps》是否说明这一点",
+       "where": "K6",
+       "support": "相关资料（没核实）：原文直接讲到同一个对象、同一件事",
+       "counter": "同一用户 ID 下付费下降且调用频次同步下降，即付费流失就是使用流失。"
+      }
+     ],
+     "short": "付费流失≠使用流失"
+    },
+    "knockout": true,
+    "ifBad": "若付费流失即使用流失，2027 应先补使用价值，任务投入清单要重估。"
+   },
+   {
+    "question": "留存差异到底沿哪一维度分层：任务、入口还是设备？",
+    "children": [
+     {
+      "question": "留存差异是否主要沿任务类型分层，高频有产出的任务更留得住？",
+      "hypothesis": {
+       "statement": "留存差异集中在任务类型：高频重复、有明确产出的任务留存显著高于灵感闲聊类。",
+       "falsifier": "不同任务留存曲线几乎重合，或差异随年龄与设备走而非任务。",
+       "conditions": [
+        "任务可按统一分类打标",
+        "中国样本不推翻全球任务排序"
+       ],
+       "known_by": [],
+       "to_verify": [
+        {
+         "what": "ChatGPT 真实使用是否集中在少数高频任务",
+         "where": "K13",
+         "support": "使用高度集中于写作与信息类任务",
+         "counter": "任务分布均匀、无主任务"
+        },
+        {
+         "what": "OECD 个人 AI 使用频率分布",
+         "where": "上网",
+         "support": "使用频率向高频任务集中",
+         "counter": "多为一次性试用"
+        },
+        {
+         "what": "核实《CNNIC 2026-10 生成式人工智能应用发展报告》是否说明这一点",
+         "where": "K2",
+         "support": "相关资料（没核实）：原文直接讲到同一个对象、同一件事",
+         "counter": "不同任务留存曲线几乎重合，或差异随年龄与设备走而非任务。"
+        }
+       ],
+       "short": "任务分层"
+      },
+      "knockout": true,
+      "ifBad": "若留存不随任务走，就不能窄押任务，2027 预算应转入口或等待。"
+     },
+     {
+      "question": "系统层默认唤起是否独立影响留存，而不只是功能强弱？",
+      "hypothesis": {
+       "statement": "系统层可唤起与留存强相关，且不随功能强弱变化。",
+       "falsifier": "同功能下入口可用与不可用两组留存无差异，或隐私控制改善后留存不变。",
+       "conditions": [
+        "能区分预装唤起与主动打开",
+        "隐私控制变化可单独观测"
+       ],
+       "known_by": [],
+       "to_verify": [
+        {
+         "what": "不感兴趣与隐私担忧是否足以解释不唤起",
+         "where": "K14",
+         "support": "隐私担忧者仍高频用内置 AI",
+         "counter": "担忧者直接不用"
+        }
+       ],
+       "short": "入口默认唤起"
+      },
+      "knockout": true,
+      "ifBad": "若入口与留存无关，预装和默认唤起不能当留存杠杆，投入全转任务。"
+     },
+     {
+      "question": "跨设备连续使用是否真的与留存相关，足以撑起联想这张牌？",
+      "hypothesis": {
+       "statement": "跨设备连续使用与留存相关，且强于单设备功能强弱与留存的相关。",
+       "falsifier": "跨设备连续使用率高但留存不升，或连续使用与留存无关。",
+       "conditions": [
+        "跨设备连续使用率可被度量",
+        "唤起率与连续使用可分开观测"
+       ],
+       "known_by": [],
+       "to_verify": [
+        {
+         "what": "跨设备连续使用率及其与留存的相关性",
+         "where": "上网",
+         "support": "连续使用者留存显著更高",
+         "counter": "多设备与单设备留存无差异、占比极低"
+        }
+       ],
+       "short": "跨设备连续"
+      }
+     }
+    ]
+   },
+   {
+    "question": "低留存有多少由品类曲线决定、多少是联想能改的？",
+    "children": [
+     {
+      "question": "低留存是行业普遍形状，还是联想特有的形状？",
+      "hypothesis": {
+       "statement": "AI 应用低留存是品类普遍形状，联想留存不显著低于同类。",
+       "falsifier": "联想留存显著低于同类基线，或显著更高说明差异不在品类。",
+       "conditions": [
+        "有可比的同类留存基线",
+        "订阅与使用口径已对齐"
+       ],
+       "known_by": [
+        "K6"
+       ],
+       "to_verify": [
+        {
+         "what": "联想与同类 AI 产品留存的可比基线",
+         "where": "上网",
+         "support": "第三方报告显示同类留存同样低",
+         "counter": "联想留存明显低于同行业"
+        }
+       ],
+       "short": "品类形状还是联想特有"
+      }
+     },
+     {
+      "question": "代际更替会不会自然解决留存，让 2027 只需占位？",
+      "hypothesis": {
+       "statement": "年轻段使用更密但留存曲线同样陡降，代际更替不会在 2030 前解决留存。",
+       "falsifier": "年轻段留存曲线显著更平，或随队列推移留存明显上升。",
+       "conditions": [
+        "年龄切面留存可观测",
+        "队列效应与年龄效应可分"
+       ],
+       "known_by": [
+        "K4",
+        "K7"
+       ],
+       "to_verify": [
+        {
+         "what": "各年龄段的日常使用频率与持续时长",
+         "where": "上网",
+         "support": "年轻段频率高但放弃率同样高",
+         "counter": "年轻段留存曲线明显更平"
+        }
+       ],
+       "short": "代际是否解药"
+      }
+     }
+    ]
+   }
+  ],
+  "key_message": "2027 年不该按覆盖设备数铺个人 AI，应先重算使用口径，再窄押办公与信息整理这类高频任务；入口与跨设备须有独立证据才配拿预算。",
+  "risks": [
+   "内部数据可能无法按用户匹配付费与调用，口径检验做不成",
+   "任务分层证据多来自使用增长而非留存结构，方向可能被高估",
+   "跨设备连续使用缺乏公开证据，联想最强优势可能无法验证",
+   "中国样本若推翻全球任务排序，窄押清单要重做"
+  ],
+  "next_actions": [
+   "数据团队两周内用同一用户 ID 匹配付费状态与功能调用，输出使用口径留存",
+   "战略部按任务、入口、设备、年龄四个切面重切留存曲线，判定分层维度",
+   "参考库与上网检索 《OpenAI 2025-09 人们如何使用 ChatGPT》、《OECD 2026-01 个人 AI 使用》、《FRED 2026-10 美国劳动年龄成年人每天使用生成式AI》 及第三方留存基线，凑够两个独立来源",
+   "如果中国样本与全球排序冲突，再加做中国专项；访谈仅列为后续建议"
+  ]
+ },
+ "pack": [
+  {
+   "id": "K1",
+   "kind": "method",
+   "title": "workplan共创",
+   "path": "00_团队知识/方法库/workplan共创.md",
+   "gist": "怎么共创 workplan 的方法"
+  },
+  {
+   "id": "K2",
+   "kind": "reference",
+   "title": "CNNIC 2026-10 生成式人工智能应用发展报告",
+   "path": "10_资料库/CNNIC 2026-10 生成式人工智能应用发展报告.md",
+   "block": "^c3",
+   "gist": "「从各类生成式人工智能应用的用户使用次数来看，AI综合助手、AI效率办公等应用的使用次数同比增长均超过100%。」— 位置：同一节"
+  },
+  {
+   "id": "K3",
+   "kind": "reference",
+   "title": "Pew 2026-06 Americans and AI 2026",
+   "path": "10_资料库/Pew 2026-06 Americans and AI 2026.md",
+   "block": "^c3",
+   "gist": "「About a quarter of Americans report using chatbots daily. This includes 12% who…"
+  },
+  {
+   "id": "K4",
+   "kind": "reference",
+   "title": "Pew 2026-06 How Opinions and Use of AI Differ by Age",
+   "path": "10_资料库/Pew 2026-06 How Opinions and Use of AI Differ by Age.md",
+   "block": "^c1",
+   "gist": "「Daily chatbot use is also more common among adults under age 50. A third of adu…"
+  },
+  {
+   "id": "K5",
+   "kind": "reference",
+   "title": "联想 2026-01 Qira发布",
+   "path": "10_资料库/联想 2026-01 Qira发布.md",
+   "block": "^c1",
+   "gist": "「Lenovo Qira is a single intelligence carried consistently across Lenovo and Mot…"
+  },
+  {
+   "id": "K6",
+   "kind": "reference",
+   "title": "RevenueCat 2026 State of Subscription Apps",
+   "path": "10_资料库/RevenueCat 2026 State of Subscription Apps.md",
+   "block": "^c1",
+   "gist": "「Retention is lower for AI apps across all subscription durations.」— 位置：Do AI ap…"
+  },
+  {
+   "id": "K7",
+   "kind": "reference",
+   "title": "ITIF 2026-03 OECD 个人生成式AI使用率",
+   "path": "10_资料库/ITIF 2026-03 OECD 个人生成式AI使用率.md",
+   "block": "^c2",
+   "gist": "「Conversely, AI adoption was lower among older individuals, with only 14 percent…"
+  },
+  {
+   "id": "K8",
+   "kind": "reference",
+   "title": "Ping Identity 2026-06 Consumer Survey AI Trust",
+   "path": "10_资料库/Ping Identity 2026-06 Consumer Survey AI Trust.md",
+   "block": "^c2",
+   "gist": "「Ping Identity's 2026 global consumer survey reveals where 11,000 consumers acro…"
+  },
+  {
+   "id": "K9",
+   "kind": "reference",
+   "title": "FRED 2026-10 美国劳动年龄成年人每天使用生成式AI",
+   "path": "10_资料库/FRED 2026-10 美国劳动年龄成年人每天使用生成式AI.md",
+   "block": "^c4",
+   "gist": "「Data comes from the Real-Time Population Survey (RPS), a nationally representat…"
+  },
+  {
+   "id": "K10",
+   "kind": "reference",
+   "title": "OECD 2026-01 个人 AI 使用",
+   "path": "10_资料库/OECD 2026-01 个人 AI 使用.md",
+   "block": "^c1",
+   "gist": "「New data show that more than one-third of individuals across the OECD used gene…"
+  },
+  {
+   "id": "K11",
+   "kind": "reference",
+   "title": "联想 2026-08 FY26-27 Q1 业绩",
+   "path": "10_资料库/联想 2026-08 FY26-27 Q1 业绩.md",
+   "block": "^c3",
+   "gist": "「Lenovo continues to be the global #1 in AI PCs, with AI PC market share increas…"
+  },
+  {
+   "id": "K12",
+   "kind": "reference",
+   "title": "联想 2026-09 Qira扩展",
+   "path": "10_资料库/联想 2026-09 Qira扩展.md",
+   "block": "^c1",
+   "gist": "「Since the initial rollout earlier this year, Lenovo has brought Lenovo & Motoro…"
+  },
+  {
+   "id": "K13",
+   "kind": "reference",
+   "title": "OpenAI 2025-09 人们如何使用 ChatGPT",
+   "path": "10_资料库/OpenAI 2025-09 人们如何使用 ChatGPT.md",
+   "block": "^c1",
+   "gist": "「研究团队在确保隐私的前提下，对 150 万条对话进行了大规模分析」— 位置：正文"
+  },
+  {
+   "id": "K14",
+   "kind": "reference",
+   "title": "Pew 2026-06 Why Don’t People Use Chatbots",
+   "path": "10_资料库/Pew 2026-06 Why Don’t People Use Chatbots.md",
+   "block": "^c3",
+   "gist": "「Not interested in using them 60% 23% 83% Concerned about how their personal inf…"
+  },
+  {
+   "id": "K15",
+   "kind": "reference",
+   "title": "TechRadar 2025-07 企业并不急着买AI PC",
+   "path": "10_资料库/TechRadar 2025-07 企业并不急着买AI PC.md",
+   "block": "^c1",
+   "gist": "「Report finds 73% are aware of Copilot+ PCs, but only 33% see AI as important pu…"
+  },
+  {
+   "id": "K16",
+   "kind": "reference",
+   "title": "Pew 2026-06 Chart Reasons People Don’t Use Chatbots",
+   "path": "10_资料库/Pew 2026-06 Chart Reasons People Don’t Use Chatbots.md",
+   "block": "^c2",
+   "gist": "「Source: Survey of U.S. adults conducted Feb. 17-23, 2026.」— 位置：图表来源注"
+  },
+  {
+   "id": "K17",
+   "kind": "reference",
+   "title": "Pew 2026-06 What Do Americans Think AI Is",
+   "path": "10_资料库/Pew 2026-06 What Do Americans Think AI Is.md",
+   "block": "^c4",
+   "gist": "「When it comes to the public’s confidence in using chatbots, about one-in-five a…"
+  }
+ ],
+ "body_sha": "104d192f813f685fb82ff634af9616fce6b72961cdd554e7e29accc0c93cce37"
+}

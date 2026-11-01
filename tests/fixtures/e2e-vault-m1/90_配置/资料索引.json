@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "generated_at": "2026-10-28T00:00:00.000Z",
+  "entries": [
+    {
+      "path": "10_资料库/Pew 2026-06 Americans and AI 2026.md",
+      "title": "Pew 2026-06 Americans and AI 2026",
+      "summary_zh": "约一半美国成年人用过 AI 聊天工具，比 2024 年夏天明显增加。",
+      "summary_en": "About half of U.S. adults now report using AI chatbots, up substantially from the summer of 2024.",
+      "keywords": [
+        "个人 AI",
+        "AI 聊天工具",
+        "持续使用",
+        "每天使用",
+        "采用率",
+        "Pew",
+        "Americans and AI",
+        "AI chatbots",
+        "daily use",
+        "adoption"
+      ],
+      "generated_at": "2026-10-28T00:00:00.000Z"
+    },
+    {
+      "path": "10_资料库/Pew 2026-06 How Opinions and Use of AI Differ by Age.md",
+      "title": "Pew 2026-06 How Opinions and Use of AI Differ by Age",
+      "summary_zh": "50 岁以下的成年人更常每天使用聊天工具，约三分之一每天使用。",
+      "summary_en": "Daily chatbot use is also more common among adults under age 50. A third of adults under 50 say they use these tools daily.",
+      "keywords": [
+        "年龄",
+        "每天使用",
+        "30 至 49 岁",
+        "年轻用户",
+        "Pew",
+        "by age",
+        "daily use",
+        "under 50"
+      ],
+      "generated_at": "2026-10-28T00:00:00.000Z"
+    },
+    {
+      "path": "10_资料库/Pew 2026-06 Why Don’t People Use Chatbots.md",
+      "title": "Pew 2026-06 Why Don’t People Use Chatbots",
+      "summary_zh": "不用聊天工具的原因：不感兴趣（主要原因 60%、次要 23%、合计 83%），担心个人信息怎么用（54%、24%、79%），不信任准确性（45%、30%、76%）。",
+      "summary_en": "Not interested in using them 60% 23% 83% Concerned about how their personal information will be used 54% 24% 79% Don’t trust them to give accurate information 45% 30% 76%",
+      "keywords": [
+        "不用的原因",
+        "隐私顾虑",
+        "准确性",
+        "不感兴趣",
+        "Pew",
+        "non-users",
+        "privacy",
+        "accuracy",
+        "why not use"
+      ],
+      "generated_at": "2026-10-28T00:00:00.000Z"
+    },
+    {
+      "path": "10_资料库/Ping Identity 2026-06 Consumer Survey AI Trust.md",
+      "title": "Ping Identity 2026-06 Consumer Survey AI Trust",
+      "summary_zh": "用户愿意给的权限有限：即使每周能省五小时，也只有 33% 愿意给 AI 代理开放主邮箱的只读权限。",
+      "summary_en": "The kind of access they’re willing to grant is also limited, with only 33% indicating willingness to give an agent “read” access to their primary email inbox, even in exchange for saving five hours per week.",
+      "keywords": [
+        "授权",
+        "信任",
+        "邮箱权限",
+        "AI 代理",
+        "隐私",
+        "Ping Identity",
+        "AI trust",
+        "agent access",
+        "read access",
+        "delegation"
+      ],
+      "generated_at": "2026-10-28T00:00:00.000Z"
+    },
+    {
+      "path": "10_资料库/联想 2026-09 Qira扩展.md",
+      "title": "联想 2026-09 Qira扩展",
+      "summary_zh": "联想把 Qira 扩展到 80 多种商用和消费 PC 配置，以及部分平板和摩托罗拉手机。",
+      "summary_en": "Since the initial rollout earlier this year, Lenovo has brought Lenovo & Motorola Qira to more than 80 supported PC configurations across its commercial and consumer portfolios, as well as select tablets and Motorola smartphones.",
+      "keywords": [
+        "联想",
+        "Qira",
+        "跨设备",
+        "个人 AI",
+        "设备覆盖",
+        "Lenovo",
+        "cross-device",
+        "Motorola",
+        "PC configurations"
+      ],
+      "generated_at": "2026-10-28T00:00:00.000Z"
+    },
+    {
+      "path": "10_资料库/联想 2026-01 Qira发布.md",
+      "title": "联想 2026-01 Qira发布",
+      "summary_zh": "Qira 是一个在联想和摩托罗拉设备之间一致延续的个人智能。",
+      "summary_en": "Lenovo Qira is a single intelligence carried consistently across Lenovo and Motorola devices.",
+      "keywords": [
+        "联想",
+        "Qira",
+        "发布",
+        "跨设备",
+        "CES 2026",
+        "Lenovo",
+        "cross-device",
+        "personal ambient intelligence"
+      ],
+      "generated_at": "2026-10-28T00:00:00.000Z"
+    },
+    {
+      "path": "10_资料库/联想 2026-08 FY26-27 Q1 业绩.md",
+      "title": "联想 2026-08 FY26-27 Q1 业绩",
+      "summary_zh": "联想 AI PC 全球第一，AI PC 份额升至 25.1%。",
+      "summary_en": "Lenovo continues to be the global #1 in AI PCs, with AI PC market share increasing to 25.1%.",
+      "keywords": [
+        "联想",
+        "业绩",
+        "AI PC 份额",
+        "设备组合",
+        "IDG",
+        "Lenovo",
+        "Q1 results",
+        "market share"
+      ],
+      "generated_at": "2026-10-28T00:00:00.000Z"
+    },
+    {
+      "path": "10_资料库/TechRadar 2025-07 企业并不急着买AI PC.md",
+      "title": "TechRadar 2025-07 企业并不急着买AI PC",
+      "summary_zh": "调研发现 73% 知道 Copilot+ PC，但只有 33% 认为 AI 是重要的购买因素。",
+      "summary_en": "Report finds 73% are aware of Copilot+ PCs, but only 33% see AI as important purchasing factors",
+      "keywords": [
+        "企业采购",
+        "AI PC",
+        "Copilot+",
+        "购买因素",
+        "TechRadar",
+        "business buyers",
+        "purchasing",
+        "Canalys"
+      ],
+      "generated_at": "2026-10-28T00:00:00.000Z"
+    }
+  ]
+}

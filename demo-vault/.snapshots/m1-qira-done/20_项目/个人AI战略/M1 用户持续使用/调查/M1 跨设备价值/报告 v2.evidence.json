@@ -1,0 +1,115 @@
+{
+ "report": "报告 v2.md",
+ "entries": [
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[联想 2026-01 Qira发布#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "仅宣称「single intelligence」跨设备覆盖，未披露留存或成本经济性"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[联想 2026-01 Qira发布#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "CES发布属功能级宣传，未见90天留存或受益用户规模"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[沃畅游#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "同账号手机TV互通存档，支撑中国样本可识别连续使用"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[沃畅游#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "一账号两设备共享存档，支撑条件(1)可区分连续使用"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[沃畅游#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "扫码登录与大小屏无缝切换，佐证跨设备连续使用可观察"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[你的 AI 采用提升幅度，其实是一种选择效应（selection effect）#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "称账户本就更活跃才选择采用，增量可由基线活跃解释、非独立"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[你的 AI 采用提升幅度，其实是一种选择效应（selection effect）#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "采用身份只是组织就绪度的代理，存在未观测混杂"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[你的 AI 采用提升幅度，其实是一种选择效应（selection effect）#^c3]]",
+   "stance": "refutes",
+   "core": true,
+   "partial": false,
+   "round": "counter",
+   "reason": "称没有前期协变量能捕捉这种就绪度，控制后的增量无法识别"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[你的 AI 采用提升幅度，其实是一种选择效应（selection effect）#^c5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "上线后测到的使用强度只可能是结果，不能作控制变量"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[你的 AI 采用提升幅度，其实是一种选择效应（selection effect）#^c6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "效应只在25席小规模账户成立，且采用效应不等于资格效应"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[雲端 AI 記憶完整指南：便利、隱私與資料控制｜APPI News#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "支持条件三：架构设计目标不能当成已落地的受益规模"
+  }
+ ]
+}

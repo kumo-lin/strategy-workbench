@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head>
+<body>
+<title>工作台流程模拟</title>
+<meta name="description" content="不调用模型、按 v6 剧本演示 AI 协作战略工作台从新建项目到结论被下一条工作线用上的完整流程。">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #eef0f3; --app: #fafafa; --surface: #ffffff; --surface-2: #f2f4f7; --ink: #18212d; --muted: #66707e; --line: #e1e5ea;
+    --accent: #1f3b63; --accent-ink: #fff; --accent-soft: #e7eef8; --warn-soft: #fdf6e3; --warn-line: #f0dca6; --warn-ink: #7a5a12;
+    --good: #1d7a4b; --good-soft: #e7f4ec; --bad-soft: #fdecec; --orange: #c2410c;
+    --senior: #7c3aed; --senior-soft: #f3edff; --ja: #0b74c4; --ja-soft: #e6f2fb; --jb: #12855a; --jb-soft: #e6f5ee;
+    --shadow: 0 1px 2px rgba(16,24,40,.06), 0 6px 20px rgba(16,24,40,.07);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0d1218; --app: #121922; --surface: #18212c; --surface-2: #1f2a37; --ink: #e7ecf2; --muted: #9aa6b4; --line: #2b3746;
+      --accent: #8db2e8; --accent-ink: #0d1218; --accent-soft: #1c2b40; --warn-soft: #2c2514; --warn-line: #5c4a1c; --warn-ink: #e8c77d;
+      --good: #6fcf9b; --good-soft: #14281d; --bad-soft: #301a1a; --orange: #f59e62;
+      --senior: #b794f6; --senior-soft: #271d3d; --ja: #6cb6ee; --ja-soft: #142a3b; --jb: #6fcf9b; --jb-soft: #14281d;
+      --shadow: 0 1px 2px rgba(0,0,0,.35), 0 6px 20px rgba(0,0,0,.3); color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0d1218; --app: #121922; --surface: #18212c; --surface-2: #1f2a37; --ink: #e7ecf2; --muted: #9aa6b4; --line: #2b3746;
+    --accent: #8db2e8; --accent-ink: #0d1218; --accent-soft: #1c2b40; --warn-soft: #2c2514; --warn-line: #5c4a1c; --warn-ink: #e8c77d;
+    --good: #6fcf9b; --good-soft: #14281d; --bad-soft: #301a1a; --orange: #f59e62;
+    --senior: #b794f6; --senior-soft: #271d3d; --ja: #6cb6ee; --ja-soft: #142a3b; --jb: #6fcf9b; --jb-soft: #14281d;
+    --shadow: 0 1px 2px rgba(0,0,0,.35), 0 6px 20px rgba(0,0,0,.3); color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body { background: var(--bg); color: var(--ink); font: 14px/1.6 "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  button { font: inherit; color: inherit; }
+  .sim { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; height: 100vh; height: 100dvh; gap: 10px;
+    padding: 10px max(14px, env(safe-area-inset-right, 0px)) 10px max(14px, env(safe-area-inset-left, 0px)); }
+
+  /* narration */
+  .narr { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 14px; align-items: baseline; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 10px 16px; box-shadow: var(--shadow); }
+  .narr .num { grid-row: span 2; font-size: 26px; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .narr h1 { font-size: 17px; margin: 0; font-weight: 700; }
+  .narr h1 small { font-weight: 400; color: var(--muted); font-size: 13px; margin-left: 10px; }
+  .narr .cap { font-size: 15px; color: var(--accent); font-weight: 500; min-height: 1.6em; }
+  .narr .cap::before { content: "▸ "; color: var(--muted); }
+
+  /* product frame */
+  .app { display: grid; grid-template-columns: 196px minmax(0, 1fr); min-height: 0; background: var(--app); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); border-top: 4px solid var(--role, var(--senior)); transition: border-color .4s; }
+  .side { border-right: 1px solid var(--line); background: var(--surface); padding: 14px 10px; display: flex; flex-direction: column; gap: 2px; min-height: 0; overflow: hidden; font-size: 13px; }
+  .side .brand { font-weight: 700; padding: 0 8px 10px; }
+  .side .nav { padding: 3px 8px; border-radius: 6px; color: var(--ink); display: flex; justify-content: space-between; }
+  .side .nav.on { background: var(--surface-2); font-weight: 500; }
+  .side .grp { color: var(--muted); font-size: 11px; padding: 10px 8px 2px; }
+  .badge { background: var(--orange); color: #fff; border-radius: 999px; font-size: 11px; padding: 0 6px; line-height: 18px; }
+  .who-box { margin-top: auto; border-top: 1px solid var(--line); padding: 10px 6px 0; }
+  .who-box .lbl { color: var(--muted); font-size: 11px; margin-bottom: 4px; }
+  .who-chip { border-radius: 8px; padding: 4px 10px; font-size: 13px; background: var(--role-soft); color: var(--role); border: 1px solid var(--role); transition: all .4s; }
+  .screen { min-height: 0; overflow: auto; padding: 14px 18px; position: relative; }
+
+  /* generic product pieces */
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+  .pad { padding: 12px 14px; }
+  .muted { color: var(--muted); }
+  .small { font-size: 12px; }
+  .btn { border: 1px solid var(--line); background: var(--surface); border-radius: 7px; padding: 5px 12px; cursor: default; font-size: 13px; white-space: nowrap; }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .pill { display: inline-block; border-radius: 999px; padding: 0 8px; font-size: 11px; line-height: 20px; border: 1px solid var(--line); background: var(--surface-2); color: var(--muted); white-space: nowrap; }
+  .pill.blue { background: var(--accent-soft); color: var(--accent); border-color: transparent; }
+  .pill.green { background: var(--good-soft); color: var(--good); border-color: transparent; }
+  .pill.amber { background: var(--warn-soft); color: var(--warn-ink); border-color: var(--warn-line); }
+  .pill.orange { color: var(--orange); background: transparent; border-color: var(--orange); }
+  h2 { font-size: 18px; margin: 0; }
+  h3 { font-size: 14px; margin: 0 0 6px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 500; font-size: 12px; }
+  .grid2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 12px; min-height: 0; }
+  .grid2.even { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .pane { display: flex; flex-direction: column; min-height: 0; }
+  .pane-h { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-bottom: 1px solid var(--line); font-weight: 500; font-size: 13px; }
+  .pane-h .sp { margin-left: auto; }
+  .pane-b { padding: 10px 12px; overflow: auto; min-height: 0; flex: 1; }
+  .ws { display: grid; grid-template-rows: auto auto auto minmax(0, 1fr); gap: 10px; height: 100%; }
+  .ws.full { height: auto; }
+  .ws-head { display: flex; gap: 12px; align-items: flex-start; }
+  .ws-head .crumb { font-size: 11px; color: var(--muted); }
+  .ws-head .sub { font-size: 12px; color: var(--muted); }
+  .ws-head .seg { margin-left: auto; display: flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; font-size: 13px; }
+  .ws-head .seg span { padding: 4px 12px; color: var(--muted); }
+  .ws-head .seg span.on { background: var(--surface); color: var(--ink); font-weight: 500; }
+  .tag { display: inline-block; border: 1px solid var(--ja); color: var(--ja); background: var(--ja-soft); border-radius: 5px; padding: 0 6px; font-size: 11px; }
+  .tag.b { border-color: var(--jb); color: var(--jb); background: var(--jb-soft); }
+  .steps { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
+  .steps div { border: 1px solid var(--line); border-radius: 7px; padding: 4px 8px; font-size: 12px; background: var(--surface); color: var(--muted); line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .steps div small { display: block; font-size: 10.5px; }
+  .steps div.done { color: var(--ink); }
+  .steps div.done b::before { content: "✓ "; color: var(--good); }
+  .steps div.cur { border-color: var(--accent); background: var(--accent-soft); color: var(--ink); }
+  .steps b { font-weight: 500; }
+  .nextbar { display: flex; align-items: center; gap: 10px; border: 1px solid var(--accent); background: var(--accent-soft); border-radius: 9px; padding: 7px 12px; font-size: 13px; }
+  .nextbar .t { flex: 1; }
+  .nextbar .t::before { content: "→ "; color: var(--accent); }
+  .banner { background: var(--warn-soft); border-bottom: 1px solid var(--warn-line); padding: 8px 12px; font-size: 12.5px; color: var(--warn-ink); }
+  .banner b { display: block; color: var(--ink); font-weight: 500; }
+
+  /* chat */
+  .chat { display: flex; flex-direction: column; gap: 10px; }
+  .msg .who { font-size: 11px; color: var(--muted); margin-bottom: 3px; }
+  .msg.user { align-self: flex-end; max-width: 88%; display: flex; flex-direction: column; align-items: flex-end; }
+  .msg.user .bubble { background: var(--surface-2); border-radius: 10px; padding: 7px 11px; white-space: pre-wrap; margin: 0; }
+  .msg.ai .ai-text { white-space: pre-wrap; }
+  .tool { display: flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 8px; padding: 5px 10px; background: var(--surface); font-size: 13px; }
+  .tool .d { color: var(--muted); font-size: 12px; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .tool .st { font-size: 12px; color: var(--muted); }
+  .tool .st.ok { color: var(--good); }
+  .ask { border: 1px solid var(--line); border-radius: 10px; background: var(--surface); padding: 10px 12px; }
+  .ask[data-state="open"] { border-color: var(--accent); }
+  .ask .h { display: flex; justify-content: space-between; font-size: 13px; font-weight: 500; margin-bottom: 4px; }
+  .ask .h span { font-weight: 400; color: var(--muted); font-size: 12px; }
+  .ask .q { margin: 0 0 8px; }
+  .ask .opts { display: flex; flex-direction: column; gap: 6px; }
+  .ask .opt { text-align: left; border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; background: var(--surface); cursor: default; }
+  .ask .opt.sel { border-color: var(--accent); background: var(--accent-soft); }
+  .ask .ans { font-size: 13px; }
+  .ask .ans small { color: var(--muted); display: block; }
+  .composer { border-top: 1px solid var(--line); padding: 8px 10px; display: flex; gap: 8px; align-items: center; }
+  .composer .in { flex: 1; border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; color: var(--muted); background: var(--surface); min-height: 34px; white-space: pre-wrap; overflow: hidden; }
+  .composer .in.typing { color: var(--ink); }
+  .proposal { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; background: var(--surface); }
+
+  /* docs */
+  .doc dl { margin: 0; display: grid; gap: 6px; }
+  .doc dt { font-size: 11.5px; color: var(--muted); }
+  .doc dd { margin: 0; }
+  .branch { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; margin-top: 8px; background: var(--surface); }
+  .branch .bt { font-size: 12px; color: var(--muted); }
+  .sq { margin-top: 5px; font-size: 13px; }
+  .sq .hy { color: var(--muted); font-size: 12.5px; }
+  .ko { color: var(--orange); font-size: 12px; }
+  .chg { border: 1px solid var(--line); border-left: 3px solid var(--senior); border-radius: 8px; padding: 8px 10px; background: var(--surface); }
+  .mark { background: var(--warn-soft); border-radius: 3px; padding: 0 2px; }
+  .fact { font-size: 11px; border-radius: 4px; padding: 0 5px; background: var(--good-soft); color: var(--good); margin-right: 4px; }
+  .infer { font-size: 11px; border-radius: 4px; padding: 0 5px; background: var(--warn-soft); color: var(--warn-ink); margin-right: 4px; }
+  .fn { font-size: 10.5px; vertical-align: super; color: var(--accent); border: 1px solid var(--accent); border-radius: 4px; padding: 0 3px; margin-left: 2px; cursor: default; }
+  .sowhat { background: var(--surface-2); border-left: 3px solid var(--accent); border-radius: 6px; padding: 8px 12px; font-weight: 500; }
+  .reason { border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; margin-top: 6px; background: var(--surface); }
+  .cite { border: 1px solid var(--accent); border-radius: 10px; background: var(--surface); padding: 10px 12px; margin-top: 10px; }
+  .cite blockquote { margin: 4px 0; padding: 6px 10px; background: var(--surface-2); border-left: 3px solid var(--line); border-radius: 4px; }
+  .checks { display: grid; gap: 2px; font-size: 12.5px; }
+  .file-group h4 { font-size: 13px; margin: 10px 0 4px; font-weight: 500; }
+  .frow { display: flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 7px; padding: 5px 10px; background: var(--surface); margin-top: 4px; font-size: 13px; transition: opacity .3s; }
+  .frow .cb { width: 14px; height: 14px; border-radius: 3px; border: 1.5px solid var(--accent); background: var(--accent); flex: none; position: relative; }
+  .frow .cb::after { content: "✓"; color: var(--accent-ink); font-size: 10px; position: absolute; left: 2px; top: -3px; }
+  .frow .cb.off { background: transparent; }
+  .frow .cb.off::after { content: ""; }
+  .frow .cb.fixed { opacity: .45; }
+  .frow.off .nm { color: var(--muted); text-decoration: line-through; }
+  .frow .star { color: var(--muted); cursor: default; }
+  .frow .star.on { color: #f59e0b; }
+  .frow .nm { flex: 1; }
+  .frow .gr { font-size: 11.5px; color: var(--muted); }
+  .runbar { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 4px; }
+  .runbar i { height: 6px; border-radius: 3px; background: var(--line); transition: background .3s; }
+  .runbar i.on { background: var(--good); }
+  .runlabels { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 4px; font-size: 11px; color: var(--muted); text-align: center; }
+  .logrow { border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; background: var(--surface); font-size: 13px; }
+  .logrow b { font-weight: 500; }
+  .logrow .j { color: var(--muted); font-size: 12.5px; }
+  .field { border: 1px solid var(--line); border-radius: 7px; padding: 6px 10px; min-height: 34px; background: var(--surface); white-space: pre-wrap; }
+  .hidden { display: none !important; }
+  .fade-in { animation: fade .45s ease both; }
+  @keyframes fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+  .flash { animation: flash 1.6s ease; }
+  @keyframes flash { 0%, 100% { box-shadow: 0 0 0 0 transparent; } 30% { box-shadow: 0 0 0 4px rgba(245, 158, 11, .45); } }
+  .pulse { position: relative; z-index: 2; animation: pulse 1.3s ease-in-out infinite; cursor: pointer !important; }
+  @keyframes pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, .0); } 50% { box-shadow: 0 0 0 5px rgba(245, 158, 11, .55); } }
+  .press { transform: scale(.96); transition: transform .12s; }
+  .modal-back { position: absolute; inset: 0; background: rgba(15, 20, 28, .35); display: grid; place-items: center; z-index: 5; }
+  .modal { width: min(520px, 92%); background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); padding: 14px 16px; display: grid; gap: 8px; }
+  .toast { position: absolute; right: 16px; bottom: 14px; background: var(--ink); color: var(--app); border-radius: 8px; padding: 6px 12px; font-size: 13px; z-index: 6; }
+  .cards3 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .proj-card { padding: 10px 14px; }
+  .proj-card .q { color: var(--muted); font-size: 13px; }
+  .tree { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .tree .line { border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; background: var(--surface); }
+  .tree .it { display: flex; justify-content: space-between; font-size: 13px; padding: 1px 0; }
+  .kv { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px 14px; font-size: 13px; }
+  .kv dt { font-size: 11.5px; color: var(--muted); }
+  .kv dd { margin: 0; }
+  .end { max-width: 980px; margin: 0 auto; display: grid; gap: 12px; }
+
+  /* presenter controls */
+  .ctl { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .cbtn { all: unset; box-sizing: border-box; cursor: pointer; border: 1px solid var(--line); background: var(--surface); border-radius: 9px; padding: 7px 14px; font-size: 14px; box-shadow: var(--shadow); }
+  .cbtn:hover { background: var(--surface-2); }
+  .cbtn:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .cbtn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 500; }
+  .cbtn[disabled] { opacity: .4; cursor: default; }
+  .ctl select { font: inherit; font-size: 13px; padding: 6px 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+  .ctl .pos { color: var(--muted); font-size: 12.5px; font-variant-numeric: tabular-nums; }
+  .ctl .grow { flex: 1; }
+  .ctl .hint { color: var(--muted); font-size: 12px; }
+  kbd { font: 11px ui-monospace, SFMono-Regular, Menlo, monospace; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; padding: 0 4px; background: var(--surface); }
+
+  @media (max-width: 900px) {
+    .sim { height: auto; min-height: 100vh; }
+    .app { grid-template-columns: minmax(0, 1fr); }
+    .side { display: none; }
+    .grid2, .grid2.even, .tree, .cards3 { grid-template-columns: minmax(0, 1fr) !important; }
+    .grid2 { height: auto !important; }
+    .screen [style*="display:flex"] { flex-wrap: wrap; }
+    .steps { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .kv { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+    .ws { height: auto; }
+    .pane-b { max-height: 60vh; }
+    .ctl .hint { display: none; }
+    .narr .num { font-size: 20px; }
+  }
+</style>
+
+<div class="sim">
+  <section class="narr" aria-live="polite">
+    <div class="num" id="n-num"></div>
+    <h1 id="n-title"></h1>
+    <div class="cap" id="n-cap"></div>
+  </section>
+
+  <div class="app" id="app">
+    <aside class="side" aria-hidden="true">
+      <div class="brand">AI 协作战略工作台</div>
+      <div class="nav" data-nav="home">首页</div>
+      <div class="nav" data-nav="inbox">待你处理 <span class="badge hidden" id="inbox-badge">1</span></div>
+      <div class="grp">项目</div>
+      <div class="nav">东南亚中小企业渠道</div>
+      <div class="nav" data-nav="proj" id="nav-proj">个人AI战略</div>
+      <div class="nav">商用 PC 换机策略</div>
+      <div class="nav">AI 服务器本地部署</div>
+      <div class="grp"></div>
+      <div class="nav">团队资料库</div>
+      <div class="nav" data-nav="config">方法与配置</div>
+      <div class="who-box"><div class="lbl">当前身份</div><div class="who-chip" id="who"></div></div>
+    </aside>
+    <main class="screen" id="screen"></main>
+  </div>
+
+  <nav class="ctl" aria-label="演示控制">
+    <button class="cbtn" id="prev" type="button">← 上一步</button>
+    <button class="cbtn primary" id="next" type="button">下一步 →</button>
+    <button class="cbtn" id="play" type="button">▶ 自动播放</button>
+    <select id="speed" aria-label="速度"><option value="0.7">慢</option><option value="1" selected>正常</option><option value="1.8">快</option></select>
+    <select id="jump" aria-label="跳到"></select>
+    <span class="pos" id="pos"></span>
+    <span class="grow"></span>
+    <span class="hint">闪烁的按钮可以直接点 · <kbd>→</kbd> 下一步 · <kbd>←</kbd> 上一步 · <kbd>P</kbd> 播放/暂停</span>
+  </nav>
+</div>
+
+<script>
+/* ---------- engine ---------- */
+const S = { scene: 0, beat: 0, running: false, rush: false, instant: false, playing: false, speed: 1, gen: 0 };
+const $ = (sel, root = document) => root.querySelector(sel);
+const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const waiters = new Set();
+function sleep(ms) {
+  if (S.instant || S.rush) return Promise.resolve();
+  return new Promise((res) => {
+    const done = () => { clearTimeout(t); waiters.delete(done); res(); };
+    const t = setTimeout(done, ms / S.speed);
+    waiters.add(done);
+  });
+}
+function hurry() { S.rush = true; for (const w of [...waiters]) w(); }
+const screen = () => $('#screen');
+function scrollDown(el) { const box = el.closest('.pane-b') || el.closest('.screen'); if (box) box.scrollTop = box.scrollHeight; }
+async function stream(el, text, cps = 70) {
+  if (S.instant || S.rush) { el.textContent = text; scrollDown(el); return; }
+  el.textContent = '';
+  for (let i = 0; i < text.length; i += 3) {
+    if (S.rush) break;
+    el.textContent = text.slice(0, i + 3);
+    if (i % 30 === 0) scrollDown(el);
+    await sleep(3000 / cps);
+  }
+  el.textContent = text;
+  scrollDown(el);
+}
+function add(container, html) {
+  const box = typeof container === 'string' ? $(container) : container;
+  box.insertAdjacentHTML('beforeend', html);
+  const el = box.lastElementChild;
+  if (!S.instant) el.classList.add('fade-in');
+  scrollDown(el);
+  return el;
+}
+function flash(sel) { if (S.instant) return; for (const el of $$(sel)) { el.classList.remove('flash'); void el.offsetWidth; el.classList.add('flash'); el.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); } }
+function toast(text) { const t = add(screen(), `<div class="toast">${esc(text)}</div>`); setTimeout(() => t.remove(), 2600 / S.speed); }
+
+/* chat helpers: the chat in the current screen */
+const ROLE = { Senior: { cls: 'senior', label: 'Senior · 审批者' }, 分析师甲: { cls: 'ja', label: '分析师甲 · 执行者' }, 分析师乙: { cls: 'jb', label: '分析师乙 · 执行者' } };
+let actor = 'Senior';
+function setRole(name) {
+  actor = name;
+  const r = ROLE[name];
+  const app = $('#app');
+  app.style.setProperty('--role', `var(--${r.cls})`);
+  app.style.setProperty('--role-soft', `var(--${r.cls}-soft)`);
+  $('#who').textContent = r.label;
+}
+function setNav(key) { for (const n of $$('.side .nav')) n.classList.toggle('on', n.dataset.nav === key); }
+function inboxBadge(on) { $('#inbox-badge').classList.toggle('hidden', !on); }
+const chat = () => $('#chat');
+async function typeIn(text) {
+  const box = $('#composer');
+  if (!box) return;
+  const ph = box.textContent;
+  box.classList.add('typing');
+  await stream(box, text, 90);
+  await sleep(250);
+  box.textContent = ph;
+  box.classList.remove('typing');
+}
+async function user(text, typed = true) {
+  if (typed) await typeIn(text);
+  add(chat(), `<div class="msg user"><div class="who">${esc(actor)}</div><p class="bubble">${esc(text)}</p></div>`);
+  await sleep(500);
+}
+async function ai(text) {
+  const el = add(chat(), `<div class="msg ai"><div class="who">AI</div><div class="ai-text"></div></div>`);
+  await sleep(300);
+  await stream($('.ai-text', el), text);
+  await sleep(400);
+}
+async function tool(name, desc = '') {
+  const el = add(chat(), `<div class="tool"><span>⚙</span><b>${esc(name)}</b><span class="d">${esc(desc)}</span><span class="st">进行中…</span></div>`);
+  await sleep(700);
+  const st = $('.st', el); st.textContent = '✓ 完成'; st.classList.add('ok');
+  await sleep(150);
+}
+async function ask(q, options) {
+  add(chat(), `<div class="ask" data-state="open"><div class="h">AI 向你提问 <span>待回答</span></div><p class="q">${esc(q)}</p><div class="opts">${options.map((o) => `<button type="button" class="opt">${esc(o)}</button>`).join('')}</div></div>`);
+  await sleep(500);
+}
+async function pick(i) {
+  const card = $$('.ask[data-state="open"]').at(-1);
+  if (!card) return;
+  const opt = card.querySelectorAll('.opt')[i];
+  opt.classList.add('sel');
+  await sleep(450);
+  card.dataset.state = 'done';
+  $('.h span', card).textContent = '已回答';
+  $('.opts', card).outerHTML = `<div class="ans"><small>你的回答：</small>${esc(opt.textContent)}</div>`;
+  await sleep(400);
+}
+function nextbar(text, btn = '', id = '') {
+  const bar = $('#nextbar');
+  if (bar) bar.innerHTML = `<span class="t">${esc(text)}</span>${btn ? `<button type="button" class="btn primary" id="${id}">${esc(btn)}</button>` : ''}`;
+}
+function modal(html) { return add(screen(), `<div class="modal-back"><div class="modal">${html}</div></div>`); }
+function closeModal() { $('.modal-back')?.remove(); }
+
+/* ---------- product screens ---------- */
+const STEP_NAMES = ['研究计划', '调查计划', '调查与报告', '访谈建议', '追加分析', '提交确认', '存入项目文件'];
+function stepsHtml(cur, done) {
+  return `<div class="steps">${STEP_NAMES.map((n, i) => {
+    const k = i + 1; const who = k >= 6 ? 'Senior' : '分析师甲';
+    const cls = k === cur ? 'cur' : k <= done ? 'done' : '';
+    return `<div class="${cls}"><b>${k} ${n}</b><small>${k === cur ? `轮到 ${who}` : who}</small></div>`;
+  }).join('')}</div>`;
+}
+function wsHeader(name, owner = '分析师甲', line = '市场如何演进', tab = '工作台') {
+  return `<div class="ws-head"><div><div class="crumb">个人AI战略</div><h2>${esc(name)}</h2><div class="sub">来自议题树「${line}」 · 由 Senior 指派 · 负责人 <span class="tag ${owner === '分析师乙' ? 'b' : ''}">${owner}</span></div></div><div class="seg"><span class="${tab === '工作台' ? 'on' : ''}">工作台</span><span class="${tab === '文件管理' ? 'on' : ''}">文件管理</span></div></div>`;
+}
+function wsPage({ name = 'M1 哪些用户会持续使用', owner, line, tab, cur, done, next, nextBtn = '', nextId = '', left, right, ratio = '' }) {
+  return `<div class="ws">${wsHeader(name, owner, line, tab)}${stepsHtml(cur, done)}<div class="nextbar" id="nextbar" data-t="${esc(next)}" data-b="${esc(nextBtn)}" data-i="${esc(nextId)}"></div><div class="grid2 ${ratio}">${left}${right}</div></div>`;
+}
+function chatPane(title, { banner = '', model = '', empty = '' } = {}) {
+  return `<section class="card pane"><div class="pane-h">${title}${model ? `<span class="pill sp">模型：${model}</span>` : ''}</div>${banner}<div class="pane-b"><div class="chat" id="chat">${empty}</div></div><div class="composer"><div class="in" id="composer">回答 AI，或者直接说你的想法…</div><button type="button" class="btn primary">发送</button></div></section>`;
+}
+function homePage() {
+  const cards = [['东南亚中小企业渠道', '东南亚中小企业买 PC 走什么渠道？', '工作区 1 · 报告 0 · 已确认决定 1'], ['商用 PC 换机策略', '商用 PC 换机周期里，联想的设备组合优势如何转成订单？', '工作区 1 · 报告 0 · 已确认决定 1'], ['AI 服务器本地部署', '企业把 AI 推理部署在本地，联想服务器该怎么切入？', '工作区 1 · 报告 0 · 已确认决定 0']];
+  return `<div style="display:flex;align-items:center;margin-bottom:6px"><h2>我的项目</h2><button type="button" class="btn primary" id="new-project" style="margin-left:auto">＋ 新建项目</button></div>
+  <p class="muted small" style="margin:0 0 10px">新项目会自动读取团队资料库和以往已确认的决定</p>
+  <div class="cards3">${cards.map(([t, q, c]) => `<div class="card proj-card"><b>${t}</b><div class="q">${q}</div><div class="small muted">${c}</div></div>`).join('')}</div>`;
+}
+const CONTRACT = [
+  ['原题', '个人 AI 市场将如何演进，对联想意味着什么？'],
+  ['决策负责人', '智能设备业务群 · 个人 AI 战略与产品管理层'],
+  ['时间', '2027 行动；展望 2028–2030'],
+  ['要做的决定', '2027 年个人 AI 的投入方向：占什么位置、先投什么'],
+  ['地域', '全球；中国单独分析'],
+  ['产品范围', 'PC、手机、平板、可穿戴及连接它们的个人 AI 服务'],
+  ['不研究', '企业级 AI 基础设施、基础模型研发'],
+];
+function contractCard(status, filled = true) {
+  if (!filled) return `<div class="card pad" id="contract"><h3>决策契约 <span class="muted small">AI 起草 · 等 Senior 确认</span></h3><p class="muted">【待输入 Main Question，定义要支持的决策】</p></div>`;
+  return `<div class="card pad" id="contract"><h3>决策契约 <span class="pill ${status === '已确认' ? 'green' : 'amber'}" id="contract-status">${status === '已确认' ? '已确认 · Senior' : '推断 · 等 Senior 确认'}</span></h3>
+  <p style="margin:2px 0 8px;font-weight:500" id="reframed">联想应在个人 AI 中占据什么战略位置？2027 年应优先投入哪些方向？</p>
+  <dl class="kv">${CONTRACT.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
+  <div class="small" style="margin-top:8px;padding:6px 10px;border-radius:6px;background:var(--warn-soft);color:var(--warn-ink)" id="fact">发现的事实：联想 2026 年 1 月发布跨设备个人 AI Qira，9 月扩展到 80 多种 PC 配置和部分手机、平板（团队资料库，A 级）</div></div>`;
+}
+function treeCard(filled = true, owners = false) {
+  if (!filled) return `<div class="card pad" id="tree"><h3>议题树与工作线</h3><p class="muted">【待输入 Main Question 进行 Workstream 拆解】</p></div>`;
+  const A = ['M1 哪些用户会持续使用', 'M2 体验与支撑技术', 'M3 竞争格局与产业经济', 'M4 2027 至 2030 情景'];
+  const B = ['L1 在哪里竞争', 'L2 凭什么赢', 'L3 如何捕获价值', 'L4 2027 年做什么'];
+  const line = (t, q, who, items, b) => `<div class="line"><b>${t}</b><div class="small muted">${q} · ${owners ? `<span class="tag ${b ? 'b' : ''}">${who}</span>` : '待指派'}</div>${items.map((x) => `<div class="it"><span>${x}</span><span class="muted small">未开始</span></div>`).join('')}</div>`;
+  return `<div class="card pad" id="tree"><h3>议题树与工作线</h3><p class="small muted" style="margin:0 0 6px">M1 的结论会成为 L2 的前提</p><div class="tree">${line('A 市场如何演进', '什么决定竞争成败？', '分析师甲', A)}${line('B 联想如何选择', '联想凭什么赢？', '分析师乙', B, true)}</div></div>`;
+}
+function newProjectPage() {
+  return `<div class="grid2" style="grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);height:100%">
+    <div style="display:grid;gap:10px;align-content:start;overflow:auto" id="proj-left"><div><h2 id="proj-name">未命名项目 <span class="pill">草稿</span></h2></div>${contractCard('', false)}${treeCard(false)}</div>
+    ${chatPane('和 AI 定义问题')}</div>`;
+}
+function projectPage() {
+  return `<div style="display:grid;gap:10px"><div style="display:flex;align-items:center"><h2>个人AI战略</h2><span class="muted small" style="margin-left:10px">工作区 0 · 报告 0 · 已确认决定 0</span></div>
+    ${contractCard('推断')}${treeCard(true, false)}<div><button type="button" class="btn primary" id="assign">确定，指派负责人</button></div></div>`;
+}
+
+/* research plan (workplan) */
+const BRANCHES = [
+  ['Q1 需求：哪些用户、哪些任务的需求最强？', [['哪些用户群的未满足需求最强？', '30 至 49 岁多任务用户与学生需求最强，不只是年轻人'], ['有没有足够高频的任务形成习惯？', '有每天重复的任务（整理信息、写作、日程）能形成习惯', 'K1'], ['个人上下文是否明显优于通用 AI？', '记得个人上下文的助手在同一任务上明显优于通用 AI', 'K2']]],
+  ['Q2 采用：用户怎样开始用？', [['预装、下载和推荐入口如何影响首次使用？', '预装提高触达，但不足以带来真实使用'], ['用户第一次用的是什么任务？', '首次使用集中在搜索和写作这类低门槛任务'], ['不用的人为什么不用？', '不感兴趣、隐私顾虑和不信任准确性是主要原因']]],
+  ['Q3 留存：什么让用户留下或离开？', [['什么导致用户放弃或换用其他工具？', '价值低、隐私顾虑、需要反复核查是主要流失原因'], ['跨设备是否解决重复出现的真实问题？', '跨设备对所有用户都有价值', 'K3'], ['付费用户的留存是否更好？', 'AI 订阅应用的留存低于非 AI 应用']]],
+  ['Q4 深化：用户愿意给多少？', [['用户愿意给多少记忆、数据和自主权？', '授权意愿随收益和可控程度变化，需要分层授权'], ['用户是否愿意授予所需权限？', '用户愿意给只读权限，不愿让 AI 代为执行', 'K4'], ['用户愿意让 AI 替自己做决定吗？', '用户要 AI 帮忙，不要 AI 替自己做决定']]],
+];
+const KO = { K1: '2027 年不按“日常高频助手”定位投入', K2: '不把个人上下文当作 2027 年的主要差异点', K3: '跨设备不作为面向所有用户的主打卖点', K4: '2027 年先做分层授权，再做代为执行' };
+function planDoc(v) {
+  const v2 = v === 2;
+  const branches = BRANCHES.map(([t, sqs], bi) => `<div class="branch"><div class="bt">分支 ${t}</div>${sqs.map(([q, h, k], si) => {
+    const changed = v2 && k === 'K3';
+    const hy = changed ? '<span class="mark">只在电脑到手机接续的特定任务中明显，不是普遍价值</span> <span class="pill" style="border-color:var(--senior);color:var(--senior)">对应意见 Senior · 10-27</span>' : esc(h);
+    return `<div class="sq" ${k ? `data-k="${k}"` : ''}>子问题 Q${bi + 1}-${si + 1} · ${esc(q)}<div class="hy">初始假设（待验证）：${hy}</div>${k ? `<div class="ko">${k} 关键问题：结果不理想就会改变 2027 年产品战略（${KO[k]}）</div>` : ''}</div>`;
+  }).join('')}</div>`).join('');
+  const change = v2 ? `<div class="chg" style="margin:8px 0"><div class="small"><b>本版修改 · 共 2 处</b>　对应意见 Senior · 10-27</div>
+    <table style="margin-top:4px"><tr><th>位置</th><th>v1</th><th>v2（按意见修改）</th></tr>
+    <tr><td>Q3-2 假设</td><td>跨设备对所有用户都有价值</td><td>只在电脑到手机接续的特定任务中明显，不是普遍价值</td></tr>
+    <tr><td>K3</td><td>跨设备是否有价值（一个判断）</td><td>拆成三个竞争假设，并加入“控制通用助手能力后是否仍有增量”的对照</td></tr></table></div>` : '';
+  return `<div class="doc"><div style="display:flex;gap:8px;align-items:center;margin-bottom:6px"><span class="pill blue">v${v} 最新</span><b>研究计划 v${v}</b>${v2 ? '<span class="pill amber">v1 → v2 已标出修改</span>' : ''}<span class="muted small">AI 起草 · 2026-10-27 · 征求意见不卡流程</span></div>${change}
+  <dl><div><dt>要回答的问题</dt><dd>哪些用户会持续使用个人 AI？2027 年应优先服务哪些用户、任务和使用机制？</dd></div>
+  <div><dt>要支撑的决策</dt><dd>优先服务哪些用户；优先做哪些任务；用什么使用机制（跨设备、个人上下文、授权）</dd></div>
+  <div><dt>初步判断</dt><dd><span class="pill amber">假设，不是结论</span> 会持续使用的是有高频重复任务的多任务用户，不只是年轻人${v2 ? '；跨设备只在特定任务里有价值' : ''}</dd></div></dl>
+  <p class="small" id="keys" style="margin:8px 0 0"><b>关键问题</b>：K1 有没有足够高频的任务形成习惯 · K2 个人上下文是否明显优于通用 AI · K3 跨设备是否解决重复出现的真实问题 · K4 用户是否愿意授予所需权限</p>
+  <p class="small muted" style="margin:4px 0 0">拆法：按用户生命周期（需求 → 首次尝试 → 留存 → 使用深化），12 个子问题，每个配一个可以被推翻的假设</p>${branches}</div>`;
+}
+function planPane(inner, opinions = 0) {
+  return `<section class="card pane"><div class="pane-h"><span>研究计划</span><span class="muted">意见 ${opinions ? `<span class="badge">${opinions}</span>` : ''}</span><button type="button" class="btn primary sp" id="ask-senior">请 Senior 提意见</button></div><div class="pane-b" id="right">${inner}</div></section>`;
+}
+
+/* investigation plan */
+function invPlanDoc() {
+  const rows = [
+    ['H1 有持续增量', '存在反复发生的跨设备任务；连续上下文改善任务结果', '真实任务回顾、任务频率；同任务对照的完成率和耗时', '文件管理资料；不够则上网；后续用户访谈'],
+    ['H2 没有独立增量', '控制模型和任务后差异消失；价值来自新鲜感', '通用助手与上下文助手的对照结果；多工具并用数据', '公开对照研究；使用研究'],
+    ['H3 被授权成本抵消', '用户认可价值，但拒绝必要的数据和行动权限', '不同权限层级下的授权意愿；隐私顾虑比例', 'Ping Identity、Gartner、Pew 调查'],
+  ];
+  return `<div class="doc"><div style="display:flex;gap:8px;align-items:center;margin-bottom:6px"><b>调查计划 v1</b><span class="pill">草稿</span><button type="button" class="btn primary" id="start-run" style="margin-left:auto">计划定了，开始调查 →</button></div>
+  <dl><div><dt>为什么查</dt><dd>决定跨设备是否作为 2027 年面向所有用户的主打卖点</dd></div>
+  <div><dt>问题树（先验证 K3）</dt><dd>① 控制通用助手能力、任务难度和用户差异后，跨设备连续体验是否仍有独立增量？<br>② 数据访问和行动权限的成本，是否会抵消这份价值？</dd></div></dl>
+  <h3 style="margin-top:10px">K3 的三个竞争假设</h3>
+  <table id="hyp"><tr><th>假设</th><th>必须成立的条件</th><th>要什么证据</th><th>去哪里查</th></tr>${rows.map((r) => `<tr>${r.map((c, i) => `<td>${i ? c : `<b>${c}</b>`}</td>`).join('')}</tr>`).join('')}</table>
+  <p class="small" id="falsify" style="margin-top:8px;padding:6px 10px;border-radius:6px;background:var(--surface-2)"><b>证伪标准</b>：执行前约定业务上有意义的最低改善幅度，避免看到结果后再改标准。</p></div>`;
+}
+const RESEARCH_TABS = (cur) => `<div class="steps" style="grid-template-columns:repeat(5,minmax(0,1fr));margin-bottom:8px">${['第 2 步 · 调查计划', '第 3 步 · 执行', '第 3 步 · 报告', '第 4 步 · 访谈建议', '第 5 步 · 追加分析'].map((t, i) => `<div class="${i === cur ? 'cur' : i < cur ? 'done' : ''}"><b>${t}</b></div>`).join('')}</div>`;
+
+/* report */
+function reportDoc(v) {
+  const v2 = v === 2;
+  return `<div class="doc"><div style="display:flex;gap:8px;align-items:center"><b style="font-size:16px">M1 跨设备价值 调查报告 v${v}</b><span class="pill green">已交付 · 引用已自检</span></div>
+  <h3 style="margin-top:10px">So what <span class="pill amber">待 Senior 确认</span></h3>
+  <div class="sowhat" id="sowhat">${v2 ? '验证范围收窄到电脑和手机之间来回接着做的日常工作' : '联想应先找出会持续使用的任务，再决定跨设备投入，不把它当成所有用户的卖点'}</div>
+  <h3 style="margin-top:10px">为什么（三条理由）</h3>
+  <div class="reason" id="r1"><b>① 用的人多，天天用的人少</b><div><span class="fact">事实</span>美国成年人 49% 用过 AI 聊天工具，每天用的只有 24%<span class="fn" id="fn-1">✓1</span>（Pew 2026）</div></div>
+  <div class="reason" id="r2"><b>② Qira 布局到位，价值未证明</b><div><span class="infer">推断</span>Qira 已覆盖 80 多种 PC 配置，这只证明供给<span class="fn" id="fn-2">✓2</span>（联想发布资料）</div>${v2 ? '<div><span class="infer">推断（访谈支持）</span>受访者只在“电脑上准备、手机上跟进”这类场景里提到明显帮助（模拟访谈）</div>' : ''}</div>
+  <div class="reason" id="r3"><b>③ 用户要帮忙，不要失控</b><div><span class="fact">事实</span>33% 愿在每周省 5 小时的前提下授予邮箱只读权限<span class="fn">✓3</span>（Ping Identity 2026）</div>${v2 ? '<div><span class="infer">推断（访谈支持）</span>愿意让 AI 读日历，不愿让 AI 代发邮件（模拟访谈）</div>' : ''}</div>
+  <h3 style="margin-top:10px">证据不足、需要另外验证</h3>
+  <table id="gaps"><tr><th>问题</th><th>公开资料缺什么</th><th>怎么验证</th></tr><tr><td>K3 跨设备</td><td>没有跨设备与单设备用户的留存对比</td><td>产品数据；访谈 Qira 产品分析负责人</td></tr><tr><td>K2 个人上下文</td><td>没有同任务对比</td><td>同任务实验</td></tr><tr><td>K4 授权</td><td>不知道哪一步授权放弃最多</td><td>访谈隐私与信任团队</td></tr></table>
+  ${v2 ? `<h3 style="margin-top:10px">因为追加了访谈，结论变了什么</h3><table id="changes"><tr><th></th><th>v1（只有公开资料）</th><th>v2（加上访谈）</th></tr>
+    <tr><td>So what</td><td>跨设备先作为待验证的细分优势，场景不明</td><td>验证范围收窄到电脑和手机之间来回接着做的日常工作</td></tr>
+    <tr><td>K3 跨设备</td><td>证据不足</td><td><b>访谈支持</b>：只在“电脑上准备、路上用手机跟进”这类场景里提到明显帮助；还没有留存数据</td></tr>
+    <tr><td>K4 授权</td><td>部分支持</td><td>仍为部分支持；补充：愿意授权日历，不愿让 AI 代发邮件</td></tr>
+    <tr><td>K1、K2</td><td colspan="2" class="muted">不变（访谈没有涉及）</td></tr></table>` : ''}
+  <div id="cite-slot"></div></div>`;
+}
+function citeHtml(which) {
+  if (which === 1) return `<div class="cite fade-in"><div style="display:flex"><b>Pew 2026-06 Americans and AI 2026</b><span class="muted small" style="margin-left:auto">关闭</span></div>
+    <div class="small muted">A 级 · 一手调查（n=5,119）· 2026-06-17 · 图表“Ever used / Use daily”</div>
+    <div class="small" style="margin-top:6px">报告引用的这一句</div><div>美国成年人 49% 用过 AI 聊天工具，每天用的只有 24%</div>
+    <div class="small" style="margin-top:6px">原文上下文</div><blockquote>“…49% of U.S. adults have ever used an AI chatbot … 24% use one daily…”</blockquote>
+    <div class="small">三道核验</div><div class="checks"><span>① 名称和数字：和原文对得上 ✓</span><span>② 第一个模型：这段原文撑得住这句话 ✓</span><span>③ 另一家的模型独立复核：撑得住 ✓</span></div>
+    <div class="small" style="margin-top:6px"><b style="color:var(--good)">能支持</b>：用过的人多、天天用的人少　<b style="color:var(--orange)">不能支持</b>：为什么不天天用</div></div>`;
+  return `<div class="cite fade-in"><div style="display:flex"><b>联想 2026-01 Qira 发布</b><span class="muted small" style="margin-left:auto">关闭</span></div>
+    <div class="small muted">A 级 · 一手（公司发布）· 2026-01</div>
+    <div class="small" style="margin-top:6px">原文上下文</div><blockquote>“…a single intelligence carried consistently across devices…”</blockquote>
+    <div class="small" style="margin-top:6px"><b style="color:var(--good)">能支持</b>：联想的公开定位是跨设备　<b style="color:var(--orange)">不能支持</b>：用户会持续使用或付费</div></div>`;
+}
+
+/* files */
+const FILES = {
+  背景: [['决策契约 · 个人AI战略', '契约', 'fixed'], ['2027 个人 AI 战略方向会（模拟）', '纪要 · 当方向用，不当证据用'], ['修改理由：不要把跨设备当成所有用户的普遍价值…', '理由', 'fixed']],
+  公司: [['联想 2026-01 Qira发布', 'A'], ['联想 2026-08 FY26-27 Q1 业绩', 'A'], ['联想 2026-09 Qira扩展', 'A'], ['CNNIC 2026-10 生成式人工智能应用发展报告', 'A'], ['OECD 2026-01 个人 AI 使用', 'A'], ['OpenAI 2025-09 人们如何使用 ChatGPT', 'B'], ['Pew 2026-06 Americans and AI 2026', 'A', 'pew'], ['Ping Identity 2026-06 Consumer Survey AI Trust', 'B'], ['RevenueCat 2026 State of Subscription Apps', 'B']],
+  公开: [['TechRadar 2025-07 企业并不急着买AI PC', 'C · AI 定级', 'techradar']],
+};
+function frow([nm, gr, key]) {
+  const fixed = key === 'fixed';
+  return `<div class="frow" ${key ? `id="f-${key}"` : ''}><span class="cb ${fixed ? 'fixed' : ''}"></span><span class="star" ${key === 'pew' ? 'id="star-pew"' : ''}>${fixed ? '·' : '☆'}</span><span class="nm">${esc(nm)}</span><span class="gr">${esc(gr)}</span></div>`;
+}
+function filesList(outputs = '') {
+  return `<div class="card pad" style="overflow:auto"><div class="small muted" style="display:flex;gap:10px;align-items:center">默认全选 · 取消勾选的 AI 不读 · ★ 为优先阅读<span class="pill" style="margin-left:auto">联网 开</span><span class="btn">＋ 上传文件</span></div>
+    <div class="file-group" id="g-out"><h4>项目产出</h4>${outputs || '<div class="muted small">没有</div>'}</div>
+    <div class="file-group" id="g-bg"><h4>项目背景 (3)</h4>${FILES.背景.map(frow).join('')}</div>
+    <div class="file-group" id="g-co"><h4>公司资料 (15，节选)</h4>${FILES.公司.map(frow).join('')}</div>
+    <div class="file-group" id="g-pub"><h4>公开数据源</h4>${FILES.公开.map(frow).join('')}</div>
+    <div class="file-group"><h4>公司资产</h4><div class="muted small">没有</div></div></div>`;
+}
+
+/* ---------- scenes ---------- */
+const SCENES = [
+  {
+    num: '2.1', title: '新建项目：先说清要支持什么决定', why: '研究跑偏，多半是因为一开始没说清这份研究给谁用、要支持什么决定。', role: 'Senior', nav: 'home',
+    build: homePage,
+    beats: [
+      { cap: '首页：每个项目显示工作区、报告和已确认决定的数量。点“＋ 新建项目”', act: '#new-project', run: async () => { screen().innerHTML = newProjectPage(); setNav(''); } },
+      { cap: '输入原题', run: () => user('Evolvement and future outlook of the Personal AI market and implications to Lenovo strategy going forward') },
+      { cap: 'AI 先问清三件事，不急着动笔', run: async () => { await ai('收到。拆题之前先问清楚三件事：① 这项研究要支持谁做什么决定？② 时间和地域范围？③ 哪些明确不研究？'); await ask('先定三件事', ['支持智能设备业务群定 2027 年个人 AI 的投入方向；全球看，展望到 2030 年；企业级 AI 基础设施不研究', '自己写']); } },
+      { cap: '项目负责人选择回答', act: () => lastOpt(0), run: () => pick(0) },
+      { cap: 'AI 去团队资料库查背景：发现联想已发布 Qira，这会改变题目本身', run: async () => { await tool('读取团队资料库', '以往已确认的决定和资料'); await tool('搜索资料', '联想 个人 AI'); await ai('还有一个前提要先确认：团队资料库里显示，联想今年 1 月已经发布了跨设备个人 AI Qira，9 月扩展到 80 多种 PC 配置。题目不该再问“要不要进入”，而是“占什么位置、先投什么”。'); await ask('题目定成：联想应在个人 AI 中占据什么战略位置？2027 年应优先投入哪些方向？拆成“市场如何演进”“联想如何选择”两条工作线。就按这个拆？', ['就按这个拆', '我要改']); } },
+      { cap: '确认题目', act: () => lastOpt(0), run: () => pick(0) },
+      { cap: 'AI 起草决策契约和议题树（草稿，等 Senior 确认）', run: async () => {
+        await tool('起草决策契约', '题目定了，写决策契约'); $('#contract').outerHTML = contractCard('推断'); if (!S.instant) $('#contract').classList.add('fade-in');
+        await tool('起草议题树', '拆成两条工作线'); $('#tree').outerHTML = treeCard(true); if (!S.instant) $('#tree').classList.add('fade-in');
+        $('#proj-name').innerHTML = '个人AI战略 <span class="pill">草稿</span>';
+        await ai('决策契约和议题树都写好了，现在是草稿：请在项目页点“确定，指派负责人”。');
+      } },
+    ],
+  },
+  {
+    num: '2.2', title: '定义问题：用资料校正题目', why: '题目本身可能带着错误前提。前提错了，后面做得再细也没有用。', role: 'Senior', nav: 'proj',
+    build: projectPage,
+    beats: [
+      { cap: '原题带着“要不要进入”的前提；资料显示联想已经进入，问题改成“占什么位置、先投什么”', run: async () => { flash('#fact'); await sleep(900); flash('#reframed'); await sleep(900); } },
+      { cap: '拆成两条线：不把“行业发生了什么”和“联想该做什么”混在一层讨论', run: async () => { flash('#tree'); await sleep(900); } },
+      { cap: 'Senior 确认，指派负责人：A 给分析师甲，B 给分析师乙', act: '#assign', run: async () => { $('#contract').outerHTML = contractCard('已确认'); $('#tree').outerHTML = treeCard(true, true); $('#assign').outerHTML = '<span class="pill green">已确认并指派 · Senior · 10-27</span>'; flash('#tree'); await sleep(600); } },
+    ],
+  },
+  {
+    num: '2.3', title: '研究计划：子问题写成问句，各带一个假设', why: '没有假设的研究，容易变成平均用力地堆资料。', role: '分析师甲', nav: 'proj',
+    build: () => wsPage({ cur: 1, done: 0, next: '第 1 步 · 和 AI 一起写研究计划：回答它的几个问题', left: chatPane('和 AI 讨论 · 研究计划', { empty: '<p class="muted small">这里是分析师甲和 AI 的对话。AI 会一次问一个问题，问清楚再起草。</p><button type="button" class="btn primary" id="cocreate">开始共创研究计划</button>' }), right: planPane('<p class="muted">还没有版本。</p>') }),
+    beats: [
+      { cap: '分析师甲开工：AI 先读任务背景（决策契约、议题树、团队方法）', act: '#cocreate', run: async () => { $('#cocreate').remove(); await user('我们开始共创这个工作区的研究计划吧。', false); await tool('读取任务背景', '决策契约、议题树、团队方法'); await ask('这项研究要支撑什么决策？', ['战略定位、优先机会、资源配置', '定价策略']); } },
+      { cap: '回答：要支撑什么决策', act: () => lastOpt(0), run: () => pick(0) },
+      { cap: '分析师想按人群拆', run: () => user('我想按学生、白领、创作者分人群拆。') },
+      { cap: 'AI 指出人群互相重叠、解释不了“为什么会持续用”，建议按用户生命周期拆', run: async () => { await ai('人群互相重叠，也解释不了“为什么会持续用”。建议按用户生命周期拆：需求 → 首次尝试 → 留存 → 使用深化。'); await ask('题目定成：哪些用户会持续使用个人 AI？2027 年应优先服务哪些用户、任务和使用机制？按生命周期拆，就按这个拆？', ['就按这个拆', '还是按人群拆']); } },
+      { cap: '同意按生命周期拆', act: () => lastOpt(0), run: () => pick(0) },
+      { cap: 'AI 拆题、写出研究计划 v1：12 个子问题都写成问句，每个配一个可以被推翻的假设', run: async () => {
+        await tool('拆题', '先整体判断，再只为会改变决策的事编子问题'); await tool('写草稿', '研究计划 v1');
+        $('#right').innerHTML = planDoc(1); if (!S.instant) $('#right').firstElementChild.classList.add('fade-in');
+        nextbar('第 1 步 · 研究计划写好了：可以继续改，也可以请 Senior 提意见（不用等）；满意就往下做调查计划', '研究计划定了，往下做调查计划');
+        await ai('v1 拆好了：4 个一级子问题、12 个假设。最大风险：跨设备可能对所有用户都有价值，只是现在没有数据。右边是研究计划 v1：可以接着改，也可以请 Senior 提意见。');
+      } },
+      { cap: '关键问题 K1–K4：一旦结果不理想就会改变 2027 年产品战略，后续调查优先投在这里', run: async () => { flash('#keys'); flash('[data-k]'); await sleep(1200); } },
+    ],
+  },
+  {
+    num: '2.4', title: '征求意见：项目负责人在线给方向', why: '负责人的意见常在会上口头给出，容易丢失，分析师也只能等开会。', role: '分析师甲', nav: 'proj',
+    build: () => wsPage({ cur: 1, done: 0, next: '第 1 步 · 研究计划写好了：可以继续改，也可以请 Senior 提意见（不用等）', left: chatPane('和 AI 讨论 · 研究计划', { empty: '<div class="msg ai"><div class="who">AI</div><div class="ai-text">v1 拆好了：4 个一级子问题、12 个假设。右边是研究计划 v1：可以接着改，也可以请 Senior 提意见。</div></div>' }), right: planPane(planDoc(1)) }),
+    beats: [
+      { cap: '随时可以请 Senior 提意见，不用等开会', act: '#ask-senior', run: async () => { modal(`<b>请 Senior 提意见</b><div class="small muted">要他看什么（摘要）</div><div class="field">请看 M1 的子问题和关键问题，尤其跨设备的适用范围。</div><div class="small muted">请他重点看</div><div class="field">K3 是否把跨设备当成所有用户的普遍价值</div><div style="display:flex;justify-content:flex-end;gap:8px"><span class="btn">取消</span><button type="button" class="btn primary" id="send-opinion">发送</button></div>`); await sleep(300); } },
+      { cap: '发出去；分析师可以先往下做', act: '#send-opinion', run: async () => { closeModal(); toast('已发给 Senior。征求意见不卡流程，你可以先往下做'); inboxBadge(true); await sleep(900); } },
+      { cap: '切换到 Senior：“待你处理”里多了一条', run: async () => { setRole('Senior'); setNav('inbox'); screen().innerHTML = `<h2>待你处理</h2><p class="muted small">研究计划只是来征求意见，不卡流程；报告要你确认，确认以后才会作为项目产出存入文件管理</p><div class="card pad" id="inbox-item" style="display:flex;gap:10px"><b>研究计划 · 征求意见</b><span>个人AI战略 / M1 用户持续使用</span><span class="muted small" style="margin-left:auto">分析师甲 · 2026-10-27</span></div><div id="inbox-open"></div>`; await sleep(400); } },
+      { cap: 'Senior 打开：左边研究计划，右边直接写意见', act: '#inbox-item', run: async () => { $('#inbox-open').innerHTML = `<div class="grid2" style="margin-top:10px;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)"><div class="card pad">${planDoc(1)}</div><div class="card pad" style="align-self:start"><div class="small">你的意见</div><div class="field" id="opinion" style="min-height:90px"></div><div style="display:flex;gap:8px;margin-top:8px"><span class="btn">稍后</span><span class="btn">看过了，没有意见</span><button type="button" class="btn primary" id="opinion-send">发送意见</button></div></div></div>`; await sleep(300); } },
+      { cap: 'Senior 写意见', run: () => stream($('#opinion'), '不要把跨设备当成所有用户的普遍价值。先区分哪些用户、哪些重复任务真正受益；如果没有独立增量，就缩为细分场景。', 60) },
+      { cap: '发送意见：意见存进项目，之后 AI 当方向参考，不当证据', act: '#opinion-send', run: async () => { $('#inbox-open').innerHTML = ''; $('#inbox-item').outerHTML = '<div class="card pad muted" style="text-align:center">现在没有等你处理的事。</div>'; inboxBadge(false); await sleep(500); } },
+      { cap: '回到分析师甲：意见到了', run: async () => { setRole('分析师甲'); setNav('proj'); screen().innerHTML = SCENES[3].build(); applyNext(); $('#right').closest('.pane').outerHTML = planPane(planDoc(1), 1); nextbar('Senior 回复了 1 条意见，还没处理', '和 AI 一起解读', 'interpret'); await sleep(400); } },
+      { cap: '和 AI 一起解读：AI 先问这条意见想达成什么', act: '#interpret', run: async () => { await user('请帮我解读这条意见（G1 2026-10-27）：\n「不要把跨设备当成所有用户的普遍价值。先区分哪些用户、哪些重复任务真正受益；如果没有独立增量，就缩为细分场景。」', false); await ask('Senior 这条意见想达成什么？', ['区分真正受益的用户和重复任务，不把跨设备当成普遍价值', '要求每个论点都写明反证怎么找']); } },
+      { cap: '回答意图', act: () => lastOpt(0), run: async () => { await pick(0); await ask('怎么改？', ['收窄跨设备假设，并在 K3 加入三个竞争解释与通用助手对照', '不改']); } },
+      { cap: '选定改法', act: () => lastOpt(0), run: () => pick(0) },
+      { cap: '研究计划 v2：每处修改旁都标“对应意见 Senior · 10-27”', run: async () => { await tool('写草稿', '按选定的改法写 v2'); $('#right').innerHTML = planDoc(2); if (!S.instant) $('#right').firstElementChild.classList.add('fade-in'); nextbar('第 1 步 · 已按意见修改 2 处；满意就往下做调查计划', '研究计划定了，往下做调查计划'); await ai('研究计划 v2 写好了，已关联 Senior 的意见：先验证 K3 的独立增量，再决定跨设备的投入范围。'); flash('.chg'); } },
+    ],
+  },
+  {
+    num: '2.5', title: '调查计划：先定好什么证据算数，再开始查', why: '先查后想，容易只找支持自己观点的证据。', role: '分析师甲', nav: 'proj',
+    build: () => wsPage({ cur: 2, done: 1, next: '第 2 步 · 和 AI 定调查计划：每个关键问题 2 到 3 个竞争假设，定了就开始调查', left: chatPane('和 AI 讨论 · 调查计划', { model: 'DeepSeek V4.1 Flash', banner: '<div class="banner" id="locked"><b>调查工具还没开放</b>联网搜索、读网页要等这份计划批准后，系统才放开。现在 AI 只能帮你改计划。</div>' }), right: `<section class="card pane"><div class="pane-b" id="right">${RESEARCH_TABS(0)}<p class="muted">告诉 AI 你想调查什么。它会先问清楚，再起草按问题树组织的调查计划。</p></div></section>` }),
+    beats: [
+      { cap: '计划批准前，系统不开放联网搜索和读网页', run: async () => { flash('#locked'); await sleep(900); } },
+      { cap: '告诉 AI 想调查什么', run: async () => { await user('请按 Senior 的意见，先调查 K3 的跨设备独立增量；其余关键问题也要有竞争假设。'); await ask('先验证哪个关键问题？', ['K3 跨设备是否解决重复出现的真实问题', 'K1 有没有足够高频的任务']); } },
+      { cap: '先验证 K3', act: () => lastOpt(0), run: async () => { await pick(0); await ask('“没有价值”和“有价值但被授权成本抵消”要不要分开验证？', ['分开：对应的产品动作不同', '合并成一个判断']); } },
+      { cap: '分开验证：前者缩小投入，后者先做权限设计', act: () => lastOpt(0), run: () => pick(0) },
+      { cap: '调查计划 v1：三个竞争假设并列去查，每个写明必须成立的条件、要什么证据、去哪里查', run: async () => { await tool('写草稿', 'K3 优先，其他关键问题保留竞争假设'); $('#right').innerHTML = RESEARCH_TABS(0) + invPlanDoc(); if (!S.instant) $('#right').lastElementChild.classList.add('fade-in'); await ai('调查计划 v1 写好了：K3 下并列 H1、H2、H3 三个竞争假设。计划定了，点“计划定了，开始调查”。'); flash('#hyp'); } },
+      { cap: '证伪标准在执行前约定，避免看到结果后再改标准', run: async () => { flash('#falsify'); await sleep(900); } },
+    ],
+  },
+  {
+    num: '2.6', title: '文件管理：资料随时可调，不占流程', why: '资料从哪里来、可信程度如何，决定了结论能信几分。但挑选资料不应该成为卡住流程的一步。', role: '分析师甲', nav: 'proj',
+    build: () => `<div class="ws">${wsHeader('M1 哪些用户会持续使用', '分析师甲', '市场如何演进', '文件管理')}${stepsHtml(2, 1)}<div class="nextbar" id="nextbar"><span class="t">第 2 步 · 调查计划定了就开始调查；资料随时可以在这里调整</span></div><div class="grid2" style="grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)">${filesList()}${chatPane('按你的任务找资料')}</div></div>`,
+    beats: [
+      { cap: '五组资料，默认全选；取消勾选的 AI 不读，★ 优先读；每份标可信等级（A 一手、B AI 定级、C 参考）', run: async () => { flash('.file-group h4'); await sleep(1200); } },
+      { cap: '决策契约和修改理由是任务的框架，始终读取（灰色勾）', run: async () => { flash('#g-bg'); await sleep(900); } },
+      { cap: '问 AI：某份资料和任务有没有关系', run: async () => {
+        await user('TechRadar 那篇讲企业采购的，和 M1 有关吗？'); await tool('读取任务背景', '开工前先读任务背景'); await tool('搜索资料', '先找到这份资料'); await tool('调整资料选择', '和任务无关的资料不进入调查');
+        add(chat(), '<div class="proposal"><ul style="margin:0;padding-left:18px"><li>不读：TechRadar 2025-07 企业并不急着买AI PC</li></ul><div style="display:flex;gap:8px;margin-top:6px" id="prop-btns"><button type="button" class="btn primary" id="agree">同意</button><span class="btn">不用</span></div></div>');
+        await ai('关系不大：M1 研究的是个人用户会不会持续使用，企业采购属于别的论点。点“同意”后取消勾选，调查时不会读。');
+      } },
+      { cap: '点“同意”才生效：和任务无关的资料不进入调查', act: '#agree', run: async () => { $('#prop-btns').outerHTML = '<div class="small muted">已按这个调整。</div>'; const r = $('#f-techradar'); r.classList.add('off'); $('.cb', r).classList.add('off'); flash('#f-techradar'); await sleep(600); } },
+      { cap: '把 Pew 2026 标为优先读', act: '#star-pew', run: async () => { const s = $('#star-pew'); s.textContent = '★'; s.classList.add('on'); flash('#f-pew'); await sleep(500); } },
+    ],
+  },
+  {
+    num: '2.7', title: '调查执行：AI 连续工作，过程可以查看', why: '调查最花时间，适合交给 AI。但如果过程看不到，结论就没法信。', role: '分析师甲', nav: 'proj',
+    build: () => wsPage({ cur: 2, done: 1, next: '第 2 步 · 调查计划定了：点“计划定了，开始调查”', left: chatPane('和 AI 讨论 · 调查执行', { model: 'DeepSeek V4.1 Flash', banner: '<div class="banner" style="background:var(--good-soft);color:var(--good);border-color:transparent"><b>计划已批准 · 调查工具已开放</b></div>', empty: '<div class="msg ai"><div class="who">AI</div><div class="ai-text">调查计划 v1 写好了：K3 下并列 H1、H2、H3 三个竞争假设。</div></div>' }), right: `<section class="card pane"><div class="pane-b" id="right">${RESEARCH_TABS(0)}${invPlanDoc()}</div></section>` }),
+    beats: [
+      { cap: '分析师确认计划后，AI 才能开始调查', act: '#start-run', run: async () => { modal('<b>开始调查</b><label class="field"><b>完整调查</b>：查全部假设，约十几分钟（演示中加速）</label><label class="field muted">快速调查：只查 K3</label><div style="display:flex;justify-content:flex-end"><button type="button" class="btn primary" id="confirm-run">确认批准，开始完整调查</button></div>'); await sleep(300); } },
+      { cap: '批准计划，开始完整调查', act: '#confirm-run', run: async () => {
+        closeModal();
+        $('#right').innerHTML = RESEARCH_TABS(1) + `<div class="card pad"><b>执行</b> <span class="muted small">每一步都留痕，可以点开</span><div class="runbar" id="runbar" style="margin-top:8px">${'<i></i>'.repeat(9)}</div><div class="runlabels"><span>拆问题</span><span>查资料库</span><span>查网上</span><span>提取</span><span>评估</span><span>找反证</span><span>补缺</span><span>判断</span><span>自检</span></div></div><div id="runlog" style="display:grid;gap:6px;margin-top:8px"></div>`;
+        nextbar('第 3 步 · AI 正在调查：不用等，过程随时可以点开看');
+        await sleep(300);
+      } },
+      { cap: 'AI 连续工作：每次检索用了什么关键词、找到什么、做了什么判断，都留痕', run: async () => {
+        const LOG = [
+          [1, '读取任务背景', '决策契约、研究计划 v2、Senior 的意见（当方向用，不当证据用）'],
+          [2, '检索 · 第 1–2 次', '资料库：Pew 2026、OECD 2026、联想 Qira 发布与扩展'],
+          [2, '检索 · 第 3 次', '在文件管理里查“跨设备 留存 对照”，找到 0 份直接证据 → K3 资料不够，转上网补查'],
+          [3, '检索 · 第 5–6 次 · 上网', '“cross-device continuity retention study”：新入库 Gartner 2026-05、Recon 2026-09，定级 B；仍无对照证据，连续 2 轮没有新证据，停止补查'],
+          [4, '提取', '原文逐字核对后才算证据；核对不过的不入库'],
+          [5, '评估', 'H1、H2、H3 并列判断；“成立”至少要 2 个独立来源'],
+          [6, '反证 · M1.1', '检验“年轻用户是主要客群”：30–49 岁每日使用率 34%，高于 18–29 岁的 31% → 原假设被数据修正'],
+          [8, '判断', 'K3、K2 证据不足：缺口转成访谈建议，不用弱证据硬凑结论'],
+          [9, '自检', '引用逐条三道核验；So what 和各子问题的回答对得上'],
+        ];
+        const bars = $$('#runbar i');
+        for (const [k, t, j] of LOG) { for (let i = 0; i < k; i++) bars[i].classList.add('on'); add('#runlog', `<div class="logrow"><b>${esc(t)}</b><div class="j">${esc(j)}</div></div>`); await sleep(1100); }
+        bars.forEach((b) => b.classList.add('on'));
+        add('#right', '<div class="card pad" id="run-done" style="margin-top:8px;border-color:var(--good)"><b style="color:var(--good)">✓ 报告 v1 已交付 · 引用已自检</b><div class="small muted">模型 DeepSeek V4.1 Flash · 搜索 13 次 · 读网页 6 次</div></div>');
+        $('.ws > .steps').outerHTML = stepsHtml(4, 3);
+        nextbar('第 4 步 · 报告里有公开资料证明不了的地方：看访谈建议，访谈做完回来追加分析');
+        await sleep(500);
+      } },
+    ],
+  },
+  {
+    num: '2.8', title: '调查报告：先给结论，引用可以核对', why: '负责人时间有限，需要一眼看到结论和依据，并能随手抽查。', role: '分析师甲', nav: 'proj',
+    build: () => wsPage({ cur: 4, done: 3, next: '第 4 步 · 报告 v1 已交付：先读 So what，引用可以点开核对', left: chatPane('和 AI 讨论 · 调查报告', { model: 'DeepSeek V4.1 Flash' }), right: `<section class="card pane"><div class="pane-b" id="right">${RESEARCH_TABS(2)}${reportDoc(1)}</div></section>` }),
+    beats: [
+      { cap: '先给 So what：负责人读第一段就知道结论', run: async () => { flash('#sowhat'); await sleep(1000); } },
+      { cap: '三条理由，每条标明是事实还是推断；通过核验的引用带 ✓', run: async () => { flash('.reason'); await sleep(1000); } },
+      { cap: '点开引用：来源、等级、原文，以及三道核验', act: '#fn-1', run: async () => { $('#cite-slot').innerHTML = citeHtml(1); $('#cite-slot').scrollIntoView({ block: 'nearest' }); await sleep(600); } },
+      { cap: '引用还写明能支持什么、不能支持什么：Qira 的官方描述只能支持“联想的公开定位”', act: '#fn-2', run: async () => { $('#cite-slot').innerHTML = citeHtml(2); $('#cite-slot').scrollIntoView({ block: 'nearest' }); await sleep(600); } },
+      { cap: '公开资料证明不了的 K2、K3，标为证据不足，不硬下结论', run: async () => { flash('#gaps'); await user('K3 为什么不能判“成立”？'); await ai('按事先定好的判断标准：“成立”至少要 2 个独立来源直接支持。公开资料里没有跨设备与单设备用户的留存对比，所以 K3 只能是“证据不足”，缺口已经转成访谈建议。'); } },
+    ],
+  },
+  {
+    num: '2.9', title: '访谈建议：把证据缺口变成访谈清单', why: '公开资料证明不了的地方要靠访谈补，前提是说清楚问谁、问什么。', role: '分析师甲', nav: 'proj',
+    build: () => wsPage({ cur: 4, done: 3, next: '第 4 步 · 报告里有公开资料证明不了的地方：看访谈建议，访谈做完回来追加分析', left: chatPane('和 AI 讨论 · 访谈建议'), right: `<section class="card pane"><div class="pane-b" id="right">${RESEARCH_TABS(3)}<div class="doc"><b>访谈建议（3 位）</b><table id="iv" style="margin-top:6px"><tr><th>找谁</th><th>问什么</th><th>为了验证什么</th></tr>
+      <tr id="iv1"><td><b>Qira 产品分析负责人</b><div class="small muted">联想内部 · 优先</div></td><td>已激活用户里，同时在 PC 和手机上使用的占多少？跨设备与单设备用户第 28 天、第 90 天留存差多少？控制重度用户后差距还在吗？</td><td>K3：跨设备是否带来独立增量</td></tr>
+      <tr><td><b>3 至 5 位多设备重度用户</b><div class="small muted">30 至 49 岁知识工作者</div></td><td>最近一周，哪些事在电脑上开始、在手机上接着做？如果 AI 自动接上，能省多少事？哪类事你不会交给 AI？</td><td>K1、K3：是否存在重复出现的跨设备任务</td></tr>
+      <tr><td><b>隐私与信任团队负责人</b></td><td>用户授权邮箱、日历时，哪一步放弃最多？只读和代为执行的授权率差多少？</td><td>K4、H3：授权成本会不会抵消价值</td></tr></table>
+      <p class="small" id="rule" style="margin-top:8px;padding:6px 10px;border-radius:6px;background:var(--warn-soft);color:var(--warn-ink)">事先约定：访谈样本少，只能把判断从“证据不足”调到“访谈支持”，不能直接算“成立”。</p></div></div></section>` }),
+    beats: [
+      { cap: '访谈问题直接对着报告里的缺口设计，每个问题写明要验证哪个判断', run: async () => { flash('#iv'); await sleep(1000); } },
+      { cap: '只能约到 3 个人时先问谁？AI 按“能改变哪个判断”排序', run: async () => { await user('只能约到 3 个人，先问谁？'); await ai('先问 Qira 产品分析负责人：K3 能否成立最直接取决于留存数据。然后是多设备重度用户（K1、K3），再是隐私与信任团队负责人（K4、H3）。'); flash('#iv1'); } },
+      { cap: '事先约定：访谈只能升到“访谈支持”，不能直接算“成立”', run: async () => { flash('#rule'); await sleep(900); } },
+    ],
+  },
+  {
+    num: '2.10', title: '追加分析：放进访谈记录，只改受影响的判断', why: '新资料进来后，要清楚哪里变了、为什么变，否则负责人只能整份重读。', role: '分析师甲', nav: 'proj',
+    build: () => wsPage({ cur: 5, done: 4, next: '第 5 步 · 把访谈记录放进来，只重判受影响的判断', ratio: 'even', left: `<section class="card pane"><div class="pane-h">和 AI 讨论 · 追加分析</div><div class="pane-b"><div class="chat" id="chat"></div></div><div class="composer" style="flex-wrap:wrap"><button type="button" class="btn" id="upload">放入访谈记录</button><span class="small muted">☑ 模拟访谈</span><span class="small muted" style="margin-left:auto">要解释的判断：K3 · 访谈支持</span><div class="in" id="composer" style="flex-basis:100%">你的问题：比如“K3 能直接改成成立吗？”</div></div></section>`, right: `<section class="card pane"><div class="pane-b" id="right">${RESEARCH_TABS(4)}<p class="muted">报告 v1 · 放入访谈记录后，只重判受影响的判断，其余证据沿用。</p></div></section>` }),
+    beats: [
+      { cap: '放进 3 份访谈记录（演示用的模拟访谈）', act: '#upload', run: async () => { add(chat(), '<div class="msg user"><div class="who">分析师甲</div><p class="bubble">放入 3 份访谈记录（模拟访谈）：\nQira 产品分析负责人\n多设备重度用户\n隐私与信任团队负责人</p></div>'); await sleep(400); await tool('读访谈记录', '3 份，标为模拟访谈'); await tool('重判受影响的判断', 'K3、K4；其余证据沿用，不重新调查'); } },
+      { cap: '报告 v2：只改受影响的两处，负责人只需要看变化表', run: async () => { $('#right').innerHTML = RESEARCH_TABS(4) + reportDoc(2); if (!S.instant) $('#right').lastElementChild.classList.add('fade-in'); nextbar('第 5 步 · 访谈已经追加分析：读报告新版本，满意就提交给 Senior 确认'); await sleep(300); $('#changes')?.scrollIntoView({ block: 'center' }); flash('#changes'); } },
+      { cap: '问：K3 能直接改成“成立”吗？AI 按事先的约定回答', run: async () => { await user('K3 能直接改成“成立”吗？'); await ai('不能。K3 在报告 v2 里已记录为“访谈支持”。产品分析负责人给的是口径和方向，没有给可核对的留存数字；按事先约定，访谈只能升到“访谈支持”。拿到产品数据后再改。'); } },
+    ],
+  },
+  {
+    num: '2.11', title: '提交确认：决定由项目负责人做', why: '结论要有人负责，不能由模型自己下。', role: '分析师甲', nav: 'proj',
+    build: () => wsPage({ cur: 5, done: 4, next: '第 5 步 · 访谈已经追加分析：满意就提交给 Senior 确认', nextBtn: '报告没问题，提交给 Senior →', nextId: 'submit', left: chatPane('和 AI 讨论 · 追加分析', { empty: '<div class="msg ai"><div class="who">AI</div><div class="ai-text">报告 v2 写好了：K3 升为“访谈支持”，K4 补充授权边界，其余不变。</div></div>' }), right: `<section class="card pane"><div class="pane-b" id="right">${RESEARCH_TABS(4)}${reportDoc(2)}</div></section>` }),
+    beats: [
+      { cap: '分析师确认报告 v2，提交给项目负责人', act: '#submit', run: async () => { nextbar('第 6 步 · 已提交给 Senior，等确认'); inboxBadge(true); toast('已提交给 Senior'); await sleep(800); } },
+      { cap: '切换到 Senior：报告待确认', run: async () => { setRole('Senior'); setNav('inbox'); screen().innerHTML = `<h2>待你处理</h2><p class="muted small">报告要你确认，确认以后才会作为项目产出存入文件管理</p><div class="card pad" id="inbox-item" style="display:flex;gap:10px"><b>报告 · 待确认</b><span>个人AI战略 / M1 用户持续使用</span><span class="muted small" style="margin-left:auto">分析师甲 · 2026-10-28</span></div>`; await sleep(300); } },
+      { cap: '左边是报告摘要，右边由 AI 起草决定', act: '#inbox-item', run: async () => {
+        inboxBadge(false); setNav('proj');
+        screen().innerHTML = `<div class="ws full">${wsHeader('M1 哪些用户会持续使用')}${stepsHtml(6, 5)}<div class="nextbar"><span class="t">第 6 步 · 分析师甲 提交了报告，等你确认决定、理由和适用边界</span></div>
+        <div class="grid2" style="grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr)"><div class="card pad" style="align-self:start"><b>报告摘要 · 报告 v2</b><p style="margin:6px 0">验证范围收窄到电脑和手机之间来回接着做的日常工作</p><ol style="margin:0;padding-left:18px"><li>用的人多，天天用的人少</li><li>Qira 布局到位，价值未证明</li><li>用户要帮忙，不要失控</li></ol><div class="small muted" style="margin-top:6px">访谈带来的变化：K3 证据不足 → 访谈支持<br>仍待验证：跨设备留存对比（需产品数据）；个人上下文的增量（需同任务实验）</div></div>
+        <div class="card pad" id="dec"><div style="display:flex;gap:8px;align-items:center"><b>决定 + 理由</b><button type="button" class="btn" id="draft">起草决定</button><span class="small muted">只有 Senior 看得到。AI 根据这份报告起草，每条理由都带报告引用过的证据。</span></div><div id="dec-body"></div></div></div></div>`;
+        await sleep(300);
+      } },
+      { cap: 'AI 起草：做什么、为什么、什么时候失效', act: '#draft', run: async () => {
+        $('#draft').remove();
+        $('#dec-body').innerHTML = `<div style="display:flex;gap:8px;align-items:center;margin-top:8px"><b>M1 用户持续使用决定-跨设备先按场景验证</b><span class="pill amber" id="dec-st">推断</span><span class="small muted">AI 起草 · 待你确认 · 可以直接改</span></div>
+          <div class="small muted" style="margin-top:6px">决定</div><div class="field" id="d1"></div><div class="small muted" style="margin-top:6px">理由</div><div class="field" id="d2"></div>
+          <div class="small muted" style="margin-top:2px" id="legend"></div><div class="small muted" style="margin-top:6px">适用边界</div><div class="field" id="d3"></div>
+          <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:8px" id="dec-btns"><span class="btn">退回，写明理由</span><button type="button" class="btn primary" id="confirm-store">确认，存入项目文件</button></div>`;
+        await stream($('#d1'), '跨设备功能先按用户和场景区分对待，暂不作为面向所有用户的主打卖点；先在电脑和手机之间来回接着做的日常工作里验证，再决定是否加大投入。');
+        await stream($('#d2'), '- 事实：公开证据只证明 AI 采用广泛，天天用的人少〔1〕\n- 推断：跨设备的价值只集中在少数场景，所以先按场景验证〔2〕\n- 推断：用户接受辅助建议多于自主执行，授权要分层〔3〕');
+        $('#legend').textContent = '〔1〕Pew 2026（A 级）〔2〕联想 Qira 发布（A 级）〔3〕Ping Identity 2026（B 级）· 改文字时请保留引用';
+        await stream($('#d3'), '在拿到跨设备留存数据前有效；数据出来后由项目负责人复审。');
+      } },
+      { cap: '只有 Senior 能确认；退回必须写明理由，理由也会留下记录', act: '#confirm-store', run: async () => { $('#dec-st').className = 'pill green'; $('#dec-st').textContent = '已确认 · Senior · 10-28'; $('#dec-btns').innerHTML = '<span class="small" style="color:var(--good)">✓ 已确认，存入项目文件</span>'; flash('#dec'); await sleep(600); } },
+    ],
+  },
+  {
+    num: '2.12', title: '存入项目文件', why: '确认的结果要留在团队，不能留在个人对话里。', role: 'Senior', nav: 'proj',
+    build: () => `<div class="ws full">${wsHeader('M1 哪些用户会持续使用')}${stepsHtml(7, 6)}<div class="nextbar"><span class="t">第 7 步 · 决定已确认，存入项目文件：L2 凭什么赢（分析师乙）的下一次调查会检索到它</span></div>
+      <div class="card pad" id="stored"><div style="padding:6px 10px;border-radius:6px;background:var(--good-soft);color:var(--good)">✓ Senior 已确认，报告和决定已作为项目产出存入文件管理</div>
+      <table style="margin-top:8px"><tr><th>类型</th><th>内容</th><th>确认</th><th>进入哪一层</th><th></th></tr>
+      <tr id="st-r"><td>报告</td><td>M1 哪些用户会持续使用个人 AI · 报告 v2</td><td>Senior · 10-28</td><td>数据层</td><td><button type="button" class="btn" id="publish">发布为公司资产</button></td></tr>
+      <tr><td>决定</td><td>跨设备功能先按用户和场景区分对待，先验证高频场景，再决定是否加大投入</td><td>Senior · 10-28</td><td>语义层（决定和理由）</td><td></td></tr>
+      <tr><td>访谈</td><td>访谈记录 3 份（模拟）</td><td>分析师甲上传</td><td>数据层</td><td></td></tr></table>
+      <p class="small muted" id="vis" style="margin:8px 0 0">可见范围：同一项目里所有工作区的“文件管理”都能看到这几份。别的项目要等 Senior 发布为公司资产后才能看到。</p></div></div>`,
+    beats: [
+      { cap: '报告和访谈记录存回数据层；决定和理由存进语义层，成为后续研究的前提', run: async () => { flash('#stored'); await sleep(1000); } },
+      { cap: '可见范围分层：本项目先用，经负责人发布后才给别的项目用', run: async () => { flash('#vis'); await sleep(900); } },
+      { cap: 'Senior 把报告发布为公司资产', act: '#publish', run: async () => { $('#publish').outerHTML = '<span class="pill green">已发布为公司资产</span>'; flash('#st-r'); await sleep(500); } },
+    ],
+  },
+  {
+    num: '2.13', title: '下一条工作线：已确认的决定直接被用上', why: '检验团队积累有没有用，要看下一项研究是不是真的少走了弯路。', role: '分析师乙', nav: 'proj',
+    build: () => `<div class="ws">${wsHeader('L2 凭什么赢', '分析师乙', '联想如何选择', '文件管理')}${stepsHtml(1, 0)}<div class="nextbar" id="nextbar"><span class="t">第 1 步 · 和 AI 一起写研究计划</span></div><div class="grid2" style="grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)">${filesList([['M1 报告 v2', '报告 · Senior 2026-10-28'], ['决定 · M1 用户持续使用决定-跨设备先按场景验证', '决定 · Senior 2026-10-28'], ['访谈 · 访谈-Qira 产品分析负责人（模拟）', '访谈 · 分析师甲'], ['访谈 · 访谈-多设备重度用户（模拟）', '访谈 · 分析师甲']].map(frow).join(''))}${chatPane('按你的任务找资料')}</div></div>`,
+    beats: [
+      { cap: '分析师乙开工 L2：M1 的决定和报告已经出现在“项目产出”一组', run: async () => { flash('#g-out'); await sleep(1000); } },
+      { cap: '问 AI：这次要先读什么？', run: async () => {
+        await user('这次要先读什么？'); await tool('读取任务背景', '开工前先读任务背景'); await tool('搜索资料', '先找项目里已有的报告和决定'); await tool('搜索资料', '再找联想自己的资料');
+        await ai('按这个任务，建议先读这 4 份：\n① M1 的决定（已确认）：L2 不再从“跨设备必然有价值”出发，而是按具体场景比较——它是这次研究的前提\n② M1 报告 v2：授权要分层，影响“平台拥有者”这个选项的可行性\n③ 联想 Qira 发布与扩展：联想现有的设备覆盖\n④ FY26/27 Q1 业绩：设备组合规模，判断能不能形成差异化');
+      } },
+      { cap: '跨项目的资料要先发布才能用，所以拿到的都是确认过的内容', run: async () => { await user('过去别的项目里，有没有讲联想设备组合优势的？'); await ai('“商用 PC 换机策略”项目里有相关决定，但还没被 Senior 发布为公司资产，这里读不到。可以请 Senior 发布；在那之前，Q1 业绩可以先用。'); } },
+    ],
+  },
+  {
+    num: '2.14', title: '换模型、换团队：配置改一处，流程不变', why: '工具要能长期用，就不能绑死某个模型，也不能只服务一个团队。', role: 'Senior', nav: 'config',
+    build: () => `<div style="display:grid;gap:10px"><h2>方法与配置</h2>
+      <div class="card pad" id="team"><h3>团队配置</h3><table><tr><th>配置项</th><th>战略部（当前）</th><th>市场部（示例）</th></tr>
+      <tr><td>方法库</td><td>先定义决策再研究 · 拆解逻辑的选择 · Knock-out 优先级 · 假设与证伪 · so what 提炼</td><td>用户分群 · 渠道漏斗 · 竞品对标 · 活动复盘</td></tr>
+      <tr><td>必须覆盖的视角</td><td>用户 · 竞争 · 经济性 · 中国市场 · 监管</td><td>用户 · 渠道 · 品牌 · 价格</td></tr>
+      <tr><td>角色</td><td>项目负责人确认方向与决定；分析师确认计划、资料与证据</td><td>市场总监确认方向与决定；市场分析确认计划与证据</td></tr></table></div>
+      <div class="card pad" id="models"><h3>按角色配置模型</h3><table><tr><th>模型角色</th><th>用在哪里</th><th>当前配置</th></tr>
+      <tr><td>判断</td><td>研究计划、证据够不够、结论、推荐</td><td>Kimi K3.1 Pro</td></tr><tr><td>执行</td><td>检索、抽证据、按判断写正文</td><td>DeepSeek V4.1 Flash</td></tr><tr><td>独立复核</td><td>引用的第三道核验</td><td>另一家的模型</td></tr></table>
+      <p class="small muted" style="margin:6px 0 0">换模型：改一行配置，代码不改；换完用固定的测试题重跑一遍，再决定是否上线。</p></div>
+      <div class="card pad" id="rules"><h3>不随团队变的工作规则</h3><ul style="margin:0;padding-left:18px"><li>决策契约先行</li><li>计划批准后才开放调查工具</li><li>引用三道核验</li><li>只有人能确认决定</li></ul></div></div>`,
+    beats: [
+      { cap: '换团队：换的是方法库、必须覆盖的视角、角色和资料来源', run: async () => { flash('#team'); await sleep(1000); } },
+      { cap: '换模型：判断、执行、独立复核分别配置，改一处，流程不变', run: async () => { flash('#models'); await sleep(1000); } },
+      { cap: '七步流程和核验规则不随团队变：战略部的其他团队、甚至市场部都可以直接用', run: async () => { flash('#rules'); await sleep(1000); } },
+    ],
+  },
+  {
+    num: '结论', title: '这一轮走下来得到了什么', why: '同一个问题，直接问通用大语言模型和用工作台的区别。', role: 'Senior', nav: 'proj',
+    build: () => `<div class="end"><div class="card pad"><h3>项目负责人确认的决定</h3><p style="margin:0;font-weight:500">跨设备功能先按用户和场景区分对待，暂不作为面向所有用户的主打卖点；先在电脑和手机之间来回接着做的日常工作里验证，再决定是否加大投入。</p><p class="small muted" style="margin:6px 0 0">适用范围：拿到跨设备留存数据前有效 · 去向：已存入项目文件，L2 开工时自动读取</p></div>
+      <div class="card pad" id="cmp"><h3>和直接问通用大语言模型比</h3><table><tr><th></th><th>直接问通用大模型</th><th>工作台</th></tr>
+      <tr><td>So what</td><td>四类用户画像平均着墨，没有排序，也没说先做哪一类</td><td>一句话结论，直接回答联想 2027 年先投什么</td></tr>
+      <tr><td>数字</td><td>“第 14 天留存降到 22.5%”等数字没有样本、口径和出处</td><td>每个数字点开就是原文，写明能支持什么、不能支持什么</td></tr>
+      <tr><td>证据缺口</td><td>所有判断语气一样肯定</td><td>事实、推断、访谈支持分开标注；缺口写明该问谁、问什么</td></tr>
+      <tr><td>联想的业务</td><td>没有提到联想、Qira 和联想的设备组合</td><td>从 Qira 已覆盖 80 多种 PC 配置这一事实出发</td></tr>
+      <tr><td>复用</td><td>答案留在个人对话里</td><td>决定存入项目文件，直接改变了 L2 的研究前提</td></tr></table>
+      <p class="small muted" style="margin:8px 0 0">成本：工作台流程更长，调用模型的次数更多。简单的查询直接问通用大模型就够了；要拿来做决定、要多人协作、要留给下一个人用的研究，适合用工作台。</p></div></div>`,
+    beats: [],
+  },
+];
+function lastOpt(i) { return $$('.ask[data-state="open"]').at(-1)?.querySelectorAll('.opt')[i] ?? null; }
+function applyNext() { const n = $('#nextbar[data-t]', screen()); if (n) nextbar(n.dataset.t, n.dataset.b, n.dataset.i); }
+
+/* ---------- runner ---------- */
+function resolveAct(act) { return typeof act === 'function' ? act() : $(act, screen()); }
+function clearPulse() { for (const el of $$('.pulse')) el.classList.remove('pulse'); }
+function pulseNext() {
+  clearPulse();
+  const sc = SCENES[S.scene];
+  const b = sc.beats[S.beat];
+  const el = b?.act ? resolveAct(b.act) : null;
+  if (el) { el.classList.add('pulse'); el.scrollIntoView({ block: 'nearest' }); }
+}
+function narr(cap) {
+  const sc = SCENES[S.scene];
+  $('#n-num').textContent = sc.num;
+  $('#n-title').innerHTML = `${esc(sc.title)}<small>${esc(sc.why)}</small>`;
+  $('#n-cap').textContent = cap ?? (sc.beats[0]?.cap ? `下一步：${sc.beats[0].cap}` : '演示结束');
+}
+function updateControls() {
+  const last = SCENES.length - 1;
+  const total = SCENES[S.scene].beats.length;
+  $('#prev').disabled = S.scene === 0 && S.beat === 0;
+  $('#next').disabled = S.scene === last && S.beat >= total;
+  $('#next').textContent = S.beat >= total && S.scene < last ? `进入 ${SCENES[S.scene + 1].num} →` : '下一步 →';
+  $('#pos').textContent = `${S.scene + 1}/${SCENES.length} · 第 ${Math.min(S.beat, total)}/${total} 拍`;
+  $('#jump').value = String(S.scene);
+  $('#play').textContent = S.playing ? '⏸ 暂停' : '▶ 自动播放';
+}
+async function enterScene(i, beats = 0) {
+  if (S.task) { hurry(); await S.task; }
+  const gen = ++S.gen;
+  S.scene = i; S.beat = 0; S.rush = false;
+  const sc = SCENES[i];
+  setRole(sc.role); setNav(sc.nav); inboxBadge(false);
+  screen().innerHTML = sc.build(); applyNext();
+  screen().scrollTop = 0;
+  if (beats > 0) {
+    S.instant = true;
+    for (let k = 0; k < beats && k < sc.beats.length; k++) { await sc.beats[k].run?.(); S.beat = k + 1; }
+    S.instant = false;
+  }
+  if (gen !== S.gen) return;
+  narr(S.beat > 0 ? sc.beats[S.beat - 1].cap : undefined);
+  updateControls(); pulseNext();
+}
+async function next() {
+  if (S.running) { hurry(); return; }
+  const sc = SCENES[S.scene];
+  if (S.beat >= sc.beats.length) { if (S.scene < SCENES.length - 1) await enterScene(S.scene + 1); return; }
+  const b = sc.beats[S.beat];
+  const gen = S.gen;
+  S.running = true; clearPulse(); narr(b.cap);
+  const el = b.act ? resolveAct(b.act) : null;
+  if (el && !S.rush) { el.classList.add('press'); await sleep(220); el.classList.remove('press'); }
+  S.task = Promise.resolve(b.run?.()).catch((e) => console.error(e));
+  await S.task;
+  S.task = null; S.running = false; S.rush = false;
+  if (gen !== S.gen) return;
+  S.beat++;
+  updateControls(); pulseNext();
+}
+function prev() {
+  S.playing = false;
+  if (S.beat > 0) enterScene(S.scene, S.beat - 1);
+  else if (S.scene > 0) enterScene(S.scene - 1, SCENES[S.scene - 1].beats.length);
+}
+async function play() {
+  if (S.playing) { S.playing = false; updateControls(); return; }
+  S.playing = true; updateControls();
+  while (S.playing) {
+    const sc = SCENES[S.scene];
+    if (S.scene === SCENES.length - 1 && S.beat >= sc.beats.length) break;
+    const sceneEnd = S.beat >= sc.beats.length;
+    await next();
+    if (!S.playing) break;
+    // time to read the caption before the next beat
+    await sleep(sceneEnd ? 1800 : 1200 + ($('#n-cap').textContent.length * 45));
+  }
+  S.playing = false; updateControls();
+}
+
+$('#jump').innerHTML = SCENES.map((s, i) => `<option value="${i}">${esc(s.num)} ${esc(s.title.split('：')[0])}</option>`).join('');
+$('#jump').addEventListener('change', (e) => { S.playing = false; enterScene(Number(e.target.value)); });
+$('#next').addEventListener('click', () => { S.playing = false; next(); });
+$('#prev').addEventListener('click', prev);
+$('#play').addEventListener('click', play);
+$('#speed').addEventListener('change', (e) => { S.speed = Number(e.target.value); });
+$('#screen').addEventListener('click', (e) => { if (e.target.closest('.pulse')) { S.playing = false; next(); } });
+document.addEventListener('keydown', (e) => {
+  if (e.altKey || e.ctrlKey || e.metaKey || e.target.matches('select')) return;
+  if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); S.playing = false; next(); }
+  else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); prev(); }
+  else if (e.key === 'p' || e.key === 'P') play();
+});
+enterScene(0);
+</script>
+
+</body>
+</html>

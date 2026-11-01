@@ -1,0 +1,750 @@
+{
+  "question": {
+    "id": 5,
+    "title": "很小的题",
+    "text": "企业 IT 现在能不能把 Windows 11 里自带的 Copilot 统一卸掉？"
+  },
+  "run": 1,
+  "ms": 245597,
+  "conversation": [
+    {
+      "round": 1,
+      "texts": [],
+      "tools": [
+        {
+          "tool": "frame_topic",
+          "why": "用户开口第一句，先记题目和能合理推出的范围、成功标准。"
+        },
+        {
+          "tool": "vault_search",
+          "why": "先看资料里有没有写到 Windows 11 自带 Copilot 能不能统一卸载。"
+        },
+        {
+          "tool": "frame_topic",
+          "why": "把用户的方向和资料包每一条对齐，看有没有冲突要先问。"
+        }
+      ],
+      "ask": {
+        "question": "这个答案要支撑哪个决定？我推荐①，因为它正对 Senior 的三层拆法。",
+        "options": [
+          {
+            "id": "a",
+            "label": "检验 IT 能不能集中配置：拿卸载自带 Copilot 当可管理性的检验点"
+          },
+          {
+            "id": "b",
+            "label": "判断企业采购会不会把「能撤掉预装 AI」当门槛，联想能否满足"
+          },
+          {
+            "id": "c",
+            "label": "先查清这个事实，还没想好拿它做什么决定"
+          }
+        ]
+      },
+      "answer": {
+        "selected": [],
+        "text": "想知道如果客户的 IT 不想要微软的 AI 助手，我们的 Qira 有没有机会。"
+      }
+    },
+    {
+      "round": 2,
+      "texts": [],
+      "tools": [
+        {
+          "tool": "frame_topic",
+          "why": "用户说出了要支撑的决策：Qira 在客户 IT 不想要微软助手时有没有机会；这个方向碰到方针的入口边界，先标冲突。"
+        }
+      ],
+      "ask": {
+        "question": "《2026财年商用PC业务方针（模拟）》说不和平台抢员工端 AI 助手入口，你这个方向和它不一样。我推荐①，因为方针明写了这条边界；资料里还没有这方面的证据。",
+        "options": [
+          {
+            "id": "a",
+            "label": "按指示：Qira 只做设备体验和 IT 管理工具，不去顶微软助手的位置"
+          },
+          {
+            "id": "b",
+            "label": "按你的想法（这处出入写进风险，让 Senior 在 G1 判断）"
+          }
+        ]
+      },
+      "answer": {
+        "selected": [
+          "a"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "texts": [],
+      "tools": [
+        {
+          "tool": "frame_topic",
+          "why": "用户定了这处冲突按指示处理，记下来才进得了确认。"
+        }
+      ],
+      "ask": {
+        "question": "复述：查 IT 能不能统一卸掉 Win11 自带 Copilot，用来定 Qira 只做体验和管理工具；限商用机集中配置；成功是给出可不可和做法。就按这个拆？",
+        "options": [
+          {
+            "id": "a",
+            "label": "就按这个拆"
+          },
+          {
+            "id": "b",
+            "label": "我要改"
+          }
+        ]
+      },
+      "answer": {
+        "selected": [
+          "a"
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "texts": [
+        "v1 拆好了：3 个一级子问题、4 个假设。最大风险：买方是否把卸载当硬条件缺直接访谈，买方侧判断可能被推翻。右边是 workplan，满意了由你点提交。"
+      ],
+      "tools": [
+        {
+          "tool": "frame_topic",
+          "why": "用户在确认卡上选了就按这个拆。"
+        },
+        {
+          "tool": "compose_workplan",
+          "why": "题目已确认，现在让系统拆成问题树并写 workplan 和假设笔记。"
+        }
+      ],
+      "ask": null,
+      "answer": null
+    }
+  ],
+  "structure": {
+    "version": 1,
+    "frame": {
+      "question": "企业 IT 现在能不能把 Windows 11 自带的 Copilot 统一卸掉？",
+      "decision": "Junior A 要在两个选项里选：Qira 只做设备体验和 IT 管理工具，还是去补微软助手让出的入口位置（按方针选前者，后者只写进风险）。",
+      "scope": "企业 IT 对 Windows 11 商用机（2026 年当前版本）自带的 Copilot，能不能统一卸载或禁用；按 Senior 的三层里「集中部署配置」这一层看。",
+      "success": "给出明确的可/不可结论和对应做法（策略、版本条件、适用范围）；查不到就说证据不足，转成要问专家的问题。"
+    },
+    "marks": [
+      {
+        "ref": "K1",
+        "verdict": "一致",
+        "note": "VP 说重点看 IT 能不能管，用户问的正是 IT 能不能卸掉自带 Copilot。"
+      },
+      {
+        "ref": "K2",
+        "verdict": "无关",
+        "note": "那条说的是别纠结 NPU 算力和出货数字。"
+      },
+      {
+        "ref": "K3",
+        "verdict": "一致",
+        "note": "统一卸载落在第一层集中部署配置：能不能推下去、统一策略。"
+      },
+      {
+        "ref": "K4",
+        "verdict": "无关",
+        "note": "那条说的是员工愿不愿在 IT 管着的前提下用。"
+      },
+      {
+        "ref": "K5",
+        "verdict": "无关",
+        "note": "那条说的是结论要落到联想明年可做什么。"
+      },
+      {
+        "ref": "K6",
+        "verdict": "无关",
+        "note": "那条讲换机周期。"
+      },
+      {
+        "ref": "K7",
+        "verdict": "无关",
+        "note": "那条讲内存存储涨价和成本。"
+      },
+      {
+        "ref": "K8",
+        "verdict": "一致",
+        "note": "客户最关心 IT 能不能管，用户问的正是这一项的具体检验点。"
+      },
+      {
+        "ref": "K9",
+        "verdict": "一致",
+        "note": "主卖点是可管理、安全和服务，用户在查可管理的一个实证点。"
+      },
+      {
+        "ref": "K10",
+        "verdict": "无关",
+        "note": "那条讲机队服务和 DaaS 增长。"
+      },
+      {
+        "ref": "K11",
+        "verdict": "冲突",
+        "note": "用户选了按方针走：Qira 不顶微软助手的位置，只做设备体验和 IT 管理工具。",
+        "resolution": "按指示"
+      },
+      {
+        "ref": "K12",
+        "verdict": "一致",
+        "note": "自研方向就是让 IT 能集中配置、管控 AI 功能的管理工具。"
+      },
+      {
+        "ref": "K13",
+        "verdict": "无关",
+        "note": "那条讲收购。"
+      },
+      {
+        "ref": "K14",
+        "verdict": "一致",
+        "note": "数据边界由客户 IT 定、默认关闭，和能不能把自带 AI 关掉是一回事。"
+      },
+      {
+        "ref": "K15",
+        "verdict": "无关",
+        "note": "那条讲只做企业客户、不做个人订阅。"
+      },
+      {
+        "ref": "K16",
+        "verdict": "无关",
+        "note": "那条讲地区优先顺序，用户没提地区。"
+      },
+      {
+        "ref": "K17",
+        "verdict": "无关",
+        "note": "那条讲 AI 功能单独报价卖不动。"
+      },
+      {
+        "ref": "K18",
+        "verdict": "无关",
+        "note": "那条讲带服务的方案续约意愿高。"
+      },
+      {
+        "ref": "K19",
+        "verdict": "无关",
+        "note": "那条讲给管理层的建议要落到做什么、不做什么。"
+      },
+      {
+        "ref": "K20",
+        "verdict": "无关",
+        "note": "那条讲和方针冲突的建议怎么写理由。"
+      },
+      {
+        "ref": "K21",
+        "verdict": "无关",
+        "note": "那条讲结论里的数据要标出处。"
+      }
+    ],
+    "pack": [
+      {
+        "id": "K1",
+        "kind": "directive",
+        "title": "2026-10-16 高层周会（模拟）",
+        "block": "^m1"
+      },
+      {
+        "id": "K2",
+        "kind": "directive",
+        "title": "2026-10-16 高层周会（模拟）",
+        "block": "^m2"
+      },
+      {
+        "id": "K3",
+        "kind": "directive",
+        "title": "2026-10-16 高层周会（模拟）",
+        "block": "^m3"
+      },
+      {
+        "id": "K4",
+        "kind": "directive",
+        "title": "2026-10-16 高层周会（模拟）",
+        "block": "^m4"
+      },
+      {
+        "id": "K5",
+        "kind": "directive",
+        "title": "2026-10-16 高层周会（模拟）",
+        "block": "^m5"
+      },
+      {
+        "id": "K6",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^j1"
+      },
+      {
+        "id": "K7",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^j2"
+      },
+      {
+        "id": "K8",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^j3"
+      },
+      {
+        "id": "K9",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^p1"
+      },
+      {
+        "id": "K10",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^p2"
+      },
+      {
+        "id": "K11",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^p3"
+      },
+      {
+        "id": "K12",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^p3b"
+      },
+      {
+        "id": "K13",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^p4"
+      },
+      {
+        "id": "K14",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^p5"
+      },
+      {
+        "id": "K15",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^p6"
+      },
+      {
+        "id": "K16",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^p7"
+      },
+      {
+        "id": "K17",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^r1"
+      },
+      {
+        "id": "K18",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^r2"
+      },
+      {
+        "id": "K19",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^q1"
+      },
+      {
+        "id": "K20",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^q2"
+      },
+      {
+        "id": "K21",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^q3"
+      },
+      {
+        "id": "K22",
+        "kind": "method",
+        "title": "workplan共创"
+      },
+      {
+        "id": "K23",
+        "kind": "reference",
+        "title": "IT 硬件（终端用户设备）基准对标清单",
+        "block": "^c1"
+      },
+      {
+        "id": "K24",
+        "kind": "reference",
+        "title": "Enterprise PC upgrades in 2026 Higher prices, worse configu",
+        "block": "^c6"
+      },
+      {
+        "id": "K25",
+        "kind": "reference",
+        "title": "Windows 11 come base per le esperienze di IA gestite - Train",
+        "block": "^c3"
+      },
+      {
+        "id": "K26",
+        "kind": "reference",
+        "title": "Windows Report 2026-04 IT可卸载Copilot",
+        "block": "^c1"
+      },
+      {
+        "id": "K27",
+        "kind": "reference",
+        "title": "跟大侠学创新 （前沿实践）探索你未曾联想的联想（11）：联想与降本增效",
+        "block": "^c3"
+      },
+      {
+        "id": "K28",
+        "kind": "reference",
+        "title": "Microsoft Copilot ROI Calculator for Enterprise EPC Group",
+        "block": "^c1"
+      },
+      {
+        "id": "K29",
+        "kind": "reference",
+        "title": "AI Mandate Security Checklist 6 Steps to Lock Down Data"
+      },
+      {
+        "id": "K30",
+        "kind": "reference",
+        "title": "AI Governance for Financial Services Controls for Banks W",
+        "block": "^c2"
+      },
+      {
+        "id": "K31",
+        "kind": "reference",
+        "title": "HP AI PC出貨占比衝46%2027年上看70%、記憶體漲價壓力第4季估觸底",
+        "block": "^c3"
+      },
+      {
+        "id": "K32",
+        "kind": "reference",
+        "title": "AI spending doubles as companies move beyond IT budgets - Bu"
+      },
+      {
+        "id": "K33",
+        "kind": "reference",
+        "title": "人工智能在金融领域的2025年法规解读与风险管理可行性分析报告.docx - 建立供应商“准入-监控-退出”全流程管控",
+        "block": "^c1"
+      },
+      {
+        "id": "K34",
+        "kind": "reference",
+        "title": "TechRadar 2025-07 企业并不急着买AI PC",
+        "block": "^c1"
+      },
+      {
+        "id": "K35",
+        "kind": "reference",
+        "title": "Windows 11 som grunnlag for administrerte AI-opplevelser - T",
+        "block": "^c5"
+      },
+      {
+        "id": "K36",
+        "kind": "reference",
+        "title": "2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技",
+        "block": "^c2"
+      },
+      {
+        "id": "K37",
+        "kind": "reference",
+        "title": "The Register 2024-11 企业不买溢价AI PC",
+        "block": "^c1"
+      },
+      {
+        "id": "K38",
+        "kind": "reference",
+        "title": "AI seen as key to smarter decisions, not just automation, fi",
+        "block": "^c1"
+      },
+      {
+        "id": "K39",
+        "kind": "reference",
+        "title": "Reason Aussie businesses ditching AI - Skip to navigation Sk",
+        "block": "^c6"
+      },
+      {
+        "id": "K40",
+        "kind": "reference",
+        "title": "ComputerWeekly 2025-10 Omdia称Win11才是换机主因",
+        "block": "^c1"
+      },
+      {
+        "id": "K41",
+        "kind": "reference",
+        "title": "Fleet 2026-10 先盘点再隔离AI agent",
+        "block": "^c2"
+      },
+      {
+        "id": "K42",
+        "kind": "reference",
+        "title": "EPCGroup 2026-10 Copilot定价与授权",
+        "block": "^c3"
+      }
+    ],
+    "axes": {
+      "chosen": "decision_options",
+      "by": "vote",
+      "votes": [
+        "decision_options",
+        "decision_options",
+        "decision_options"
+      ]
+    },
+    "tree": {
+      "core_question": "企业 IT 现在能不能把 Windows 11 自带的 Copilot 统一卸掉？",
+      "decision_options": "决策选项为只做设备体验和IT管理工具；按方针选这一方案。",
+      "day1_answer": "能卸，但只在受管设备和受支持版本/许可下可统一卸载；覆盖不了员工自装入口，只做设备体验和IT管理工具这一方案成立，补入口只作风险。",
+      "split_basis": "按决策选项拆：先验卸载路径是否受支持，再验只做管理工具（买方刚需、我方覆盖），最后验补入口是否必要。技术供给在技术条件，买方和我方分别核验，对手在竞争，监管并入技术条件。少技术条件不知可不可卸，少买方和我方核验不知只做管理工具能否成立，少竞争风险写不实。",
+      "subquestions": [
+        {
+          "question": "微软在2026当前版本是否提供受支持的企业级统一卸载或禁用Windows 11自带Copilot的路径？",
+          "hypothesis": {
+            "statement": "统一下载路径存在但只覆盖受管设备和特定版本/许可，不能等同于所有商用机都能卸。",
+            "falsifier": "官方文档显示无企业级卸载策略，或所有2026商用版本均可无差别卸载。",
+            "conditions": [
+              "2026当前商用版本在支持列表",
+              "企业有Intune/SCCM管理权",
+              "卸载不违反许可与数据边界"
+            ],
+            "known_by": [
+              "K26"
+            ],
+            "to_verify": [
+              {
+                "what": "卸载策略适用的版本、许可和组件范围",
+                "where": "上网",
+                "support": "文档列明版本、许可、可卸载组件",
+                "counter": "文档说仅部分版本或需额外许可"
+              }
+            ],
+            "short": "卸载路径与版本范围"
+          }
+        },
+        {
+          "question": "只做设备体验和IT管理工具，买方刚需和我方覆盖边界是否支持这一选择？",
+          "children": [
+            {
+              "question": "企业买方是否把统一卸载或禁用自带Copilot当作采购或续约的硬条件？",
+              "hypothesis": {
+                "statement": "企业IT把统一卸载/禁用自带Copilot列为管理刚需，但只在安全/合规场景愿单独付费。",
+                "falsifier": "客户访谈或招标显示只要求可配置，不把卸载列入必须项。",
+                "conditions": [
+                  "受访者为CIO/IT负责人",
+                  "场景含数据合规要求",
+                  "采购清单单列AI管控"
+                ],
+                "known_by": [],
+                "to_verify": [
+                  {
+                    "what": "企业采购清单是否列AI助手卸载/禁用",
+                    "where": "上网",
+                    "support": "清单把AI管控列为必选评分项",
+                    "counter": "清单只列硬件与服务，不列AI卸载"
+                  }
+                ],
+                "short": "买方卸载刚需"
+              }
+            },
+            {
+              "question": "Qira现有管理工具能否把Q1确认的受管卸载路径落地，并管住员工自装入口？",
+              "hypothesis": {
+                "statement": "管理工具能把技术条件确认的受管卸载路径落地，但管不住员工自装入口，只做设备体验和IT管理工具这一方案须写明边界。",
+                "falsifier": "Qira文档或实测无法下发Q1卸载策略，或能封住员工自装入口。",
+                "conditions": [
+                  "Q1已确认受管卸载路径存在",
+                  "Qira工具能下发或封装该策略",
+                  "员工自装入口不在统一策略内"
+                ],
+                "known_by": [
+                  "K26"
+                ],
+                "to_verify": [
+                  {
+                    "what": "Qira能否下发Q1的Intune/SCCM卸载策略",
+                    "where": "上网",
+                    "support": "Qira文档或实测可调用或封装该策略",
+                    "counter": "无相关能力或只能手工逐台处理"
+                  },
+                  {
+                    "what": "Qira能否管住员工自装Copilot入口",
+                    "where": "上网",
+                    "support": "Qira可拦截或隔离未登记的AI入口",
+                    "counter": "只能管已登记设备/agent，自装入口仍可绕过"
+                  },
+                  {
+                    "what": "核实《Fleet 2026-10 先盘点再隔离AI agent》是否说明这一点",
+                    "where": "K41",
+                    "support": "相关资料（没核实）：原文直接讲到同一个对象、同一件事",
+                    "counter": "Qira文档或实测无法下发Q1卸载策略，或能封住员工自装入口。"
+                  }
+                ],
+                "short": "Qira落地与自装边界"
+              }
+            }
+          ]
+        },
+        {
+          "question": "补微软助手让出的入口，Qira能否比微软和平台商更强地占住企业助手入口？",
+          "hypothesis": {
+            "statement": "补入口难成为企业采购理由，Qira难比微软/平台商更强，按方针不选只作风险。",
+            "falsifier": "出现客户因Qira助手入口而选Qira的招标或续约案例。",
+            "conditions": [
+              "客户按可管理性选型",
+              "微软入口仍强绑定系统",
+              "Qira不违反不抢入口方针"
+            ],
+            "known_by": [
+              "K34",
+              "K37"
+            ],
+            "to_verify": [
+              {
+                "what": "第三方助手入口的客户采用与替换案例",
+                "where": "上网",
+                "support": "客户因第三方入口替换微软",
+                "counter": "客户只按可管理性选型"
+              }
+            ],
+            "short": "补入口的竞争壁垒"
+          }
+        }
+      ],
+      "key_message": "能卸但仅限受管设备和受支持版本；只做设备体验和IT管理工具这一方案成立，补入口只作风险。",
+      "risks": [
+        "卸载策略的版本/许可范围可能比《Windows Report 2026-04 IT可卸载Copilot》说的窄，若仅个别版本可用，结论要改。",
+        "买方是否把卸载当硬条件缺直接访谈，买方侧判断可能被推翻。",
+        "员工自装入口管不住，只做设备体验和IT管理工具这一方案的边界是否可接受要高层判断。"
+      ],
+      "next_actions": [
+        "Junior A 先查《Windows 11 come base per le esperienze di IA gestite - Train》/《Windows Report 2026-04 IT可卸载Copilot》官方文档，确认版本、许可、组件范围。",
+        "战略部访谈3家客户IT负责人，验证卸载是否硬条件。",
+        "产品团队用受管样机测卸载与更新回装，再给Senior定边界。"
+      ]
+    },
+    "review": {
+      "rounds": 2,
+      "open": [
+        "root：视角缺",
+        "root：视角缺"
+      ]
+    }
+  },
+  "workplan": {
+    "version": 1,
+    "body": "\n# WS-A workplan\n\n## 要回答的问题与要支撑的决策\n核心问题：企业 IT 现在能不能把 Windows 11 自带的 Copilot 统一卸掉？\n\n要支撑的决策：Junior A 要在两个选项里选：Qira 只做设备体验和 IT 管理工具，还是去补微软助手让出的入口位置（按方针选前者，后者只写进风险）。\n范围和时间：企业 IT 对 Windows 11 商用机（2026 年当前版本）自带的 Copilot，能不能统一卸载或禁用；按 Senior 的三层里「集中部署配置」这一层看。\n成功的样子：给出明确的可/不可结论和对应做法（策略、版本条件、适用范围）；查不到就说证据不足，转成要问专家的问题。\n决策的全部选项：决策选项为只做设备体验和IT管理工具；按方针选这一方案。\n\n## 前提\n- 高层指示（一致）：[[2026-10-16 高层周会（模拟）#^m1]]：VP：嗯。我先插一句，方向先别飘。重点看 IT 能不能管。为什么？第一，我们卖给企业的东西，决定权在 CIO 和 IT 手里，不在员工手里。员工想要什么…VP 说重点看 IT 能不能管，用户问的正是 IT 能不能卸掉自带 Copilot。\n- 高层指示（一致）：[[2026-10-16 高层周会（模拟）#^m3]]：Senior：嗯，我理解大概三层。第一层，能不能集中部署和配置——IT 能不能推下去、统一策略、远程改，不是一台一台员工自己弄。第二层，数据，哪些数据能…统一卸载落在第一层集中部署配置：能不能推下去、统一策略。\n- 公司业务方针（一致）：[[2026财年商用PC业务方针（模拟）#^j3]]：\"AI PC\"这个标签本身卖不出溢价。客户问得最多的是三件事：IT 能不能管，数据安不安全，多久能回本。客户最关心 IT 能不能管，用户问的正是这一项的具体检验点。\n- 公司业务方针（一致）：[[2026财年商用PC业务方针（模拟）#^p1]]：不拿 AI 当单独的卖点加价。商用产品不以 NPU 算力或\"AI PC\"标签作主卖点，也不为 AI 功能单独报价。主卖点是可管理、安全和服务。主卖点是可管理、安全和服务，用户在查可管理的一个实证点。\n- 公司业务方针（**和用户的方向不一致**，处理：按指示）：[[2026财年商用PC业务方针（模拟）#^p3]]：和操作系统、办公套件平台厂商合作；不做通用大模型，也不和平台去抢员工端 AI 助手的入口。用户选了按方针走：Qira 不顶微软助手的位置，只做设备体验和 IT 管理工具。\n- 公司业务方针（一致）：[[2026财年商用PC业务方针（模拟）#^p3b]]：自研只做两处：Qira 在设备上的体验；让 IT 能集中配置、管控 AI 功能的管理工具。自研方向就是让 IT 能集中配置、管控 AI 功能的管理工具。\n- 公司业务方针（一致）：[[2026财年商用PC业务方针（模拟）#^p5]]：数据边界由客户的 IT 来定。凡是会把员工数据传出客户环境的功能，出厂时默认关闭，由客户的 IT 决定是否打开。数据边界由客户 IT 定、默认关闭，和能不能把自带 AI 关掉是一回事。\n\n## Day-1 answer\n（假设，不是结论）能卸，但只在受管设备和受支持版本/许可下可统一卸载；覆盖不了员工自装入口，只做设备体验和IT管理工具这一方案成立，补入口只作风险。\n\n## 问题树与假设\n### Q1 微软在2026当前版本是否提供受支持的企业级统一卸载或禁用Windows 11自带Copilot的路径？\n**假设 H1**：统一下载路径存在但只覆盖受管设备和特定版本/许可，不能等同于所有商用机都能卸。 [[WS-A-H1 卸载路径与版本范围]]\n\n### Q2 只做设备体验和IT管理工具，买方刚需和我方覆盖边界是否支持这一选择？\n\n#### Q2-1 企业买方是否把统一卸载或禁用自带Copilot当作采购或续约的硬条件？\n**假设 H2-1**：企业IT把统一卸载/禁用自带Copilot列为管理刚需，但只在安全/合规场景愿单独付费。 [[WS-A-H2 买方卸载刚需]]\n\n#### Q2-2 Qira现有管理工具能否把Q1确认的受管卸载路径落地，并管住员工自装入口？\n**假设 H2-2**：管理工具能把技术条件确认的受管卸载路径落地，但管不住员工自装入口，只做设备体验和IT管理工具这一方案须写明边界。 [[WS-A-H3 Qira落地与自装边界]]\n\n### Q3 补微软助手让出的入口，Qira能否比微软和平台商更强地占住企业助手入口？\n**假设 H3**：补入口难成为企业采购理由，Qira难比微软/平台商更强，按方针不选只作风险。 [[WS-A-H4 补入口的竞争壁垒]]\n\n## MECE 和充分必要的自检\n怎么拆的：按决策的选项拆。\n按决策选项拆：先验卸载路径是否受支持，再验只做管理工具（买方刚需、我方覆盖），最后验补入口是否必要。技术供给在技术条件，买方和我方分别核验，对手在竞争，监管并入技术条件。少技术条件不知可不可卸，少买方和我方核验不知只做管理工具能否成立，少竞争风险写不实。\n\n## 每个假设怎么验证\n### H1\n\n必须成立的条件：（1）2026当前商用版本在支持列表；（2）企业有Intune/SCCM管理权；（3）卸载不违反许可与数据边界\n看到什么就算它错了：官方文档显示无企业级卸载策略，或所有2026商用版本均可无差别卸载。\n\n已经知道的（有资料撑着，不用再查）：\n- [[Windows Report 2026-04 IT可卸载Copilot#^c1]]：微软加了一条策略，允许 IT 通过 Intune / SCCM 从受管的 Windows 11 设备上卸载 Copilot。\n\n还要去证实的：\n- 卸载策略适用的版本、许可和组件范围。去哪里查：上网查。什么能证明：文档列明版本、许可、可卸载组件。反证去哪里找：文档说仅部分版本或需额外许可。\n\n### H2-1\n\n必须成立的条件：（1）受访者为CIO/IT负责人；（2）场景含数据合规要求；（3）采购清单单列AI管控\n看到什么就算它错了：客户访谈或招标显示只要求可配置，不把卸载列入必须项。\n\n已经知道的（有资料撑着，不用再查）：\n- 参考库里还没有直接撑它的资料\n\n还要去证实的：\n- 企业采购清单是否列AI助手卸载/禁用。去哪里查：上网查。什么能证明：清单把AI管控列为必选评分项。反证去哪里找：清单只列硬件与服务，不列AI卸载。\n\n### H2-2\n\n必须成立的条件：（1）Q1已确认受管卸载路径存在；（2）Qira工具能下发或封装该策略；（3）员工自装入口不在统一策略内\n看到什么就算它错了：Qira文档或实测无法下发Q1卸载策略，或能封住员工自装入口。\n\n已经知道的（有资料撑着，不用再查）：\n- [[Windows Report 2026-04 IT可卸载Copilot#^c1]]：微软加了一条策略，允许 IT 通过 Intune / SCCM 从受管的 Windows 11 设备上卸载 Copilot。\n\n还要去证实的：\n- Qira能否下发Q1的Intune/SCCM卸载策略。去哪里查：上网查。什么能证明：Qira文档或实测可调用或封装该策略。反证去哪里找：无相关能力或只能手工逐台处理。\n- Qira能否管住员工自装Copilot入口。去哪里查：上网查。什么能证明：Qira可拦截或隔离未登记的AI入口。反证去哪里找：只能管已登记设备/agent，自装入口仍可绕过。\n- 核实《Fleet 2026-10 先盘点再隔离AI agent》是否说明这一点。去哪里查：读 [[Fleet 2026-10 先盘点再隔离AI agent#^c2]]。什么能证明：相关资料（没核实）：原文直接讲到同一个对象、同一件事。反证去哪里找：Qira文档或实测无法下发Q1卸载策略，或能封住员工自装入口。。\n\n### H3\n\n必须成立的条件：（1）客户按可管理性选型；（2）微软入口仍强绑定系统；（3）Qira不违反不抢入口方针\n看到什么就算它错了：出现客户因Qira助手入口而选Qira的招标或续约案例。\n\n已经知道的（有资料撑着，不用再查）：\n- [[TechRadar 2025-07 企业并不急着买AI PC#^c1]]：来源：https://www.techradar.com/pro/ai-pcs-are-here-but-businesses-arent-exactly-ru…\n- [[The Register 2024-11 企业不买溢价AI PC#^c1]]：来源：https://www.theregister.com/2024/11/22/premiumpricedaipcs（2026-10-24 抓取；C 级：不…\n\n还要去证实的：\n- 第三方助手入口的客户采用与替换案例。去哪里查：上网查。什么能证明：客户因第三方入口替换微软。反证去哪里找：客户只按可管理性选型。\n\n## 金字塔骨架\nkey message：能卸但仅限受管设备和受支持版本；只做设备体验和IT管理工具这一方案成立，补入口只作风险。\n结构：核心问题的回答由Q1、Q2、Q3的回答组装，每个回答落在它的假设和证据上。\n\n## 风险和待确认\n- 卸载策略的版本/许可范围可能比《Windows Report 2026-04 IT可卸载Copilot》说的窄，若仅个别版本可用，结论要改。\n- 买方是否把卸载当硬条件缺直接访谈，买方侧判断可能被推翻。\n- 员工自装入口管不住，只做设备体验和IT管理工具这一方案的边界是否可接受要高层判断。\n- 评审后还有这些地方可能没改好，建议你看一下：2 处可能缺一个团队要求的视角。评审的原话留在系统记录里。\n\n## next action\n- Junior A 先查《Windows 11 come base per le esperienze di IA gestite - Train》/《Windows Report 2026-04 IT可卸载Copilot》官方文档，确认版本、许可、组件范围。\n- 战略部访谈3家客户IT负责人，验证卸载是否硬条件。\n- 产品团队用受管样机测卸载与更新回装，再给Senior定边界。\n"
+  },
+  "checks": [
+    {
+      "name": "对话里没有内部文件名、路径、工具名",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "对话里没有 markdown",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "正文里最多一个问句",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "对话字数：超限的不超过 10%",
+      "pass": true,
+      "detail": "0/11 句超限"
+    },
+    {
+      "name": "不以夸奖开头",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "不列能力清单",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "不替用户宣布提交或批准",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "书名号成对",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "不出现 A1 这类代号",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "句子完整（不停在半句上）",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "提问之前先查了资料",
+      "pass": true,
+      "detail": "frame_topic → vault_search → frame_topic"
+    },
+    {
+      "name": "问题数不超过 3",
+      "pass": true,
+      "detail": "3 个"
+    },
+    {
+      "name": "workplan 过结构检查",
+      "pass": true,
+      "detail": "没问题"
+    },
+    {
+      "name": "4 个槽都填满了",
+      "pass": true,
+      "detail": "全部填了"
+    },
+    {
+      "name": "每条指示、决定、方针都标了",
+      "pass": true,
+      "detail": "都标了"
+    },
+    {
+      "name": "冲突都有处理结果",
+      "pass": true,
+      "detail": "都有"
+    },
+    {
+      "name": "子问题都挂了证伪条件",
+      "pass": true,
+      "detail": "都挂了"
+    },
+    {
+      "name": "扎根：至少一个 known_by",
+      "pass": true,
+      "detail": "3 个子问题有 known_by"
+    },
+    {
+      "name": "有选定的拆法",
+      "pass": true,
+      "detail": "decision_options"
+    },
+    {
+      "name": "已知的事实没有写成要去查",
+      "pass": true,
+      "detail": "写在\"已经知道的\"，没有写成要去查"
+    },
+    {
+      "name": "树不超过 4 个子问题",
+      "pass": true,
+      "detail": "4 个"
+    }
+  ]
+}

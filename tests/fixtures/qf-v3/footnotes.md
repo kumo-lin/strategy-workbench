@@ -1,0 +1,5 @@
+[^1]: “In one Jazz deployment the security team had sanctioned a handful of GenAI tools, and the agent found 1,223 in use.”（C 级，网络 · AI 定级）[[AI use rules for banks, broker-dealers and fintechs (2026)#^c5]]
+[^2]: “In a new BlackFog survey, nearly half (49%) of workers admit to adopting AI tools without employer approval, many using free versions with which they are freely sharing sensitive enterprise data.”（B 级，知识库）[[CIO.com 2026-01 BlackFog影子AI调查#^c1]]
+[^4]: “- Technical Supremacy: Technical roles (CTO, CIO, Head of AI/ML, CDO, VP Engineering, CISO) collectively control 72% of AI purchasing decisions, demonstrating that organizations prioritize technical expertise and implementation capability over traditional business considerations in AI investments.”（C 级，网络 · AI 定级）[[Technical Leaders Own 72% of Enterprise AI Purchasing Power#^c3]]
+[^10]: “Microsoft 365 Copilot costs $30 per user each month.”（C 级，网络 · AI 定级）[[EPCGroup 2026-10 Copilot定价与授权#^c1]]
+[^57]: “IDC identifies lack of security and governance as the leading concern surrounding enterprise AI globally, cited by 48% of organisations.”（C 级，知识库）[[Irish Tech News 2026-08 Logicalis CIO报告#^c3]]

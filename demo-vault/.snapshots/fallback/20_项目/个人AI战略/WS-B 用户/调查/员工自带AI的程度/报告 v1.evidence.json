@@ -1,0 +1,75 @@
+{
+ "report": "报告 v1.md",
+ "entries": [
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者用「反面」挑战，称是管控过严才逼出绕行，另作解释"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "「管得太死员工会绕过去」，影子使用被归因于管控过严而非个人生活带入"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[Shadow AI has gone agentic. Are organizations ready#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "「近三成」低于三成的门槛，且调查样本是安全负责人，不是员工"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[Shadow AI has gone agentic. Are organizations ready#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "说明员工曾把敏感信息交给聊天机器人，支持「交出工作数据」这一环"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[Shadow AI has gone agentic. Are organizations ready#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "称员工将继续绕过审批，佐证影子AI存在，但没有比例数据"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "受访者强调「不是那种一刀切的白名单」，分三层管理且有放开不管的部分，论点只在更窄范围成立"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[One In Four Employees Use Unapproved AI Tools, Research Find#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "27%低于三成门槛，且样本口径未说明为大中型企业员工"
+  }
+ ]
+}

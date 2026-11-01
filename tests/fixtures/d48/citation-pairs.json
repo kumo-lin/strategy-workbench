@@ -1,0 +1,731 @@
+[
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^9]",
+    "sentence": "钱多半不在软件科目[^9]，硬件无 AI 单列条目[^10]，获批要绑可量化收益[^11]。",
+    "quote": "据BCG周三发布的一份报告显示，80%的AI支出发生在IT预算之外。",
+    "ref": "[[CIO需打造AI部署透明化管理体系#^c1]]",
+    "verdict": "挂错",
+    "why": "原文讲 80% 的 AI 支出在 IT 预算之外，是预算归属，不讲记在哪个科目"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^14]",
+    "sentence": "「AI PC」标签带不来预算[^14]；",
+    "quote": "厂商顺势推动所谓AI PC概念，将本地AI算力、专用加速单元及更高硬件规格作为提价依据。",
+    "ref": "[[销量下滑却赚得更多！PC厂商依靠高价实现增收#^c5]]",
+    "verdict": "挂错",
+    "why": "原文说厂商拿 AI PC 概念当提价依据，没说标签带不来预算"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^15]",
+    "sentence": "依据：受监管行业把供应商准入、身份管理、日志审计写成硬要求[^5][^15]；",
+    "quote": "提升智能体系统安全保障能力，防范数据泄露、记忆污染、身份越权、工具滥用、运行失控等安全风险。",
+    "ref": "[[国家金融监督管理总局#^c5]]",
+    "verdict": "部分",
+    "why": "原文出自金融监管总局，讲防范身份越权，撑得住\"身份\"这一项；没讲日志审计，也是能力目标而不是硬要求"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^22]",
+    "sentence": "未采购的主要障碍是 ROI、数据与人才[^22][^12]。",
+    "quote": "自主AI已从实验阶段跃升为企业战略优先级，但Gartner调查显示，77%的CIO认为安全与风险是规模化落地的最大障碍。",
+    "ref": "[[安全顾虑正在拖慢自主AI落地，CIO们如何应对#^c1]]",
+    "verdict": "挂错",
+    "why": "原文说 77% 的 CIO 认为安全与风险是最大障碍，意思正好相反"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^1]",
+    "sentence": "Q1 → 准入由 IT 管住[^1][^2]；",
+    "quote": "第四十七条 银行保险机构应当开展数据安全的技术基础设施建设，支持用户身份管理、数据匿名化、行为监测、日志审计、数据虚拟化等功能的组件化、服务化，保障安全标准在信息系统中执行的一致性。",
+    "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c1]]",
+    "verdict": "部分",
+    "why": "只讲银行保险机构的身份管理、日志审计，正文泛化成所有企业的准入由 IT 管"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^2]",
+    "sentence": "Q1 → 准入由 IT 管住[^1][^2]；",
+    "quote": "银行保险机构应当对人工智能模型开发应用进行统一管理，建立模型算法产品外部引入的准入机制，对模型研发过程进行主动管理，实现模型算法可验证、可审核、可追溯。",
+    "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c4]]",
+    "verdict": "部分",
+    "why": "只讲银行保险机构对外部引入模型建准入机制，撑不住所有企业"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^3]",
+    "sentence": "拍板和预算多半分散在 IT 与业务线，还缺采购案例[^3][^4]",
+    "quote": "The BCG survey found that 80% of AI spending now sits outside the enterprise IT budget.",
+    "ref": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c1]]",
+    "verdict": "部分",
+    "why": "撑得住预算在 IT 之外，撑不住拍板分散"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^6]",
+    "sentence": "过关后多半按价格与换机周期定[^6]；",
+    "quote": "受访者：对，甚至我要说一句反面的。管得太死，员工会绕过去。我们之前推过一轮很严的终端管控，结果呢，员工拿自己的手机拍屏幕、用个人账号在浏览器里开外网工具，我们一样看不见，风险反而更大，因为你连日志都没有。所以我不认为管住本身就是价值，把员工逼到影子 IT 里去，是最坏的结果。还有一层，采购到最后还是看价格和换机周期，管理能力只是门槛，不是加分项。厂商如果拿可管理当卖点来溢价，我这边很难过。我更希望看到的是它在放开使用的同时，让我看得见、追得到，而不是简单地把功能锁掉。",
+    "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+    "verdict": "部分",
+    "why": "内容对得上，但来源是模拟专家访谈，不计入 A/B 级"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^10]",
+    "sentence": "依据：现在价差由内存、显卡、屏、保修吃完[^10]；",
+    "quote": "Ultra 9-285H、双 32G 内存条（64G）、2TB PCIe 5.0 固态硬盘、4K OLED 触控屏、RTX Pro 2000 8G 显卡：29899 元",
+    "ref": "[[2025 款联想 ThinkPad P16v 笔记本开售：可选 U7-255H U9-285H，至高匹配 RTX P#^c6]]",
+    "verdict": "部分",
+    "why": "只有一份单机配置报价，不是同代机型之间的价差对比"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^11]",
+    "sentence": "钱多半不在软件科目[^9]，硬件无 AI 单列条目[^10]，获批要绑可量化收益[^11]。",
+    "quote": "从全球共性问题看，‘初始成本高且长期节省效益不确定’（全球占比57.4%）是企业评估生成式AI类产品定价的首要障碍，当前智能体AI技术价值转化路径尚不清晰的现状，与企业生成式AI驱动下的智能体应用落地趋势形成矛盾，因此CIO在预算规划中需为技术试错与价值验证预留弹性空间。",
+    "ref": "[[IDC调查：CIO预算制定指南，2025——企业智能投资与安全影响#^c4]]",
+    "verdict": "部分",
+    "why": "原文讲评估定价的首要障碍是成本与效益不确定，不是获批条件；正文写成了肯定句"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^13]",
+    "sentence": "管理不产生溢价、也未单列付费[^13]，评审权重还缺证据。",
+    "quote": "采购方案：通用办公岗500台联想ThinkCentre M70t Gen 4（i5-13400/16GB/256GB SSD），单台成交价2980元（含三年上门保修和镜像部署）。",
+    "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c5]]",
+    "verdict": "部分",
+    "why": "撑得住未单列管理付费，撑不住不产生溢价；这台也不是 AI PC"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^16]",
+    "sentence": "同代机型价差能由内存、硬盘、屏、显卡和保修项吃完[^10][^16]；",
+    "quote": "一个典型的例子是显卡,同品牌同芯片组的显卡，可能分为标准版、OC超频版、旗舰版三个梯队，散热规模、供电设计、出厂频率完全不同，差价在200元到800元之间很正常，再比如内存，同样标注16G DDR5，频率是5600MHz还是6000MHz，有没有RGB灯效，有没有散热马甲，价格能差出几十到一百多元，固态硬盘更是重灾区，同容量下，PCIe 3.0和PCIe 4.0的读写速度相差近一倍，差价往往超过100元，商家给你写个笼统的512G固态，没写明具体型号和接口协议，这份报价就没有可比性。",
+    "ref": "[[同样配置两份报价为什么差这么多，怎么看出报价中的猫腻？#^c1]]",
+    "verdict": "部分",
+    "why": "原文是电脑报价可比性的一般说法，不是 AI PC 价差拆解"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^23]",
+    "sentence": "席位与 DaaS 已有具名成交[^7][^8][^23]。",
+    "quote": "Lenovo TruScale DaaSは『デバイス・アズ・ア・サービス（DaaS）』であり、パソコン本体に加えて、パソコンの配備から運用、保守、サポート、廃棄までの業務をサービスとして提供する。",
+    "ref": "[[日立が全グループのパソコン17万台にレノボ採用、運用もアウトソース#^c4]]",
+    "verdict": "部分",
+    "why": "原文是 DaaS 的定义，不是成交"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^4]",
+    "sentence": "调研里 AI 预算由 IT 集中管理的只占 22%、由业务线独立掌控的占 20%[^4][^21]；",
+    "quote": "Among those surveyed, 22% said AI budgets are managed centrally by IT, while another 22% said responsibility is shared between IT and the business.",
+    "ref": "[[CIOs say AI is outpacing governance, Thoughtworks finds#^c3]]",
+    "verdict": "撑得住",
+    "why": "原文 22% 由 IT 集中管理"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^5]",
+    "sentence": "Q2 → 可管在受监管行业是准入要求[^5]，一般企业还缺采购文件；",
+    "quote": "供应链服务中涉及敏感级及以上数据处理的，银行保险机构应当加强对供应商的准入和安全管理。",
+    "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c6]]",
+    "verdict": "撑得住",
+    "why": "原文要求银行保险机构加强对供应商的准入和安全管理"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^7]",
+    "sentence": "Q3 → 席位与 DaaS 有计费单元和成交[^7][^8]；",
+    "quote": "### 微软推出 Microsoft 365 生产力套件 E7 企业版订阅：捆绑多项 AI 功能，每用户每月 90.45 美元起",
+    "ref": "[[微软推出 Microsoft 365 生产力套件 E7 企业版订阅：捆绑多项 AI 功能，每用户每月 90.45 美元起#^c1]]",
+    "verdict": "撑得住",
+    "why": "原文给出 E7 每用户每月 90.45 美元起的席位价"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^8]",
+    "sentence": "Q3 → 席位与 DaaS 有计费单元和成交[^7][^8]；",
+    "quote": "レノボ・ジャパンは2026年5月28日、日立製作所が全世界のグループ会社で使用する最大約17万3000台のパソコンについて、レノボのサービスである『Lenovo TruScale DaaS』を採用すると発表した。",
+    "ref": "[[日立が全グループのパソコン17万台にレノボ採用、運用もアウトソース#^c1]]",
+    "verdict": "撑得住",
+    "why": "原文是日立采用 TruScale DaaS 的具名成交"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^12]",
+    "sentence": "未采购的主要障碍是 ROI、数据与人才[^22][^12]。",
+    "quote": "ROI不明确、数据不足、内部AI专业经验缺口是主要绊脚石。",
+    "ref": "[[联想集团联合IDC发布2025年《全球首席信息官（CIO）报告》#^c2]]",
+    "verdict": "撑得住",
+    "why": "原文 ROI 不明确、数据不足、人才缺口是主要绊脚石"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^13]",
+    "sentence": "依据：现在成交侧只见整机打包、管理未单列付费[^13]；",
+    "quote": "采购方案：通用办公岗500台联想ThinkCentre M70t Gen 4（i5-13400/16GB/256GB SSD），单台成交价2980元（含三年上门保修和镜像部署）。",
+    "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c5]]",
+    "verdict": "撑得住",
+    "why": "原文成交价含保修和镜像部署，没有单列管理"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^17]",
+    "sentence": "修正：准入确实由 IT 管住[^17]，但拍板与预算分散在 IT 与业务线；",
+    "quote": "我先插一句，方向先别飘。重点看 IT 能不能管。为什么？第一，我们卖给企业的东西，决定权在 CIO 和 IT 手里，不在员工手里。员工想要什么，最后要 IT 点头才能进公司。",
+    "ref": "[[20_项目/个人AI战略/会议/2026-10-16 高层周会（模拟）#^m1]]",
+    "verdict": "撑得住",
+    "why": "引的是被回应的高层原话本身"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^18]",
+    "sentence": "可管三层[^18] 只在受监管行业是准入要求，一般企业还不构成准入要求",
+    "quote": "Senior：嗯，我理解大概三层。第一层，能不能集中部署和配置——IT 能不能推下去、统一策略、远程改，不是一台一台员工自己弄。",
+    "ref": "[[20_项目/个人AI战略/会议/2026-10-16 高层周会（模拟）#^m3]]",
+    "verdict": "撑得住",
+    "why": "引的是被回应的高层原话本身"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^19]",
+    "sentence": "付费意愿按[^19] 只认换机之外为 AI 本身付的钱，现有报价里没有这一项[^10]；",
+    "quote": "要论证付费意愿，必须找企业在换机之外、为 AI 能力本身付钱的证据（单独定价、溢价被接受、预算科目）。",
+    "ref": "[[20_项目/个人AI战略/决策/W1决定-AI PC渗透不作为付费意愿证据]]",
+    "verdict": "撑得住",
+    "why": "引的是 W1 决定原文"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^20]",
+    "sentence": "受控 agent 的形态按[^20] 沿用。",
+    "quote": "1. 本项目里企业员工的个人 AI的形态，按端云混合、受企业管控的 agent来定义（供给侧已经成形）。 2. 受控 agent 能不能取代员工自带的云端工具不在 W1",
+    "ref": "[[20_项目/个人AI战略/决策/W1决定-员工个人AI按受控agent定义并把供需缺口交给W2]]",
+    "verdict": "撑得住",
+    "why": "引的是 W1 决定原文"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v6.md",
+    "footnote": "[^21]",
+    "sentence": "调研里 AI 预算由 IT 集中管理的只占 22%、由业务线独立掌控的占 20%[^4][^21]；",
+    "quote": "A further 20% said budgets are controlled independently by business units, 19% said they sit at executive or board level, and 17% said the model is still evolving.",
+    "ref": "[[CIOs say AI is outpacing governance, Thoughtworks finds#^c4]]",
+    "verdict": "撑得住",
+    "why": "原文 20% 由业务线独立掌控"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^15]",
+    "sentence": "依据：微软[^15] 每用户每月 90.45 美元起[^1]，TruScale DaaS 按月计费[^16]；",
+    "quote": "2）实施服务：主要内容为，基于已建成的OA系统、内网邮件系统，对WPS AI智能办公平台实施部署、数据同步及单点登录对接等服务。",
+    "ref": "[[云之龙咨询集团有限公司WPS AI智能办公平台技术服务项目（GXZC2026-C3-001075-YZLZ）竞争性磋商公#^c5]]",
+    "verdict": "挂错",
+    "why": "原文是 WPS AI 实施服务的采购文件，挂在了\"微软\"后面"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^11]",
+    "sentence": "准入由 IT 拍板[^10][^11]",
+    "quote": "Senior：嗯，我理解大概三层。第一层，能不能集中部署和配置——IT 能不能推下去、统一策略、远程改，不是一台一台员工自己弄。",
+    "ref": "[[20_项目/个人AI战略/会议/2026-10-16 高层周会（模拟）#^m3]]",
+    "verdict": "挂错",
+    "why": "原文讲三层管理的第一层是什么，不讲谁拍板"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^3]",
+    "sentence": "Q3 → 席位与 DaaS 有单价和成交[^1][^2]，硬件价差无 AI 条目[^3]；",
+    "quote": "Ultra 9-285H、双 32G 内存条（64G）、2TB PCIe 5.0 固态硬盘、4K OLED 触控屏、RTX Pro 2000 8G 显卡：29899 元",
+    "ref": "[[2025 款联想 ThinkPad P16v 笔记本开售：可选 U7-255H U9-285H，至高匹配 RTX P#^c6]]",
+    "verdict": "部分",
+    "why": "只有一份单机配置报价，不是同配置机型的价差对比"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^5]",
+    "sentence": "过关后多半按价格与换机周期定胜负[^5]，管理不单列价[^7]，多付对应收益还缺证据",
+    "quote": "受访者：对，甚至我要说一句反面的。管得太死，员工会绕过去。我们之前推过一轮很严的终端管控，结果呢，员工拿自己的手机拍屏幕、用个人账号在浏览器里开外网工具，我们一样看不见，风险反而更大，因为你连日志都没有。所以我不认为管住本身就是价值，把员工逼到影子 IT 里去，是最坏的结果。还有一层，采购到最后还是看价格和换机周期，管理能力只是门槛，不是加分项。厂商如果拿可管理当卖点来溢价，我这边很难过。我更希望看到的是它在放开使用的同时，让我看得见、追得到，而不是简单地把功能锁掉。",
+    "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+    "verdict": "部分",
+    "why": "内容对得上，但来源是模拟专家访谈"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^6]",
+    "sentence": "准入是否由 IT 拍板，还缺证据决策与预算多半分散在 IT、业务线、高层[^6]，缺采购案例",
+    "quote": "Among those surveyed, 22% said AI budgets are managed centrally by IT, while another 22% said responsibility is shared between IT and the business.",
+    "ref": "[[CIOs say AI is outpacing governance, Thoughtworks finds#^c3]]",
+    "verdict": "部分",
+    "why": "撑得住预算分散；\"高层\"那一份在另一条资料里"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^7]",
+    "sentence": "买方是否单独付钱多半不会，还缺证据[^7]",
+    "quote": "采购方案：通用办公岗500台联想ThinkCentre M70t Gen 4（i5-13400/16GB/256GB SSD），单台成交价2980元（含三年上门保修和镜像部署）。",
+    "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c5]]",
+    "verdict": "部分",
+    "why": "一台非 AI PC 的成交，说明不了买方为不为 AI 付钱"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^10]",
+    "sentence": "准入由 IT 拍板[^10][^11]",
+    "quote": "我先插一句，方向先别飘。重点看 IT 能不能管。为什么？第一，我们卖给企业的东西，决定权在 CIO 和 IT 手里，不在员工手里。员工想要什么，最后要 IT 点头才能进公司。",
+    "ref": "[[20_项目/个人AI战略/会议/2026-10-16 高层周会（模拟）#^m1]]",
+    "verdict": "部分",
+    "why": "内容对得上，但这是被回应的高层原话，不是证据"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^15]",
+    "sentence": "现有合作就能把身份与日志接进合同[^15][^2]。",
+    "quote": "2）实施服务：主要内容为，基于已建成的OA系统、内网邮件系统，对WPS AI智能办公平台实施部署、数据同步及单点登录对接等服务。",
+    "ref": "[[云之龙咨询集团有限公司WPS AI智能办公平台技术服务项目（GXZC2026-C3-001075-YZLZ）竞争性磋商公#^c5]]",
+    "verdict": "部分",
+    "why": "原文说明部署能对接单点登录，撑不住合作就能接进合同"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^18]",
+    "sentence": "自研整合层与准入组件：不选，自研要自己建身份、日志与准入能力，落地时间会晚过客户下一个采购周期，而现有 TruScale DaaS 合同已经能承载这些内容[^2][^18]。",
+    "quote": "Lenovo TruScale DaaSは『デバイス・アズ・ア・サービス（DaaS）』であり、パソコン本体に加えて、パソコンの配備から運用、保守、サポート、廃棄までの業務をサービスとして提供する。",
+    "ref": "[[日立が全グループのパソコン17万台にレノボ採用、運用もアウトソース#^c4]]",
+    "verdict": "部分",
+    "why": "原文 DaaS 含配备、运维、支持，撑不住身份、日志与准入能力"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^8]",
+    "sentence": "一般企业主要障碍不是管理安全，出局证据还缺[^8]",
+    "quote": "ROI不明确、数据不足、内部AI专业经验缺口是主要绊脚石。",
+    "ref": "[[联想集团联合IDC发布2025年《全球首席信息官（CIO）报告》#^c2]]",
+    "verdict": "部分",
+    "why": "原文列出 ROI、数据、人才，\"不是管理安全\"是推出来的"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^9]",
+    "sentence": "换机预算收紧已证实[^9]；",
+    "quote": "分析师表示，由于AI芯片需求激增导致内存价格飙升，企业PC价格今年预计上涨17%，迫使企业推迟硬件升级计划。",
+    "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c1]]",
+    "verdict": "部分",
+    "why": "撑得住企业推迟升级，\"预算收紧\"是推出来的，且是 C 级分析师说法"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^1]",
+    "sentence": "席位与 DaaS 有可查单价和真实成交[^1][^2]；",
+    "quote": "### 微软推出 Microsoft 365 生产力套件 E7 企业版订阅：捆绑多项 AI 功能，每用户每月 90.45 美元起",
+    "ref": "[[微软推出 Microsoft 365 生产力套件 E7 企业版订阅：捆绑多项 AI 功能，每用户每月 90.45 美元起#^c1]]",
+    "verdict": "撑得住",
+    "why": "原文 E7 每用户每月 90.45 美元起"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^2]",
+    "sentence": "在现有 TruScale DaaS 客户里推，规模参照日立一笔最多约17万3000台 PC 的合同[^2]，范围先限受监管行业",
+    "quote": "レノボ・ジャパンは2026年5月28日、日立製作所が全世界のグループ会社で使用する最大約17万3000台のパソコンについて、レノボのサービスである『Lenovo TruScale DaaS』を採用すると発表した。",
+    "ref": "[[日立が全グループのパソコン17万台にレノボ採用、運用もアウトソース#^c1]]",
+    "verdict": "撑得住",
+    "why": "原文日立最多约 17.3 万台采用 TruScale DaaS"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^4]",
+    "sentence": "Q2 → 受监管行业是准入要求[^4]；",
+    "quote": "供应链服务中涉及敏感级及以上数据处理的，银行保险机构应当加强对供应商的准入和安全管理。",
+    "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c6]]",
+    "verdict": "撑得住",
+    "why": "原文要求银行保险机构加强对供应商的准入和安全管理"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^7]",
+    "sentence": "依据：受监管行业把供应商准入与安全管理写成要求[^4]，整机报价未单列管理[^7]；",
+    "quote": "采购方案：通用办公岗500台联想ThinkCentre M70t Gen 4（i5-13400/16GB/256GB SSD），单台成交价2980元（含三年上门保修和镜像部署）。",
+    "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c5]]",
+    "verdict": "撑得住",
+    "why": "原文成交价含保修和镜像部署，没有单列管理"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^12]",
+    "sentence": "[^12] 要求的换机之外付费证据只在席位与服务侧找到[^1][^2]。",
+    "quote": "要论证付费意愿，必须找企业在换机之外、为 AI 能力本身付钱的证据（单独定价、溢价被接受、预算科目）。",
+    "ref": "[[20_项目/个人AI战略/决策/W1决定-AI PC渗透不作为付费意愿证据]]",
+    "verdict": "撑得住",
+    "why": "引的是 W1 决定原文"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^13]",
+    "sentence": "依据：监管要求身份管理、日志审计与外部引入的准入机制[^13][^14]，部署要接 OA 与单点登录[^15]，席位与 DaaS 有可查计费单元和真实成交[^1][^2]，整机报价未单列管理[^7]。",
+    "quote": "第四十七条 银行保险机构应当开展数据安全的技术基础设施建设，支持用户身份管理、数据匿名化、行为监测、日志审计、数据虚拟化等功能的组件化、服务化，保障安全标准在信息系统中执行的一致性。",
+    "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c1]]",
+    "verdict": "撑得住",
+    "why": "原文要求支持用户身份管理、日志审计"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^14]",
+    "sentence": "依据：监管要求身份管理、日志审计与外部引入的准入机制[^13][^14]，部署要接 OA 与单点登录[^15]，席位与 DaaS 有可查计费单元和真实成交[^1][^2]，整机报价未单列管理[^7]。",
+    "quote": "银行保险机构应当对人工智能模型开发应用进行统一管理，建立模型算法产品外部引入的准入机制，对模型研发过程进行主动管理，实现模型算法可验证、可审核、可追溯。",
+    "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c4]]",
+    "verdict": "撑得住",
+    "why": "原文要求建立模型算法产品外部引入的准入机制"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^15]",
+    "sentence": "依据：监管要求身份管理、日志审计与外部引入的准入机制[^13][^14]，部署要接 OA 与单点登录[^15]，席位与 DaaS 有可查计费单元和真实成交[^1][^2]，整机报价未单列管理[^7]。",
+    "quote": "2）实施服务：主要内容为，基于已建成的OA系统、内网邮件系统，对WPS AI智能办公平台实施部署、数据同步及单点登录对接等服务。",
+    "ref": "[[云之龙咨询集团有限公司WPS AI智能办公平台技术服务项目（GXZC2026-C3-001075-YZLZ）竞争性磋商公#^c5]]",
+    "verdict": "撑得住",
+    "why": "原文是 WPS AI 部署、数据同步及单点登录对接服务"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^16]",
+    "sentence": "依据：TruScale DaaS 已有日立全球集团最多约17万3000台 PC 的采用[^2]，按月一笔可预测费用计费[^16]。",
+    "quote": "透過新一代裝置、更安全的職場，以及切實的永續發展進展，讓您的企業為未來的工作作好準備 - 所有這一切只需每月支付一筆可預測的費用。",
+    "ref": "[[Lenovo 的 TruScale Device as a Service#^c3]]",
+    "verdict": "撑得住",
+    "why": "原文每月支付一笔可预测的费用"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "[^17]",
+    "sentence": "依据：内存涨价推高终端价格、企业推迟升级[^17][^9]；",
+    "quote": "Gartner estimates a 130% surge in combined DRAM and solid-state drive (SSD) prices by the end of 2026, which will increase PC prices by 17% and smartphone prices by 13%, compared to 2025 levels.",
+    "ref": "[[Gartner 2026-02 内存涨价压低出货#^c2]]",
+    "verdict": "撑得住",
+    "why": "原文 DRAM 与 SSD 涨价 130%，PC 涨价 17%"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "v7 改前 [^6]",
+    "sentence": "准入由 IT 拍板[^6]；",
+    "quote": "银行保险机构应当对人工智能模型开发应用进行统一管理，建立模型算法产品外部引入的准入机制，对模型研发过程进行主动管理，实现模型算法可验证、可审核、可追溯。",
+    "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c4]]",
+    "verdict": "挂错",
+    "why": "原文只要求机构建立外部引入的准入机制，没说由 IT 拍板（引用检查删除，判断正确）"
+  },
+  {
+    "report": "20_项目/个人AI战略/WS-A 买方/调查/买方采购逻辑（问题树）/报告 v7.md",
+    "footnote": "v7 改前 [^9]",
+    "sentence": "钱是否新增、AI 支出多半要绑可量化收益才过会，缺证据[^9]",
+    "quote": "分析师表示，由于AI芯片需求激增导致内存价格飙升，企业PC价格今年预计上涨17%，迫使企业推迟硬件升级计划。",
+    "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c1]]",
+    "verdict": "挂错",
+    "why": "原文讲内存涨价推高 PC 价格、企业推迟升级，不讲 AI 支出过会条件（引用检查删除，判断正确）"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v4.md",
+    "footnote": "[^1]",
+    "sentence": "回答（一句话）：联想多半押管理／服务层、自研整合层加微软生态合作拿到[^1]；",
+    "quote": "Lenovo TruScale Device as a Service (DaaS) 提供超級個人化裝置與靈活的支援 - 不僅最佳化數位員工體驗，並讓員工更智慧、更快速地工作。",
+    "ref": "[[Lenovo 的 TruScale Device as a Service#^c2]]",
+    "verdict": "挂错",
+    "why": "原文是 DaaS 的产品介绍，撑不住押管理／服务层、靠自研整合层加微软合作拿到"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v4.md",
+    "footnote": "[^10]",
+    "sentence": "只需要把固件和带外从卖点里去掉，因为这两项由 Intel 芯片层提供、各 OEM 通用[^10]。",
+    "quote": "Out-of-band access means your IT teams can reach, diagnose, and recover PCs regardless of their OS states, which means fewer on-site truck rolls and more remote fixes.",
+    "ref": "[[Intel vPro 产品页#^c2]]",
+    "verdict": "部分",
+    "why": "原文出自 Intel vPro 产品页，撑得住带外是 Intel 平台能力；没说各 OEM 通用，和端侧算力也无关"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v4.md",
+    "footnote": "[^2]",
+    "sentence": "Q2 → 微软已管住配置与身份[^2]；",
+    "quote": "And manageability connects that activity into tools like Agent 365 and Intune, so organizations can set policy, monitor risk, and govern agents across the organization",
+    "ref": "[[Microsoft 2026-10 Windows混合智能#^c3]]",
+    "verdict": "部分",
+    "why": "原文讲设策略、治理 agent，没讲身份"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v4.md",
+    "footnote": "[^3]",
+    "sentence": "联想多半只剩机队整合与服务，还缺对手对比的 A 级证据[^3]",
+    "quote": "At the time of testing, the HP portal didn’t have this capability, and Lenovo didn’t have a partner portal at all.",
+    "ref": "[[In our Intune environment, a Dell Pro AI PC powered by an AM#^c5]]",
+    "verdict": "部分",
+    "why": "撑得住联想没有合作门户，撑不住只剩机队整合与服务"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v4.md",
+    "footnote": "[^4]",
+    "sentence": "Q3 → 企业侧采购案例还没有[^4]；",
+    "quote": "The announcement also revealed pricing: Qira Personal ships free for one year on new devices, then $4.99 per month per user for continued access.",
+    "ref": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c4]]",
+    "verdict": "部分",
+    "why": "原文只有个人版定价，\"没有企业案例\"是从缺证据推出来的"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v4.md",
+    "footnote": "[^5]",
+    "sentence": "受监管行业的管理要求构成准入[^5]，Qira 满足得了还没有证据",
+    "quote": "完善人机协同的业务管理流程，科学设定人工智能的功能边界、系统和数据权限，明确人员岗位责任，确保业务全流程管理责任清晰、可落实、可追溯。",
+    "ref": "[[国家金融监督管理总局#^c1]]",
+    "verdict": "部分",
+    "why": "原文有功能边界、权限要求，没说准入"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v4.md",
+    "footnote": "[^9]",
+    "sentence": "依据：企业采购的决定权在 CIO 和 IT 手里[^9]，而微软的 Intune 与 Agent 365 已经把 agent 的配置与身份管住[^2]，联想能站的位置正是 IT 可管的机队整合和随设备交付的服务[^1]；",
+    "quote": "我先插一句，方向先别飘。重点看 IT 能不能管。为什么？第一，我们卖给企业的东西，决定权在 CIO 和 IT 手里，不在员工手里。员工想要什么，最后要 IT 点头才能进公司。",
+    "ref": "[[20_项目/个人AI战略/会议/2026-10-16 高层周会（模拟）#^m1]]",
+    "verdict": "部分",
+    "why": "引的是高层原话，被当成支持高层指示的依据"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v4.md",
+    "footnote": "[^13]",
+    "sentence": "依据：服务收入占比被硬件收入反向指向[^13][^14]；",
+    "quote": "Revenue for IDG increased 27% year-on-year to record first fiscal quarter revenue ofUS$17.1 billion, with revenue from PCs and smart devices up nearly 30% year-on-year.",
+    "ref": "[[联想 2026-08 FY26-27 Q1 业绩#^c1]]",
+    "verdict": "部分",
+    "why": "原文只说明硬件在增长，没有服务收入占比"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v4.md",
+    "footnote": "[^14]",
+    "sentence": "依据：服务收入占比被硬件收入反向指向[^13][^14]；",
+    "quote": "这块业务规模不大，但利润率最高。",
+    "ref": "[[联想搞钱的方式，变了-钛媒体官方网站#^c3]]",
+    "verdict": "部分",
+    "why": "原文没写\"这块\"指哪块业务"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v4.md",
+    "footnote": "[^1]",
+    "sentence": "依据：TruScale DaaS 提供个性化设备与灵活支持[^1]；",
+    "quote": "Lenovo TruScale Device as a Service (DaaS) 提供超級個人化裝置與靈活的支援 - 不僅最佳化數位員工體驗，並讓員工更智慧、更快速地工作。",
+    "ref": "[[Lenovo 的 TruScale Device as a Service#^c2]]",
+    "verdict": "撑得住",
+    "why": "原文 DaaS 提供个性化装置与灵活支援"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v4.md",
+    "footnote": "[^3]",
+    "sentence": "依据：现有对比只有 C 级评测[^3]；",
+    "quote": "At the time of testing, the HP portal didn’t have this capability, and Lenovo didn’t have a partner portal at all.",
+    "ref": "[[In our Intune environment, a Dell Pro AI PC powered by an AM#^c5]]",
+    "verdict": "撑得住",
+    "why": "原文就是这份 C 级上手评测"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v4.md",
+    "footnote": "[^5]",
+    "sentence": "依据：受监管行业要求权限管理与日志审计[^5][^11]；",
+    "quote": "完善人机协同的业务管理流程，科学设定人工智能的功能边界、系统和数据权限，明确人员岗位责任，确保业务全流程管理责任清晰、可落实、可追溯。",
+    "ref": "[[国家金融监督管理总局#^c1]]",
+    "verdict": "撑得住",
+    "why": "原文要求设定功能边界、系统和数据权限"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v4.md",
+    "footnote": "[^6]",
+    "sentence": "依据：服务和机队基础有财报与官方材料支撑[^6][^7][^1]；",
+    "quote": "TruScale continues to be a key growth driver, growing 35% year-on-year.",
+    "ref": "[[联想 2026-08 FY26-27 Q1 业绩#^c5]]",
+    "verdict": "撑得住",
+    "why": "原文 TruScale 同比增长 35%"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v4.md",
+    "footnote": "[^7]",
+    "sentence": "依据：服务和机队基础有财报与官方材料支撑[^6][^7][^1]；",
+    "quote": "Global PC market share leadership was further strengthened, reaching 24.2% and extending Lenovo’s lead over the #2 player to more than five percentage points",
+    "ref": "[[联想 2026-08 FY26-27 Q1 业绩#^c2]]",
+    "verdict": "撑得住",
+    "why": "原文 PC 份额 24.2%"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v4.md",
+    "footnote": "[^8]",
+    "sentence": "企业换机不为 AI 功能单独采购[^8]；",
+    "quote": "2025年企業PC換機需求的一大推力，是Windows 10於該年10月終止支援。這波換機需求不代表企業是為了AI功能而採購。",
+    "ref": "[[数位时代 2026-10 AI换机潮落空#^c2]]",
+    "verdict": "撑得住",
+    "why": "原文换机推力是 Windows 10 停止支持，不是为了 AI 功能"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v4.md",
+    "footnote": "[^11]",
+    "sentence": "依据：受监管行业要求权限管理与日志审计[^5][^11]；",
+    "quote": "第四十七条 银行保险机构应当开展数据安全的技术基础设施建设，支持用户身份管理、数据匿名化、行为监测、日志审计、数据虚拟化等功能的组件化、服务化，保障安全标准在信息系统中执行的一致性。",
+    "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c1]]",
+    "verdict": "撑得住",
+    "why": "原文要求支持用户身份管理、日志审计"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v5.md",
+    "footnote": "[^5]",
+    "sentence": "依据：条件①服务收入占比高证据不足[^5]，还缺直接证据；",
+    "quote": "Global PC market share leadership was further strengthened, reaching 24.2% and extending Lenovo’s lead over the #2 player to more than five percentage points",
+    "ref": "[[联想 2026-08 FY26-27 Q1 业绩#^c2]]",
+    "verdict": "挂错",
+    "why": "原文是 PC 份额 24.2%，和服务收入占比无关"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v5.md",
+    "footnote": "[^9]",
+    "sentence": "机队整合与带外控制已被 HP、戴尔追平[^9][^10]，联想剩下的只有随设备交付的服务。",
+    "quote": "However, we had to manually deploy a BIOS policy using software we downloaded from Lenovo and published to Intune.",
+    "ref": "[[In our Intune environment, a Dell Pro AI PC powered by an AM#^c6]]",
+    "verdict": "挂错",
+    "why": "原文说联想要手工部署 BIOS 策略，不说被追平"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v5.md",
+    "footnote": "[^1]",
+    "sentence": "买方为运行成本买单不为AI[^1]；",
+    "quote": "2025年企業PC換機需求的一大推力，是Windows 10於該年10月終止支援。這波換機需求不代表企業是為了AI功能而採購。",
+    "ref": "[[数位时代 2026-10 AI换机潮落空#^c2]]",
+    "verdict": "部分",
+    "why": "撑得住不为 AI，撑不住为运行成本买单"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v5.md",
+    "footnote": "[^2]",
+    "sentence": "Q2 → 微软管住配置和身份[^2]；",
+    "quote": "And manageability connects that activity into tools like Agent 365 and Intune, so organizations can set policy, monitor risk, and govern agents across the organization",
+    "ref": "[[Microsoft 2026-10 Windows混合智能#^c3]]",
+    "verdict": "部分",
+    "why": "原文讲设策略、治理 agent，没讲身份"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v5.md",
+    "footnote": "[^8]",
+    "sentence": "依据：微软在配置与身份上已有可用管控[^2][^8]，买方换机由 Windows 10 停更推动，不为 AI 功能采购[^1]；",
+    "quote": "These settings support Windows devices managed through Intune or MDE security settings management.",
+    "ref": "[[What's new in Microsoft Intune - Microsoft Intune - - Hardwa#^c4]]",
+    "verdict": "部分",
+    "why": "原文只说明 Intune 管得到这些设置"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v5.md",
+    "footnote": "[^10]",
+    "sentence": "机队整合与带外控制已被 HP、戴尔追平[^9][^10]，联想剩下的只有随设备交付的服务。",
+    "quote": "HP | HP Sure Admin, HP Manageability Integration Kit | Intel AMT / DASH | Full (requires vPro/AMD PRO)",
+    "ref": "[[Enterprise Laptop Manufacturer Selection Guide#^c2]]",
+    "verdict": "部分",
+    "why": "只讲了 HP 的完整带外能力，没讲戴尔，也没有和联想比"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v5.md",
+    "footnote": "[^10]",
+    "sentence": "依据：Q2 ③ 现在只有 C 级评测[^10]，还不足以判定，这个判断还缺证据；",
+    "quote": "HP | HP Sure Admin, HP Manageability Integration Kit | Intel AMT / DASH | Full (requires vPro/AMD PRO)",
+    "ref": "[[Enterprise Laptop Manufacturer Selection Guide#^c2]]",
+    "verdict": "部分",
+    "why": "原文是 C 级的能力对照表，不是上手评测（引用检查判挂错，误判）"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v5.md",
+    "footnote": "[^13]",
+    "sentence": "押端侧算力：不选，押端侧算力不成立：换机由 Windows 10 停更推动，不为 AI 硬件采购[^1]，内存涨价还压低 AI PC 出货[^13]。",
+    "quote": "In addition, rising AI PC prices will delay the projected 50% market penetration of AI PCs until 2028.",
+    "ref": "[[Gartner 2026-02 内存涨价压低出货#^c4]]",
+    "verdict": "部分",
+    "why": "原文讲价格上涨推迟渗透，没提内存，讲的是渗透不是出货"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v5.md",
+    "footnote": "[^3]",
+    "sentence": "Q3 → 企业买方一侧依据还缺：个人版按人月 4.99 美元[^3]，企业版按设备计价仅单一来源[^4]。",
+    "quote": "The announcement also revealed pricing: Qira Personal ships free for one year on new devices, then $4.99 per month per user for continued access.",
+    "ref": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c4]]",
+    "verdict": "撑得住",
+    "why": "原文 Qira 个人版每用户每月 4.99 美元"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v5.md",
+    "footnote": "[^4]",
+    "sentence": "Q3 → 企业买方一侧依据还缺：个人版按人月 4.99 美元[^3]，企业版按设备计价仅单一来源[^4]。",
+    "quote": "Qira Business starts at $8 per device per month with volume discounts.",
+    "ref": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c3]]",
+    "verdict": "撑得住",
+    "why": "原文 Qira Business 每台设备每月 8 美元起"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v5.md",
+    "footnote": "[^5]",
+    "sentence": "依据：联想 PC 份额 24.2%、领先第二名超过五个百分点[^5]，TruScale 增长 35% 说明服务在增长[^6]；",
+    "quote": "Global PC market share leadership was further strengthened, reaching 24.2% and extending Lenovo’s lead over the #2 player to more than five percentage points",
+    "ref": "[[联想 2026-08 FY26-27 Q1 业绩#^c2]]",
+    "verdict": "撑得住",
+    "why": "原文 24.2%，领先第二名超过五个百分点"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v5.md",
+    "footnote": "[^6]",
+    "sentence": "依据：联想 PC 份额 24.2%、领先第二名超过五个百分点[^5]，TruScale 增长 35% 说明服务在增长[^6]；",
+    "quote": "TruScale continues to be a key growth driver, growing 35% year-on-year.",
+    "ref": "[[联想 2026-08 FY26-27 Q1 业绩#^c5]]",
+    "verdict": "撑得住",
+    "why": "原文 TruScale 同比增长 35%"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v5.md",
+    "footnote": "[^7]",
+    "sentence": "支持[^7] 的方向：IT 能不能管是管理/服务层的分界，差异化落到随设备交付的服务上",
+    "quote": "我先插一句，方向先别飘。重点看 IT 能不能管。为什么？第一，我们卖给企业的东西，决定权在 CIO 和 IT 手里，不在员工手里。员工想要什么，最后要 IT 点头才能进公司。",
+    "ref": "[[20_项目/个人AI战略/会议/2026-10-16 高层周会（模拟）#^m1]]",
+    "verdict": "撑得住",
+    "why": "引的是被回应的高层原话本身"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v5.md",
+    "footnote": "[^11]",
+    "sentence": "依据：TruScale DaaS 已按设备交付并定位为增长驱动[^6][^11]，设备交付速度提升 40%[^12]；",
+    "quote": "Lenovo TruScale Device as a Service (DaaS) 提供超級個人化裝置與靈活的支援 - 不僅最佳化數位員工體驗，並讓員工更智慧、更快速地工作。",
+    "ref": "[[Lenovo 的 TruScale Device as a Service#^c2]]",
+    "verdict": "撑得住",
+    "why": "原文 DaaS 提供个性化装置与灵活支援，和 [^6] 一起撑 DaaS 在交付"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v5.md",
+    "footnote": "[^12]",
+    "sentence": "依据：TruScale DaaS 已按设备交付并定位为增长驱动[^6][^11]，设备交付速度提升 40%[^12]；",
+    "quote": "憑藉我們的新產品組合，效能提升達 10 倍，裝置交付速度提升 40%，成本節省和碳排放節約也可衡量，該產品採用代理式 AI、AI 電腦、服務、TruScale DaaS 和端對端解決方案。",
+    "ref": "[[Lenovo 的 TruScale Device as a Service#^c4]]",
+    "verdict": "撑得住",
+    "why": "原文装置交付速度提升 40%"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v5.md",
+    "footnote": "v5 改前 [^6]",
+    "sentence": "依据：TruScale 的增长要靠续约兑现[^6]。",
+    "quote": "TruScale continues to be a key growth driver, growing 35% year-on-year.",
+    "ref": "[[联想 2026-08 FY26-27 Q1 业绩#^c5]]",
+    "verdict": "挂错",
+    "why": "原文只说 TruScale 同比增长 35%，没提续约（引用检查删除，判断正确）"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v5.md",
+    "footnote": "v5 改前 [^9]",
+    "sentence": "依据：Q2 ③ 现在只有 C 级评测[^9][^10]，还不足以判定。",
+    "quote": "However, we had to manually deploy a BIOS policy using software we downloaded from Lenovo and published to Intune.",
+    "ref": "[[In our Intune environment, a Dell Pro AI PC powered by an AM#^c6]]",
+    "verdict": "撑得住",
+    "why": "原文正是那份 C 级上手评测（引用检查删除，误删）"
+  },
+  {
+    "report": "20_项目/个人AI战略/W5 联想的位置/调查/联想的位置/报告 v5.md",
+    "footnote": "v5 改前 [^6]",
+    "sentence": "依据：条件①服务收入占比高证据不足[^6][^5]。",
+    "quote": "TruScale continues to be a key growth driver, growing 35% year-on-year.",
+    "ref": "[[联想 2026-08 FY26-27 Q1 业绩#^c5]]",
+    "verdict": "挂错",
+    "why": "原文是 TruScale 增长 35%，和服务收入占比无关（引用检查删除，判断正确）"
+  }
+]

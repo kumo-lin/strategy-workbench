@@ -1,0 +1,5025 @@
+{
+ "report": "报告 v3.md",
+ "entries": [
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "分层管控、企业版走 SSO、日志落地，员工端 AI 已纳入 IT 统一范围"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "存在业务部门自出的独立 AI 预算，说明预算并非全在 IT 一侧"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管要求身份管理、日志审计等设施，支持机构侧统一管控"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "访问策略与访问控制由机构统一实施，贴合 IT 侧管控"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "IT 要求统一下发策略、日志进 SIEM、与现有终端管理集成"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "管控过严员工就绕过、IT 看不到日志；采购最终仍看价格"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求统一管理并建立外部引入准入机制，把关方在机构侧"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "AI 系统投入使用前须过数据安全审查，准入由机构把关"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "由机构设定 AI 功能边界与系统数据权限，即 IT 侧把关"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "日志保存期限要求，属机构侧留存与可追溯管控"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "同源条款：由机构设定 AI 功能边界与系统数据权限"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "同源条款：日志保存期限要求，属机构侧留存管控"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "IT 负责人自述由其评估与拍板，可管理性只是准入门槛"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "关键决策须人工复核并留痕，属机构侧统一可追溯管控"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求机构提升智能体安全保障，责任落在机构一侧"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "谁使用谁负责、压实机构主体责任，指向机构侧统一管理"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "同源条款：人工复核与记录留存，属机构侧可追溯管控"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "同源条款：机构提升智能体安全防护，责任在机构一侧"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[企业AI决策权归谁？治理滞后于应用普及#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "报告称中央IT团队对AI决策与预算分配影响力最大，支撑IT主导"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[企业AI决策权归谁？治理滞后于应用普及#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "业务部门部署AI出问题时IT被追责，说明IT有动机收紧管控"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[Shadow AI Sprawl When Every Department Builds Its Own AI Is#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "仅证明员工自带未授权工具，与假设承认的绕开IT使用一致"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[企业AI决策权归谁？治理滞后于应用普及#^c4]]",
+   "stance": "refutes",
+   "core": true,
+   "partial": true,
+   "round": "kb",
+   "reason": "称AI支出所有权分散、无单一主导预算模式，直接挑战预算归IT"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "预算随形态分流，且存在业务部门自出钱的独立AI预算"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "称管太死员工会绕开、IT看不见，采购最终看价格非管理能力"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[企业AI决策权归谁？治理滞后于应用普及#^c5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "以AI所有权分散为前提，靠嵌入技术负责人应对，非集中决策"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[Shadow AI Sprawl When Every Department Builds Its Own AI Is#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "描述无审批、IT不在环路的自用，未涉及企业采购与付款"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[Shadow AI Sprawl When Every Department Builds Its Own AI Is#^c5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "称现在成了盲区问题，挑战IT事后发现并收紧的解释"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[企业AI决策权归谁？治理滞后于应用普及#^c6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "称不存在单一理想AI所有权模式，削弱决策统一归IT"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受限层必须走企业版、SSO、日志回落IT，支撑IT登记下发策略"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[Shadow AI Sprawl When Every Department Builds Its Own AI Is#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "不需预算申请的东西不进审批流程，符合走不到采购付款一步"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[Shadow AI Sprawl When Every Department Builds Its Own AI Is#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "禁令只改变使用发生地，挑战IT收紧后能管住的前提"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[Shadow AI Sprawl When Every Department Builds Its Own AI Is#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "强调只有被登记记录的东西才可管，呼应IT登记下发策略"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "IT负责人以统一策略、日志进SIEM、对接Intune为采购评估项"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "由IT先过合规技术评审，管理能力只是门槛，决策仍在IT侧"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[企业AI决策权归谁？治理滞后于应用普及#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "称中央IT团队决策影响力与预算格局最大，支持IT主导"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[企业AI决策权归谁？治理滞后于应用普及#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "决策权分散而责任归IT，说明拍板权不在IT一侧"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[对话100位CIO：如何在2025年自研和采购AI#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "称AI费用走集中IT预算，倾向支持集中出资"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[企业AI决策权归谁？治理滞后于应用普及#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "部署与支出所有权分散，无单一主导预算模式"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "IT受访者自述按软硬件预算池取舍，业务自筹盘子很小"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[企业AI决策权归谁？治理滞后于应用普及#^c5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "AI所有权分散于各部门，需嵌入技术负责人补救"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[对话100位CIO：如何在2025年自研和采购AI#^c6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "员工能影响采购决策，并非IT单方拍板"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c1]]",
+   "stance": "refutes",
+   "core": true,
+   "partial": false,
+   "round": "kb",
+   "reason": "80%的AI支出在IT预算之外，直接否定预算归IT"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "重大投资决策需三方共同参与，非IT单方"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "决策归中央组但预算不归，预算归属前提被否"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "管得太死逼出影子IT且无日志，IT并未真正掌控"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[企业AI决策权归谁？治理滞后于应用普及#^c6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "不存在通用AI所有权模式，论点只在更窄条件成立"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "IT设分层准入、SSO与日志，是登记与策略制定方"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "明确否认CFO或CIO能单独决策"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[AI spending shifts beyond IT, testing CIO-CFO decision right#^c6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "主张决策权应贴近业务结果，倾向业务线"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "IT负责人按硬件或软件预算评估，并问「替代了什么」，可见预算决策在IT这一侧"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q4",
+   "ref": "[[CIO需打造AI部署透明化管理体系#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "BCG称80%的AI支出落在IT预算之外，直接削弱预算归IT的前提"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q4",
+   "ref": "[[CIO需打造AI部署透明化管理体系#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "BCG高管称投资分散到各团队是合理的，说明预算未必由IT集中掌握"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受限层必须走企业版、SSO、日志回落到IT，说明IT登记和策略是生效前提"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "IT以统一策略下发、日志进SIEM、接Intune为采购门槛，说明采购决策在IT手里"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者称管得太死员工就绕行，日志都没有；管理能力只是门槛，不是加价项"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q4",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管要求对外部引入的模型算法建准入机制，说明外部工具须经统一审批"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q4",
+   "ref": "[[对话100位CIO：如何在2025年自研和采购AI#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "采购流程已标准化，看价格和安全，说明走正式采购，不靠员工先报销再补审批"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q4",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管要求身份管理、行为监测、日志审计，佐证入库须接入身份与日志"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q4",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求按数据级别做用户认证与访问控制，说明准入由统一安全策略约束"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q4",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求定期审计数据操作，佐证IT必须掌握日志"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q4",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "模型算法投入使用前须做数据安全审查，说明外部引入须过统一评审"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q4",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求加强供应商准入和安全管理，佐证采购走统一准入"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q4",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c8]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求2小时内上报事件，前提是IT可见并留日志，佐证IT须集中管控"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q4",
+   "ref": "[[安全顾虑正在拖慢自主AI落地，CIO们如何应对#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管要求每个智能体可追踪、可审计并落到责任人，佐证IT集中管控"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q4",
+   "ref": "[[安全顾虑正在拖慢自主AI落地，CIO们如何应对#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "答不出数据与操作范围就不能规模化，佐证IT把可见性作为准入门槛"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[企业买AI，从“尝鲜”变成“算账” - 以前企业采购人工智能大模型，大多只是抱着试一试的心态：这笔费用归在创新预算里，简#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "大型机构采购审核严格，支持员工难以自采绕过采购流程"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[企业买AI，从“尝鲜”变成“算账” - 以前企业采购人工智能大模型，大多只是抱着试一试的心态：这笔费用归在创新预算里，简#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "一体化打包采购，支持采购集中化、个人零散采购空间小"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q2",
+   "ref": "[[企业买AI，从“尝鲜”变成“算账” - 以前企业采购人工智能大模型，大多只是抱着试一试的心态：这笔费用归在创新预算里，简#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "先测试验证再多部门推广，符合IT集中登记下发的路径"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[Who actually controls enterprise AI - Advertisement#^c5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web1",
+   "reason": "业务线在约定护栏内可自行决策，与决策权集中于IT相悖"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[CIOs shoulder AI workforce redesign as governance lags - IT#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web1",
+   "reason": "权限与责任错配，暗示决策权分散而非IT独揽"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[Who actually controls enterprise AI - Advertisement#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "CIO角色扩至统筹企业AI，支持IT侧掌握主导"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[CIOs shoulder AI workforce redesign as governance lags - IT#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web1",
+   "reason": "调研称尚无定式，说明归属未落在IT一侧"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[Who actually controls enterprise AI - Advertisement#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "CIO被视为AI治理主体，支持IT侧负责治理"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[Who actually controls enterprise AI - Advertisement#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web1",
+   "reason": "称不存在通用归属模式，H1只在部分企业成立"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q3",
+   "ref": "[[CIOs shoulder AI workforce redesign as governance lags - IT#^c2]]",
+   "stance": "refutes",
+   "core": true,
+   "partial": false,
+   "round": "web1",
+   "reason": "预算归属同样分散，直接否定预算集中于IT"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "受访者称「不是一刀切的白名单」，开放层由员工自选、IT基本不管，条件1仅部分成立"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "「管得太死，员工会绕过去」，终端管控逼出无日志的影子IT，条件3被反向解释"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[企业AI决策权归谁？治理滞后于应用普及#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "报告称中央IT团队等对AI决策与预算分配影响力最大"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[企业AI决策权归谁？治理滞后于应用普及#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "「决策权分散」，IT仅事后被追责，并非独占决策与预算"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[企业AI决策权归谁？治理滞后于应用普及#^c4]]",
+   "stance": "refutes",
+   "core": true,
+   "partial": false,
+   "round": "counter",
+   "reason": "「所有权分散，不存在单一主导预算模式」，直接否定预算归IT"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[企业AI决策权归谁？治理滞后于应用普及#^c5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "正因所有权分散才把技术负责人嵌入业务部门，说明决策不集中于IT"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "IT受访者按硬件/软件预算池谈单价与替代，采购话语在IT侧"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[对话100位CIO：如何在2025年自研和采购AI#^c6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "称采购决策「受员工影响」，员工并非完全触不到采购环节"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "监管要求身份管理、行为监测、日志审计，支撑统一纳管前提"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "模型算法投用前须数据安全审查，支撑IT侧准入把关"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "日志保存不低于业务存续期，支撑集中日志留存要求"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "生成式AI用于公众服务须向监管报告，纳入统一治理"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "IT买方要求企业级开关、策略统一下发、日志进SIEM"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "要求用户认证与访问控制匹配数据级别，支撑统一管控"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "定期审计不超过六个月，支撑日志与审计可查要求"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "要求AI模型统一管理与外部引入准入机制，支撑条件1"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "供应商准入与安全管理要求，支撑采购由机构集中把关"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "要求设定AI功能边界与系统数据权限、责任可追溯"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "关键决策须人工复核并完整留痕，支撑可追溯治理"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "禁止个人信息用于模型训练，支撑企业版合规采购动因"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[国家金融监督管理总局#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "要求防范智能体身份越权、工具滥用等风险，须统一管控"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[CIO需打造AI部署透明化管理体系#^c1]]",
+   "stance": "refutes",
+   "core": true,
+   "partial": false,
+   "round": "counter",
+   "reason": "「80%的AI支出发生在IT预算之外」，直接推翻预算归IT。"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[CIO需打造AI部署透明化管理体系#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "该80%含人才培养与治理，非员工端工具，只是将论点限定到更窄条件。"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[IDC调查：CIO预算制定指南，2025——企业智能投资与安全影响#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "智能体AI是CIO预算制定重点，指向由IT侧掌握。"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[IDC调查：CIO预算制定指南，2025——企业智能投资与安全影响#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "由CIO做生成式AI预算规划与弹性预留，指向IT侧掌预算。"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[How 100 Enterprise CIOs Are Building and Buying Gen AI in 20#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "预算成「IT与业务线」双线列支，非IT独有。"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[How 100 Enterprise CIOs Are Building and Buying Gen AI in 20#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "明确写业务线预算也付款，采购非IT独占。"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[CIO需打造AI部署透明化管理体系#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "BCG称投资分散到各团队是合理的，支持业务线持预算。"
+  },
+  {
+   "claim": "C1",
+   "sub": "C1-Q1",
+   "ref": "[[How 100 Enterprise CIOs Are Building and Buying Gen AI in 20#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "创新预算占比降至7%，支出转入常规IT预算。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管强制要求日志审计、身份管理等基础设施，管理能力属硬性合规项"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "强制访问策略与访问控制，支持权限边界为必需要求"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管要求对供应商设准入与安全管理，支持准入式门槛"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管要求防范越权、滥用、失控，安全可控成先决条件"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "与第5条同文转载，监管要求安全可控为先决条件"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "投入使用前须安全审查，属前置资格而非事后加分"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "评审首问数据流向、企业级开关、日志导出与权限边界"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "明确称先过合规技术评审，过不了直接出局，是门槛"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "称愿为可管小幅溢价，管理不纯是门槛而是有条件加分"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "称管得太死员工会绕到影子IT，管住本身不构成价值"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "谁使用谁负责，责任可追溯为强制要求"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求对外部引入模型建准入机制，正是资格前置"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求设定功能边界与系统数据权限，权限边界为强制项"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "日志保存不低于业务存续期，审计追溯属强制要求"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "关键决策须留痕可追溯，审计追责为强制要求"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "禁止个人信息用于训练，数据边界为强制约束"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "功能边界与数据和系统权限的强制要求，支持权限门槛"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "日志保存期限强制要求，支持审计追责前置"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "人工复核与完整留痕要求，支持追责为资格条件"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "个人信息不得用于训练，数据边界属强制约束"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "审计周期不超六个月，审计能力为强制合规项"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[邮储银行大模型安全测评工具采购项目公开招标公告 - 邮储银行大模型安全测评工具采购项目公开招标公告#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "招标设POC「通过性指标项」，证明存在资格门槛机制"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[邮储银行大模型安全测评工具采购项目公开招标公告 - 邮储银行大模型安全测评工具采购项目公开招标公告#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "该项目POC测评分计入综合评分，属评分项而非一票否决"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管要求加强供应商准入与安全管理，支撑管理作为准入条件"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者愿为可管小幅溢价，说明管理可能成为加分项"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管强制提升智能体安全保障能力，支撑安全为条件"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "同一监管要求再次出现，同样支撑安全保障为强制"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求身份管理、日志审计等设施，支撑三层可管要求"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "强制访问控制并与数据级别匹配，支撑权限边界层"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "投入使用前须数据安全审查，支撑准入审查为前置"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c7]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "强制年度数据安全风险评估，支撑治理为合规要求"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "明确要求建立外部引入准入机制，直接支撑资格门槛"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "分层管控存在但落地难、员工难判级，可管性被打折"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "管太死逼出影子IT、采购最终看价格，管理非价值"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求功能边界、权限与责任可追溯，支撑三层管理"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求变更记录与日志留存，支撑审计追责层"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "关键决策须人工复核留痕，支撑追责可追溯"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "禁止个人信息用于训练，支撑数据权限边界"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "高风险应用须向监管报告，构成合规前置条件"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "谁使用谁负责、压实主体责任，支撑追责层"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "同为功能边界与责任可追溯要求，支撑三层管理"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "同为变更记录与日志留存要求，支撑审计追责"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "同为人工复核留痕要求，支撑追责可追溯"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "同为训练数据限制，支撑数据权限边界"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q3",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "强制定期审计数据操作，支撑审计追责层"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管要求对涉敏感数据的供应商加强准入和安全管理"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求建立外部模型产品准入机制且可验证可审核可追溯"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管要求建设身份管理、行为监测、日志审计等能力"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求访问控制与数据级别匹配，即数据权限边界为硬要求"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "模型投入使用前须过安全审查，属事前准入"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[国家金融监督管理总局#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "禁止把个人信息用于模型训练，构成数据使用硬约束"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[邮储银行大模型安全测评工具采购项目公开招标公告 - 邮储银行大模型安全测评工具采购项目公开招标公告#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "资格后审未通过即否决投标，佐证资格条款可否决"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[中国建设银行股份有限公司AI财富管理智能服务产品选型测试项目征集公告#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "报名不等于获候选资格，存在筛选关口"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者称愿为可管的小幅溢价，可管性成了加分项"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "称管得太死员工会绕过去，且最终看价格和换机周期"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[国家金融监督管理总局#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求划清功能边界、权限与岗位责任可追溯"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[国家金融监督管理总局#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "关键决策须人工复核并留痕，责任可追溯为强制项"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[国家金融监督管理总局#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求防范身份越权、工具滥用等，属可管性强制要求"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[国家金融监督管理总局#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "高风险场景应用须向监管报告，构成部署前置条件"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者描述三层分级管控，AI工具须单独过评审"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "明确先过合规技术评审否则出局，是门槛不是加分项"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "强制定期审计且周期不超六个月，追责为硬要求"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[国家金融监督管理总局#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "日志保存不低于业务存续期，属审计追责强制项"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q4",
+   "ref": "[[邮储银行大模型安全测评工具采购项目公开招标公告 - 邮储银行大模型安全测评工具采购项目公开招标公告#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "POC设通过性指标项，评审确有硬性否决线"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[安全顾虑正在拖慢自主AI落地，CIO们如何应对#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "Gartner称安全风险是规模化落地最大障碍，支持安全居障碍首位"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[安全顾虑正在拖慢自主AI落地，CIO们如何应对#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "同一报告，77%的CIO视安全风险为最大障碍，支持条件二"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管要求对供应商准入与安全管理，属准入条件"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[安全顾虑正在拖慢自主AI落地，CIO们如何应对#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "86%称安全致延期、63%列为主要障碍，支持安全居前"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管强制建设日志审计等设施，管理属硬要求"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管强制访问控制与认证，数据权限为硬要求"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "投入使用前须安全审查，属准入审查"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[国家金融监督管理总局#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管要求智能体安全可控，防范越权失控"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者仅在有实效时愿小幅溢价，挑战非加分项"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者称管太死会催生影子IT，管住本身非价值，仅窄条件成立"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者明确先过合规评审否则出局，是门槛"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求外部引入模型建准入机制并可追溯，直接支持"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[国家金融监督管理总局#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "要求设定功能边界与数据权限，责任可追溯"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[国家金融监督管理总局#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "日志保存至业务存续期，审计为强制要求"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q2",
+   "ref": "[[国家金融监督管理总局#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "关键决策须人工复核、责任可追溯"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "受访者称「管得太死员工会绕过去」，且最后仍由价格和换机周期拍板。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "监管要求行为监测、日志审计等基础设施，管理能力属强制合规要求。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "受访者称愿为可管的小幅溢价付费，管理可变加分项而非纯门槛。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "监管硬性要求数据访问策略与访问控制，权限边界不是可选项。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "允许用但必须走企业版、SSO、日志落到企业侧，管理是使用前提。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "投入使用前须开展数据安全审查，构成准入式前置条件。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "敏感数据处理须加强供应商准入与安全管理，指向资格门槛。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "监管要求防范越权、滥用、失控，安全治理属强制要求。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "同源条款要求防范身份越权与运行失控，支撑治理是强制项。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "受访者首问统一开关、策略下发和日志进SIEM，管理是首关。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "受访者明确「是门槛，不是加分项」，过不了合规评审就直接出局。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "强制定期审计且周期不超六个月，审计能力是硬性义务。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "要求设定功能与数据权限、责任可追溯，属强制治理条款。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "日志保存不低于业务存续期，审计留痕为强制要求。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "同条款强制功能边界与责任可追溯，支撑治理是资格项。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "同条款强制日志长期留存，支撑审计追责这一层。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "受访者指agent行为责任与追溯链条不清，审计追责层难落地。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "监管要求建立外部引入准入机制并做到可审核、可追溯。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "关键决策须人工复核并留存全链路记录，追责为强制。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "明确谁使用谁负责与主体责任，支撑审计追责这一层。"
+  },
+  {
+   "claim": "C2",
+   "sub": "C2-Q1",
+   "ref": "[[国家金融监督管理总局关于银行业保险业人工智能安全开发应用的指导意见 - 国家金融监督管理总局关于银行业保险业人工智能安全#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "关键决策须人工复核并完整留痕，责任可追溯为强制。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "愿小幅溢价但须对应管理成本或处置时间下降，印证条件3"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "称管得太死致影子IT，「管住」本身不是价值，论点仅在更窄条件下成立"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "明确管理是门槛非加分项，过关后拉不开差距，拍板看价格与换机周期"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "关注与Intune、SCCM及SIEM对接，印证生态集成成本影响选型"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[云之龙咨询集团有限公司WPS AI智能办公平台技术服务项目（GXZC2026-C3-001075-YZLZ）竞争性磋商公#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "实施含与既有OA、邮件、单点登录对接，印证生态集成成本"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者称只在小幅溢价且能降低管理成本时才多付，吻合可量化收益条件"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者明确称管理只是门槛不是加分项，最后看价格与换机周期"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者把与Intune、SCCM等现有工具的配合列为评审关切，支持生态集成计权"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者称可管理性拉不开差距，最后看价格与合同打包"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q4",
+   "ref": "[[对话100位CIO：如何在2025年自研和采购AI#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "采购流程标准化，价格等因素进入评审，支持过关后按价格等选"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者称管得太死会逼出影子IT、风险更大，管理并非价值，只对放开可追溯的场景成立"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者明确说管理是门槛不是加分项，拍板看价格、换机周期和合同打包"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者称只在减少管理成本或缩短处置时间时才小幅溢价，支持条件三"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[Microsoft 2026-10 Windows混合智能#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "平台已把治理能力内建到Intune/Agent 365，说明管理正成为标配"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "审计追责链条尚未解决，风险收益无法量化，条件(3)不成立"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "买方要求日志进SIEM、与Intune集成，生态集成是评审内容"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者明说管理是门槛而非加分项，最终看价格与合同打包"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[Microsoft 2026-10 Windows混合智能#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "厂商把可管理性说成组织默认预期，而非差异化卖点"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[Microsoft 2026-10 Windows混合智能#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "身份与隔离由平台内建，说明管理能力正趋于标配"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[Microsoft 2026-10 Windows混合智能#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "MXC随Windows 11正式可用，运行时隔离成为平台默认能力"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "监管强制日志审计等能力，构成所有厂商共同的准入线"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[Intel vPro Fleet Services in Intune Managing a Device…#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "OS级管理在最需要时失去可见性，说明管理仍存在差距"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者称管得太死会逼出影子IT，采购最终看价格与换机周期"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[Microsoft 2026-10 Windows混合智能#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "云预算难以支撑需求，买方对成本与TCO更敏感"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "按数据级别做访问控制是强制要求，属于准入门槛"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "模型须可验证、可审核、可追溯，使管理成为合规准入项"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "上线前须通过数据安全审查，属硬性前置条件"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[国家金融监督管理总局关于印发银行保险机构数据安全管理办法的通知 - 第四十七条 银行保险机构应当开展数据安全的技术基础设#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "供应商准入与安全管理要求，使合规成为门槛"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[ComputerWeekly 2025-10 Omdia称Win11才是换机主因#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "极少客户把AI能力列为首要优先级，能力卖点不决定胜负"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[ComputerWeekly 2025-10 Omdia称Win11才是换机主因#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "买方优先看性能、电池与兼容性，可管理性排在后面"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q2",
+   "ref": "[[Intel vPro Fleet Services in Intune Managing a Device…#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "该覆盖缺口是所有OS级工具通病，候选之间拉不开差距"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q3",
+   "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "采购成本占TCO近半，支持价格/TCO为评审重点。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q3",
+   "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "远程管理价值体现为减少现场维护的TCO，属可量化收益。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q3",
+   "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "报价含三年上门与镜像部署，未见管理能力单列。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q3",
+   "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web1",
+   "reason": "远程管理工具许可单列为成本项，管理并非免费标配。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q3",
+   "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "管理平台采购后统一部署，非采购阶段的差异项。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q3",
+   "ref": "[[商用电脑 vs 消费电脑，企业采购到底买哪个？#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "两方案单价并列比较，价格是评审直接比选项。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q3",
+   "ref": "[[商用电脑 vs 消费电脑，企业采购到底买哪个？#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "人工与等待成本计入TCO，支持按总成本比选。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q3",
+   "ref": "[[商用电脑 vs 消费电脑，企业采购到底买哪个？#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "维修台数可预估，说明故障风险成本可量化。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q3",
+   "ref": "[[商用电脑 vs 消费电脑，企业采购到底买哪个？#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "三年上门使维修成本归零，属可量化风险下降。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q3",
+   "ref": "[[商用电脑 vs 消费电脑，企业采购到底买哪个？#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "vPro/AMT远程修复省人力时间，管理价值可量化。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q3",
+   "ref": "[[商用电脑 vs 消费电脑，企业采购到底买哪个？#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "军规、TPM、上门均为出厂标配，管理项拉不开差距。"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "受访者愿「小幅溢价」以降低管理成本、缩短处置时间为前提，符合条件(3)"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "远程管理功能被折算为TCO下降，管理的价值按量化口径计算"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "采购成本是TCO最大单项，说明价格在评标中权重靠前"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "管理成本计入TCO并且可以量化，并非单独列出的管理溢价"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "远程管理平台随硬件统一部署，管理能力成了标配"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "管理、日志与Intune/SCCM集成都是入场必答项，不是溢价项"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "明确「是门槛，不是加分项」，并且最后按价格和合同打包决定"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "「管得太死」会逼出影子IT，管理门槛本身失效，论点只在更窄条件下成立"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[云之龙咨询集团有限公司WPS AI智能办公平台技术服务项目（GXZC2026-C3-001075-YZLZ）竞争性磋商公#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "与OA、邮件、单点登录的对接单独列为服务内容，集成成本进入采购考量"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[邮储银行大模型安全测评工具采购项目公开招标公告 - 邮储银行大模型安全测评工具采购项目公开招标公告#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "设有「通过性指标项」，说明部分要求按通过项处理，而不是按评分项处理"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[邮储银行大模型安全测评工具采购项目公开招标公告 - 邮储银行大模型安全测评工具采购项目公开招标公告#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "POC测试分计入综合评分，技术/安全能力仍参与打分"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "单台价含保修与镜像部署，管理能力随硬件打包计价"
+  },
+  {
+   "claim": "C3",
+   "sub": "C3-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "追溯责任链条未解，管理能力尚未标准化，所以条件(2)只在更窄范围成立"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者说单独订阅要走软件预算但与安全协同工具抢同一池子，独立AI预算盘子很小"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q4",
+   "ref": "[[企业买AI，从“尝鲜”变成“算账” - 以前企业采购人工智能大模型，大多只是抱着试一试的心态：这笔费用归在创新预算里，简#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "称企业AI费用仍归创新预算、试水性质，非新增软件服务科目"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q4",
+   "ref": "[[对话100位CIO：如何在2025年自研和采购AI#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "称AI费用转入集中IT和业务部门预算，已成核心业务支出"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q4",
+   "ref": "[[企业AI决策权归谁？治理滞后于应用普及#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "称支出所有权分散、无单一主导预算模式，削弱科目集中说法"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q4",
+   "ref": "[[CIO需打造AI部署透明化管理体系#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "BCG称80%AI支出在IT预算之外，不指向软件服务科目"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q4",
+   "ref": "[[CIO需打造AI部署透明化管理体系#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "同上引述80%在IT预算外，且投向人才与治理非软件订阅"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q4",
+   "ref": "[[CIO需打造AI部署透明化管理体系#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "称投资分散到不同团队是合理的，不支持单一软件服务科目"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q4",
+   "ref": "[[对话100位CIO：如何在2025年自研和采购AI#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "金融科技公司停止自建转而采购现成产品，属软件采购成交"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q4",
+   "ref": "[[企业买AI，从“尝鲜”变成“算账” - 以前企业采购人工智能大模型，大多只是抱着试一试的心态：这笔费用归在创新预算里，简#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "称AI投入不再是试水费而划入正规经营成本，钱是新增科目"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q4",
+   "ref": "[[企业买AI，从“尝鲜”变成“算账” - 以前企业采购人工智能大模型，大多只是抱着试一试的心态：这笔费用归在创新预算里，简#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "打包采购算力模型应用，含硬件，非单纯软件服务科目"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q4",
+   "ref": "[[企业买AI，从“尝鲜”变成“算账” - 以前企业采购人工智能大模型，大多只是抱着试一试的心态：这笔费用归在创新预算里，简#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "称验证后持续追加投入并多部门复用，体现真实持续付费"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": true,
+   "partial": true,
+   "round": "kb",
+   "reason": "称管理能力只是门槛，厂商难以据此溢价，采购最终看价格"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "refutes",
+   "core": true,
+   "partial": true,
+   "round": "kb",
+   "reason": "称可管理性是门槛非加分项，不会因此多付钱"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者称跟PC来的算硬件预算，单独订阅要与既有软件抢同一个池子，独立AI预算盘子小、不可持续"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": true,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者明确称管理能力只是门槛不加分，不会为可管理溢价，采购仍看价格与换机周期"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "「受访者称单独订阅也要跟安全软件抢同一预算池」，并非新增钱，独立AI预算盘子小且不可持续"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q3",
+   "ref": "[[联想 TruScale DaaS for AI PCs 页面#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "官网写明AI PC采用与专家服务打包进同一份订阅合同，有可查计费形态"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者称可管理性「是门槛，不是加分项」，不会为此多付钱"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者明言「管住」本身不是价值，厂商拿可管理溢价很难过关"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "订阅要与现有安全或协同工具抢同一个池子，独立AI预算盘子小、不可持续"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[摩根斯坦利3Q26 CIO调查：硬件支出加速主要受涨价和提前采购驱动，DELL表现最佳 - 清空#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "CIO预期预算持平或下降、本地AI部署未增，新增资金存疑"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[摩根斯坦利3Q26 CIO调查：硬件支出加速主要受涨价和提前采购驱动，DELL表现最佳 - 清空#^c5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "预算调整由硬件涨价和提前采购驱动，钱向硬件走"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[摩根斯坦利3Q26 CIO调查：硬件支出加速主要受涨价和提前采购驱动，DELL表现最佳 - 清空#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "硬件价格翻倍、采购提前，预算被硬件占用"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[跟大侠学创新 （前沿实践）探索你未曾联想的联想（11）：联想与降本增效#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "厂商披露DaaS实际用户规模，可作计费单元有成交的弱证据"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": true,
+   "partial": true,
+   "round": "kb",
+   "reason": "明确否认「可管理」能溢价，采购只看价格与换机周期"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q3",
+   "ref": "[[レノボ、日立グループに最大17万3,000台規模のPC運用をDaaSで提供｜Infoseekニュース - ×#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "日立为实名买家、按月付费订阅DaaS，佐证订阅计费单元真实存在"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q3",
+   "ref": "[[レノボ、日立グループに最大17万3,000台規模のPC運用をDaaSで提供｜Infoseekニュース - ×#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "单一合同按月收费、含硬件与服务，计费单元表述明确"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q3",
+   "ref": "[[レノボ、日立グループに最大17万3,000台規模のPC運用をDaaSで提供｜Infoseekニュース - ×#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web1",
+   "reason": "DaaS由既有采购/租赁预算转换而来，更像预算搬家而非新增资金"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q3",
+   "ref": "[[レノボ、日立グループに最大17万3,000台規模のPC運用をDaaSで提供｜Infoseekニュース - ×#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "给出日立约17.3万台PC的合同规模，佐证DaaS成交体量"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q2",
+   "ref": "[[Microsoft 365 Copilot Licensing + Cost Enterprise Guide (202#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "四个 Copilot SKU 按用户每月明码标价，席位计费单元清楚"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q2",
+   "ref": "[[Microsoft 365 Copilot Licensing + Cost Enterprise Guide (202#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "$30/用户/月附加订阅，直接给出可查席位计费口径"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q2",
+   "ref": "[[Microsoft 365 Copilot Licensing + Cost Enterprise Guide (202#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "GitHub Copilot 按席位 $19/$39 定价，计费单元明确"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q2",
+   "ref": "[[Microsoft Copilot ROI Calculator for Enterprise EPC Group#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "席位×年费的 license 费测算，落在软件订阅科目（测算非成交）"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q2",
+   "ref": "[[Microsoft 365 Copilot Licensing + Cost Enterprise Guide (202#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "Copilot Studio 按消息计量，agent 消费有可查计费单元"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q2",
+   "ref": "[[Microsoft 365 Copilot Licensing + Cost Enterprise Guide (202#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "Security Copilot 按 SCU 小时计费，安全科目有计费单元"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "受访者说随 PC 来的算硬件预算，单独订阅要抢既有软件池子，独立 AI 预算盘子小；只在窄条件下成立"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[对话100位CIO：如何在2025年自研和采购AI#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "AI 模型与应用费用走集中的 IT 和业务部门预算，指向软件侧"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[Microsoft 2026-07 FY26Q4 财报电话会#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "3000 万付费 Copilot 席位且净增翻倍，正是可查席位计费与真实付款"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[对话100位CIO：如何在2025年自研和采购AI#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "金融科技公司停自建改买第三方产品，是软件采购的真实成交"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "受访者称管理能力只是门槛不是加分项，采购仍看价格与换机周期，溢价难成立"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[Morgan Stanley CIO survey Why AI hype isn’t boosting 2026 I#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "「K型预算」是把支出再分配给软件，属再分配，且AI资金来自IT之外，削弱「新增且记在软件科目」前提"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[Morgan Stanley CIO survey Why AI hype isn’t boosting 2026 I#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "AI热度未转化为IT预算增长，新增资金前提缺乏支撑"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[Morgan Stanley CIO survey Why AI hype isn’t boosting 2026 I#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "IT服务预算增速下滑最明显，直接削弱管理服务科目增长"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[Morgan Stanley CIO survey Why AI hype isn’t boosting 2026 I#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "软件内数据管理、安全、应用平台被点名受益于GenAI变现，支持向软件与服务倾斜"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[CIOs Consolidate Platform Spending as AI Moves From Pilot to#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "平台支出是「再分配」口径，未给新增预算证据，削弱新增前提"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[CIOs Consolidate Platform Spending as AI Moves From Pilot to#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "CIO收窄平台栈，钱在厂商间挪移而非按席位新增"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[CIOs Consolidate Platform Spending as AI Moves From Pilot to#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "AI不再是孤立试点，意味转入常态化预算科目，利于形成计费单元"
+  },
+  {
+   "claim": "C4",
+   "sub": "C4-Q1",
+   "ref": "[[CIOs Consolidate Platform Spending as AI Moves From Pilot to#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "AI与安全、云捆绑决策，支持新增支出落在安全或云订阅科目"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者称愿为可管个人AI小幅溢价，但附降本前提，非NPU条目"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者明言采购看价格与换机周期，管理卖点难溢价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q3",
+   "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "商用机单价按配置保修部署构成，无AI项"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者称管理能力是门槛，拍板看价格与换机"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "价格上涨使企业选低配或延长周期，未见为 AI 付费"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "涨价归因内存，买方推迟升级，属成本驱动"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者称愿为可管 AI 小幅溢价，溢价并非不存在"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[Gartner 2026-02 内存涨价压低出货#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "AI PC 涨价推迟渗透，买方未消化溢价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "成本压力下厂商只能涨价或降规格，非 AI 单列"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "AI 主要在云端，企业不急升级带 NPU 机型"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "企业等降价再换机，采购理由非 AI"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "AI 性能差异由内存配置承担，可归入配置项"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "全面涨价并降内存规格，价格变动源于元器件"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "Copilot+ 所需内存成本上升，价差归内存"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "买方质疑为 Copilot 花千元换机是否值得"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者称采购看价格与换机周期，管理能力不加价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[Gartner 2026-02 内存涨价压低出货#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "内存成本推高出货下滑，需求随价格收缩"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[Gartner 2026-02 内存涨价压低出货#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "PC 涨价 17% 归因 DRAM/SSD 暴涨，非 AI 溢价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[Gartner 2026-02 内存涨价压低出货#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "内存占 BOM 升至 23%，涨价来源可解释"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "芯片内存短缺致低价机缺位，属成本因素"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "内存占制造成本 35%，涨价由元器件解释"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "内存存储占 BOM15-18%，口径与上条不同但同向"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[Gartner 2026-02 内存涨价压低出货#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "企业延长换机周期 15%，以周期应对涨价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "成交价按 CPU 内存保修报价，无 AI 条目"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者称可管理性是门槛，不会为此多付钱"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "涨价17%归因AI挤占内存，属成本推动而非AI溢价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者愿为可管AI小幅溢价，仅在降低管理成本时成立"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "涨价令企业降配或延长周期，价格主导采购"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "企业等降价再升级，未见为AI付费意愿"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "成本压力下要么涨价要么降配，非AI溢价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "AI主要走云端，企业不急升级AI PC"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "内存占制造成本35%，涨价来自内存"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "内存存储占BOM 15-18%，口径与时点不同"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "厂商全面涨价并在入门机降内存规格"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "减内存伤性能尤其AI，压力来自内存成本"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "Copilot+所需内存更贵，推高整机成本"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "质疑为Copilot功能换新机是否值1000美元"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "低价高性能机缺位源于芯片内存短缺"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "采购看价格与换机周期，管理溢价不接受"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "AI订阅单独按人月4.99美元计价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "可管理性是门槛，拍板看价格与换机周期"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[Lenovo Qira Cross-Device AI Assistant at MWC 2026#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "AI能力按每设备每月8美元起单独定价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "涨价致AI PC普及放缓，买方按价格与周期决策，并非为AI付费"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "17%涨价归因内存涨价，买方推迟升级，说明不是AI溢价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "成本压力迫使涨价或降规格，AI体验被挤向高端，非AI定价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "企业等降价再上AI PC，说明不为AI能力付溢价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者称愿为可管的AI小幅溢价（附前提），论点仅在无管理收益时成立"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "采购看价格与换机周期，管理能力只是门槛，拿它溢价难成立"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "厂商全面涨价并降内存规格，涨价由成本而非AI驱动"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "Copilot+所需内存成本高，涨价源于内存而非NPU条目"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "一价全包含保修与部署，未见AI能力单独条目"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "AI主要走云端，企业不急于升级，无需为端侧AI付费"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "内存占制造成本35%，佐证涨价由内存推动"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "内存存储占BOM约15-18%，口径虽不同仍指向内存成本"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "减内存不可行且AI尤受影响，成本杠杆是内存而非NPU"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "可管理性是门槛非加分项，拍板看价格与换机周期"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[河南省实验中学人工智能垂类模型场景应用电脑购置项目-成交公告#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "采购项目直接以AI场景应用电脑立项，买方理由含AI"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[河南省实验中学人工智能垂类模型场景应用电脑购置项目-成交公告#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "报价仅为整机单价，未列AI或NPU单项"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "芯片内存短缺使低价机难现，涨价由供应成本驱动"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "买方质疑为Copilot花千元换机，不愿为AI付费"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[河南省实验中学人工智能垂类模型场景应用电脑购置项目-成交公告#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "成交公告以AI场景电脑项目命名，买方理由含AI"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q4",
+   "ref": "[[河南省实验中学人工智能垂类模型场景应用电脑购置项目-成交公告#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "成交总额等于数量乘单价，未见AI单项加价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[销量下滑却赚得更多！PC厂商依靠高价实现增收#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "均价上涨而出货量缩减，符合溢价就是均价上涨的解释，并未拆分出AI项"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[销量下滑却赚得更多！PC厂商依靠高价实现增收#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web1",
+   "reason": "声称买方愿为AI算力和大内存的高端机型付钱，把AI和内存配置混为一谈"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[销量下滑却赚得更多！PC厂商依靠高价实现增收#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "惠普收入增而出货量降，说明增长来自单价和结构，并非AI单独计价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[销量下滑却赚得更多！PC厂商依靠高价实现增收#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "内存涨价传导到整机，为均价上涨提供成本端解释"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[销量下滑却赚得更多！PC厂商依靠高价实现增收#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "厂商涨价是为了弥补销量下滑，说明提价由成本驱动，而不是AI溢价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q3",
+   "ref": "[[JJ202600176便携式计算机网上竞价成交公告#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "NPU只作为芯片参数出现，未见「AI能力」单独计价条目"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q3",
+   "ref": "[[JJ202600176便携式计算机网上竞价成交公告#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "采购理由写的是符合要求、价格最低，未把AI能力当作理由"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "价格上涨使企业买低配或延长换机周期，采购动机是预算而非AI能力"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "涨价由内存推动，企业推迟升级，属成本而非AI溢价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "AI PC高价源于内存成本，厂商只能涨价或降规格"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "企业等价格下降再升级，说明不为AI能力额外付费"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "受访者称愿为可管理的个人AI小幅溢价，且存在独立AI预算"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "AI主要在云端完成，企业不急于为PC端AI升级付费"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "Copilot+推高的是内存成本，导致低价机型难做"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "内存占制造成本35%，价差可归因内存而非AI"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "内存存储占BOM15-18%（口径与上条不同），成本项仍是内存"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC价格大幅上涨，廉价时代短期内难以回归#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "AI性能受内存容量制约，成本落在内存配置项上"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "受访者称采购只看价格和换机周期，管理能力是门槛非加分项"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "涨价信号伴随入门机型降内存规格，非AI能力计价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "买方质疑是否愿为Copilot功能掏钱换机"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "受访者称可管理性是门槛，最终看价格与换机周期，不为此多付"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "芯片内存短缺致低价机型缺位，价格由元器件驱动"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "成交价2980元对应明确CPU/内存/存储/保修配置，无AI条目"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[高單價 AI 筆電能否帶動企業換機潮與投資價值？#^c2]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "把ASP上涨部分归因于「NPU整合」，暗示AI被计入价格，但只有厂商侧均价口径，没有同配置的价差证据"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[HP's keyboard PC is back with AMD's Ryzen AI 400 chip, a 32W#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "两代处理器搭载同款NPU，说明NPU不能解释配置之间的价差"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[高單價 AI 筆電能否帶動企業換機潮與投資價值？#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "称「硬體溢價」已反映在毛利率上，但没有给出买方逐项报价，也不能排除只是机型结构变化带来的影响"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[高單價 AI 筆電能否帶動企業換機潮與投資價值？#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "涨价归因于记忆体成本这一「AI附加稅」，企业观望，采购动因是Win10换机"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[高單價 AI 筆電能否帶動企業換機潮與投資價值？#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "称企业看重地端AI推理的降本价值，触及「采购理由非AI」这一条件，但没有价格条目作支撑"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[HP's keyboard PC is back with AMD's Ryzen AI 400 chip, a 32W#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "报价按处理器、内存、存储罗列，看不出AI能力这一单独计价项"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[HP's keyboard PC is back with AMD's Ryzen AI 400 chip, a 32W#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "与入门款同代且有同款NPU，价差可由CPU与内存解释"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q1",
+   "ref": "[[HP's keyboard PC is back with AMD's Ryzen AI 400 chip, a 32W#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "涨价被归因于处理器更强，没有提AI能力的单独加价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[《產業》美PC ASP首度突破1,000美元 價漲量縮_富聯網#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web2",
+   "reason": "将ASP与高价机出货增长归因于AI渗透率，未拆分配置与内存成本"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[《產業》美PC ASP首度突破1,000美元 價漲量縮_富聯網#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "明确ASP走高源于内存、SSD、CPU涨价，支持成本推动"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[《產業》美PC ASP首度突破1,000美元 價漲量縮_富聯網#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "涨价导致出货缩减的共识，符合成本推动而非AI溢价"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[《產業》美PC ASP首度突破1,000美元 價漲量縮_富聯網#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "ASP涨幅扩大而出货两位数衰退，符合价涨量缩的成本推动"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[DigitalToday 2026-09 AI PC推高单价#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "HP出货减16%营收增18%，涨价非需求或AI溢价所致"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[News by Dow Jones Newswires on TradingView, 2026-09-04 - Exc#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "厂商减量抬价且奏效，符合价涨量缩的成本推动"
+  },
+  {
+   "claim": "C5",
+   "sub": "C5-Q2",
+   "ref": "[[《產業》美PC ASP首度突破1,000美元 價漲量縮_富聯網#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "预算承压致采购暂缓、出货下滑，买方未为AI付费"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[CIO需打造AI部署透明化管理体系#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "显示技术负责人承受AI回报压力，支撑条件二前半"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[摩根斯坦利3Q26 CIO调查：硬件支出加速主要受涨价和提前采购驱动，DELL表现最佳 - 清空#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "七成CIO预计预算持平或下降，支撑预算收紧"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[摩根斯坦利3Q26 CIO调查：硬件支出加速主要受涨价和提前采购驱动，DELL表现最佳 - 清空#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "硬件支出增长靠周期性涨价而非AI需求，支持标签不扩容"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者称只在小幅溢价且能降管理成本时才付钱"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[对话100位CIO：如何在2025年自研和采购AI#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "采购已看价格与安全，而非只看AI标签"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[CIO需打造AI部署透明化管理体系#^c1]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "AI支出多走IT预算外，压力未必落到终端预算"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[CIO需打造AI部署透明化管理体系#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "同前，八成AI支出在IT预算外，限制论点适用面"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[摩根斯坦利3Q26 CIO调查：硬件支出加速主要受涨价和提前采购驱动，DELL表现最佳 - 清空#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "涨价与供应不确定迫使CIO调整与提前预算"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[摩根斯坦利3Q26 CIO调查：硬件支出加速主要受涨价和提前采购驱动，DELL表现最佳 - 清空#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "增长源于ASP上涨与提前采购，非AI结构性需求"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[摩根斯坦利3Q26 CIO调查：硬件支出加速主要受涨价和提前采购驱动，DELL表现最佳 - 清空#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "存储、服务器与PC价格涨幅翻倍，支撑终端涨价"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者称管理能力只是门槛，采购最终看价格与换机周期"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者明确管理能力是门槛非加分项，不因此多付钱"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[数位时代 2026-10 AI换机潮落空#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "说明2025年换机动力来自Win10停售，而非AI功能，佐证AI标签不驱动采购"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[《產業》美PC ASP首度突破1,000美元 價漲量縮_富聯網#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "ASP双位数上涨，下半年出货双位数衰退，价升量缩已成共识"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[数位时代 2026-10 AI换机潮落空#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "IDC数据显示2026Q3全球PC出货年减20.1%，说明需求明显收缩"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[数位时代 2026-10 AI换机潮落空#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "IDC与Gartner均预估2026年全球PC ASP涨约17%至18%，终端价确实走高"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "厂商发出全面涨价信号，并在入门机型降级内存，直接对应降配置行为"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "分析师称成本压力迫使厂商提价或降规格，且AI PC体验被推迟到高端"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "AI主要经云端浏览器完成，企业不急升级AI PC，削弱AI标签拉动力"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[《產業》美PC ASP首度突破1,000美元 價漲量縮_富聯網#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "内存、SSD、CPU续涨，ASP逐季走高而出货逐季走滑，传导链条清楚"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[《產業》美PC ASP首度突破1,000美元 價漲量縮_富聯網#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "美国Q2 ASP首破千美元、Q4再创新高，出货量跌至全年低点"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[《產業》美PC ASP首度突破1,000美元 價漲量縮_富聯網#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "美国Q2 ASP年增12%、高阶机款出货增近37%，印证终端价上行"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[《產業》美PC ASP首度突破1,000美元 價漲量縮_富聯網#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "预估Q3、Q4美国ASP年增16%、18%，下半年出货年减18.4%"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[《產業》美PC ASP首度突破1,000美元 價漲量縮_富聯網#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "HP、Dell因ASP上涨与公教预算承压暂缓采购，出货下滑，属延长周期行为"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者称只愿小幅溢价，前提是确实降低管理成本或缩短事件处置时间"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[数位时代 2026-10 AI换机潮落空#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "内存与存储成本由约70美元涨至294美元，占零件成本42%，源头明确"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "芯片与内存短缺使低成本笔电短期难现，指向涨价与降规格"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "Copilot+所需内存变贵，600美元以下笔电难推出，成本直接传导"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者质疑为Copilot多花千美元换机，AI功能不足以驱动采购"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者称可管理性只是门槛不是加分项，不会因此多付钱，最终看价格与换机周期"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者明言「管住」本身不是价值，厂商以此溢价很难过关，采购仍看价格"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "受访者明言只有减少管理成本或缩短处置时间才愿小幅溢价，直接支持论点"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者明说「管住」本身不算价值，管理能力只是门槛，决定因素是价格和换机周期"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "指出采购成本占TCO近半，印证终端成本压力真实存在"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "把可管理性与减少现场维护次数这类可量化成本挂钩"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "大批量低配低价成交，侧面显示配置与单价被压缩"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者强调可管理性只是门槛非加分项，不为风险降低多付钱"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[2026年企业办公电脑采购方案… - 行业动态 - 华南腾飞科技#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "给出运维成本占比，为量化节省提供可核口径"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[WS-A 专家访谈（模拟）#^e6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "指出agent行为责任与审计追溯讲不清，风险降低难以量化证明"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "愿小幅溢价但须以减少管理成本或缩短处置时间为前提，绑定可量化收益"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "受访者称管控非价值、会被绕过且风险反增，风险降低难作依据"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q4",
+   "ref": "[[销量下滑却赚得更多！PC厂商依靠高价实现增收#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "厂商以AI PC为由提价，印证标签用于抬价"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "可管理只是门槛，最终拍板看价格与换机周期"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q4",
+   "ref": "[[联想搞钱的方式，变了-钛媒体官方网站#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "出货量预降约15%，印证终端需求收缩"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q4",
+   "ref": "[[销量下滑却赚得更多！PC厂商依靠高价实现增收#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "2026年PC均价涨约20%、出货进一步缩减"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q4",
+   "ref": "[[销量下滑却赚得更多！PC厂商依靠高价实现增收#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "惠普收入增而出货降16%，印证涨价缩量"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q4",
+   "ref": "[[销量下滑却赚得更多！PC厂商依靠高价实现增收#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "内存价格上游压力传导至整机市场"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q4",
+   "ref": "[[销量下滑却赚得更多！PC厂商依靠高价实现增收#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "kb",
+   "reason": "厂商被迫提价以弥补销量下滑营收"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q4",
+   "ref": "[[WS-A 专家访谈（模拟）#^e6]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "kb",
+   "reason": "agent问责与审计追溯链缺失，风险降低难量化证明"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[IDC Analyst Enterprises Are Finally Seeing AI Returns, But#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "建议收窄AI范围并维持现有设备，符合预算收紧、延长换机"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[Investing.com 2026-01 摩根士丹利CIO调查AI未抬高IT预算#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "调研称AI热情未转化为IT预算增长，AI标签扩不了预算"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[Investing.com 2026-01 摩根士丹利CIO调查AI未抬高IT预算#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "预算从硬件通信转向软件，硬件侧确实被压缩"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[Investing.com 2026-01 摩根士丹利CIO调查AI未抬高IT预算#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "IT预算增速由3.5%降至3.4%，印证整体收紧"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[IDC Analyst Enterprises Are Finally Seeing AI Returns, But#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "高价新设备重塑预算讨论，指向续用而非照常换机"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[IDC Analyst Enterprises Are Finally Seeing AI Returns, But#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "新设备价格改变算账逻辑，支持价格收紧前提"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[IDC Analyst Enterprises Are Finally Seeing AI Returns, But#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "高价支出挤压其余预算，终端可分配额度变小"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q2",
+   "ref": "[[IDC Analyst Enterprises Are Finally Seeing AI Returns, But#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "AI资金出自同一预算池，不扩大总盘子"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[CIOs told Prove your AI pays off – or pay the price#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "AI预算与目标达成挂钩，否则被削减或冻结，支持凭证明获批"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[Decision 7 of 7 when ai budgets require measurable proof#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "与第1条同一调查的同口径复述，方向一致但不算独立佐证"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[CIOs told Prove your AI pays off – or pay the price#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "董事会要求可量化ROI，保预算取决于能否证明回报"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[Decision 7 of 7 when ai budgets require measurable proof#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "同一调查的98%数字，支持证明价值的压力上升"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[CIOs told Prove your AI pays off – or pay the price#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "薪酬与可量化AI成果挂钩，佐证证明价值的压力"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[Decision 7 of 7 when ai budgets require measurable proof#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "直接断言AI资金按证明评估，贴合论点机制"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[CIOs earn AI reprieve, but ROI pressure is surging - CIOs ea#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "被砍的是无成果的「我们在做AI」科目，标签不再保预算"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[CIOs told Prove your AI pays off – or pay the price#^c4]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "web1",
+   "reason": "称资金仍持续涌入AI且未见降本增收，说明标签仍能拿钱"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[Decision 7 of 7 when ai budgets require measurable proof#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "无法绑定业务成果则整体组合难辩护，支持绑定可量化收益"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[CIOs earn AI reprieve, but ROI pressure is surging - CIOs ea#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "成功者在立项前就给每个项目挂指标，支持可量化前提"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[CIOs earn AI reprieve, but ROI pressure is surging - CIOs ea#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "受冲击的是无法交代的AI开支，而非AI开支本身"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[Decision 7 of 7 when ai budgets require measurable proof#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "ROI自项目启动即内置，支持可量化收益为获批前提"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[Decision 7 of 7 when ai budgets require measurable proof#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "过去试点凭潜力拨款，反衬如今须凭证明"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[CIOs earn AI reprieve, but ROI pressure is surging - CIOs ea#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "钱仍流向挂硬指标的项目，支持可量化才获批"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[CIOs earn AI reprieve, but ROI pressure is surging - CIOs ea#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "无硬指标的试点被悄悄断粮，支持标签本身不保预算"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[CIOs earn AI reprieve, but ROI pressure is surging - CIOs ea#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web1",
+   "reason": "压力重塑开支而非削减总额，呼应标签只改变钱投向"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[数位时代 2026-10 AI换机潮落空#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "換機由Win10停援驅動而非AI功能，說明AI標籤不驅動採購"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "記憶體成本迫使廠商漲價或降規格，支持終端價格收緊"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "AI多在雲端完成，企業不急於為AI PC升級"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "願小幅溢價的前提是降低管理成本或處置時間"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "受訪者質疑是否願為Copilot功能花千元換機"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "廠商發出漲價信號並在入門機降記憶體規格"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[数位时代 2026-10 AI换机潮落空#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "PC出貨年減20.1%，顯示換機需求明顯收縮"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[数位时代 2026-10 AI换机潮落空#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "IDC與Gartner均預估2026年PC均價漲約17–18%"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "記憶體成本上升使低價筆電難推出，指向漲價降規"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "可管理性只是門檻，拍板仍看價格與換機周期"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[WS-A 专家访谈（模拟）#^e5]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "受訪者否定「管住即價值」，管控溢價難過會"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[数位时代 2026-10 AI换机潮落空#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "記憶體與儲存成本由70美元漲至294美元，占比42%"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[企业PC升级面临挑战：2026年价格上涨配置下降 - 企业PC升级面临挑战：2026年价格上涨配置下降#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "晶片與記憶體短缺使低成本高效能筆電短期難現"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[2026年全球PC和手机出货量将因内存成本上升而下降#^c5]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "企业PC使用年限延长15%，直接支撑延长换机周期这一条件"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[2026年全球PC和手机出货量将因内存成本上升而下降#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "出货量下滑佐证成本推高价格、需求收缩，支持预算收紧"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[2026年全球PC和手机出货量将因内存成本上升而下降#^c6]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "AI PC份额达标推迟，说明AI标签未能抵御涨价、扩大预算"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[2026年全球PC和手机出货量将因内存成本上升而下降#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "内存与SSD涨价130%，是预算收紧成本端的直接来源"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[2026年全球PC和手机出货量将因内存成本上升而下降#^c4]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "counter",
+   "reason": "价格上涨促使延长使用周期、改变升级节奏，支持条件一"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q1",
+   "ref": "[[2026年全球PC和手机出货量将因内存成本上升而下降#^c3]]",
+   "stance": "refutes",
+   "core": false,
+   "partial": true,
+   "round": "counter",
+   "reason": "需求集中于高端设备，与降配置方向相反，只支持涨价一半"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[Westpac spends US$12,000 in AI tokens on intranet migration#^c2]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "给出 token 成本数字，是量化收益论证的一环，但无审批结果"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[Westpac spends US$12,000 in AI tokens on intranet migration#^c3]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "仅断言 ROI 很清楚，无收益数字也无审批记录，支持力弱"
+  },
+  {
+   "claim": "C6",
+   "sub": "C6-Q3",
+   "ref": "[[Westpac spends US$12,000 in AI tokens on intranet migration#^c1]]",
+   "stance": "supports",
+   "core": false,
+   "partial": false,
+   "round": "web2",
+   "reason": "与 token 成本对比可算出量化节省，但仍无获批证据"
+  }
+ ]
+}

@@ -1,0 +1,929 @@
+{
+  "question": {
+    "id": 4,
+    "title": "和方针冲突、前提可疑",
+    "text": "员工肯定愿意为 AI 单独付钱。我想明年推一个直接卖给员工个人的 AI 订阅，你帮我拆一下怎么做。"
+  },
+  "run": 1,
+  "ms": 277211,
+  "conversation": [
+    {
+      "round": 1,
+      "texts": [
+        "这句“肯定愿意”在资料里找不到证据，我会把它拆成要先检验的一支。另外，方针里明说不做员工个人的付费订阅，这一处得出你来定。"
+      ],
+      "tools": [
+        {
+          "tool": "frame_topic",
+          "why": "用户第一次开口，先把原话和能推出来的三项记下来，看资料包里有哪几条要标"
+        },
+        {
+          "tool": "frame_topic",
+          "why": "把资料包每条按用户方向标成一致/冲突/无关，好确定最卡拆题的那条冲突"
+        }
+      ],
+      "ask": {
+        "question": "《2026财年商用PC业务方针（模拟）》说不做员工个人付费订阅，《2026-10-16 高层周会（模拟）》说决定权在 IT；员工付费意愿资料里没证据。怎么办？我推荐『按指示』，因为方针明确写了不做。",
+        "options": [
+          {
+            "id": "a",
+            "label": "按指示：题目改成企业 IT 愿不愿意为可管的个人 AI 付费，员工个人订阅只作对照"
+          },
+          {
+            "id": "b",
+            "label": "按你的想法：先检验员工个人付费意愿是否真实，和方针的出入写进风险让 Senior 在 G1 判断"
+          },
+          {
+            "id": "c",
+            "label": "两条并成决策选项：企业 IT 采购和员工个人订阅谁真付钱，一起比"
+          }
+        ]
+      },
+      "answer": {
+        "selected": [],
+        "text": "我还是想看看这条路，员工已经在自己用 AI 了。"
+      }
+    },
+    {
+      "round": 2,
+      "texts": [
+        "就按你的想法来。这条和方针那四条方向相反，我会把出入写进风险，交给 Senior 在 G1 判断。"
+      ],
+      "tools": [
+        {
+          "tool": "frame_topic",
+          "why": "用户坚持先看员工这条路，把这四条冲突都按他的想法记下，题目改成要不要做"
+        }
+      ],
+      "ask": {
+        "question": "这个答案最后谁来用、他要在哪几个选项里选？我推荐第一个，因为你这个题目就是在问要不要做。",
+        "options": [
+          {
+            "id": "a",
+            "label": "VP 定明年推不推这款员工个人 AI 订阅：推、不推、还是先小范围试点"
+          },
+          {
+            "id": "b",
+            "label": "VP 定个人 AI 的付费方和渠道：企业 IT 统一采购，还是员工个人订阅"
+          },
+          {
+            "id": "c",
+            "label": "VP 定员工端 AI 先投哪块资源：直接卖员工，还是先补 IT 可管能力"
+          }
+        ]
+      },
+      "answer": {
+        "selected": [
+          "a"
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "texts": [
+        "题目定住了，你看一眼这张卡就行。"
+      ],
+      "tools": [
+        {
+          "tool": "frame_topic",
+          "why": "用户选定了决策项，四项齐了，看是否可以发确认卡"
+        }
+      ],
+      "ask": {
+        "question": "复述：明年该不该直接卖给员工个人的 AI 订阅，VP 在推、不推、小范围试点里选，2027 年、中国商用市场，成功是给出可被推翻的判断。就按这个拆？",
+        "options": [
+          {
+            "id": "ok",
+            "label": "就按这个拆"
+          },
+          {
+            "id": "change",
+            "label": "我要改"
+          }
+        ]
+      },
+      "answer": {
+        "selected": [
+          "ok"
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "texts": [
+        "我现在开始拆题，大概需要一两分钟。",
+        "v1 拆好了：5 个一级子问题、8 个假设。最大风险：员工个人付费意愿可能只在小众高价值岗位成立。右边是 workplan，满意了由你点提交。"
+      ],
+      "tools": [
+        {
+          "tool": "frame_topic",
+          "why": "用户点了\"就按这个拆\"，记下确认好让系统开始拆题"
+        },
+        {
+          "tool": "compose_workplan",
+          "why": "题目已确认，让系统按这份定题拆出问题树、写 workplan 和假设笔记"
+        }
+      ],
+      "ask": null,
+      "answer": null
+    }
+  ],
+  "structure": {
+    "version": 1,
+    "frame": {
+      "question": "联想明年该不该推一条直接卖给员工个人的 AI 订阅？",
+      "decision": "战略部 VP 决定明年推不推这款员工个人 AI 订阅：推、不推、还是先小范围试点",
+      "scope": "2027 年（明年）；企业员工使用的个人 AI 订阅；地区未明说，先按中国商用市场（推荐，待确认）",
+      "success": "能给出可被推翻的一句判断：员工个人为 AI 单独付费是否成立、直接卖员工这条路成立的条件是什么，VP 据此能定渠道和付费方"
+    },
+    "marks": [
+      {
+        "ref": "K1",
+        "verdict": "冲突",
+        "note": "周会说决定权在 CIO 和 IT 手里；用户坚持先看员工这条路，员工已在自用但没有付费证据。",
+        "resolution": "按用户的想法"
+      },
+      {
+        "ref": "K2",
+        "verdict": "无关",
+        "note": "讲的是 NPU 和出货数字，不是谁付钱。"
+      },
+      {
+        "ref": "K3",
+        "verdict": "无关",
+        "note": "讲的是 IT 可管的三层拆法，用户方向绕开了 IT。"
+      },
+      {
+        "ref": "K4",
+        "verdict": "无关",
+        "note": "问的是在 IT 管着的前提下员工愿不愿用。"
+      },
+      {
+        "ref": "K5",
+        "verdict": "一致",
+        "note": "结论要写成联想明年可以做什么，用户的订阅想法正是这一类。"
+      },
+      {
+        "ref": "K6",
+        "verdict": "无关",
+        "note": "讲换机周期已经在上一财年释放。"
+      },
+      {
+        "ref": "K7",
+        "verdict": "无关",
+        "note": "讲成本和涨价，与付费方是谁无关。"
+      },
+      {
+        "ref": "K8",
+        "verdict": "无关",
+        "note": "对象是企业客户和 AI PC 标签，不是员工个人订阅。"
+      },
+      {
+        "ref": "K9",
+        "verdict": "冲突",
+        "note": "方针说不为 AI 单独报价；用户的题目就是把 AI 单独卖，出入写进风险。",
+        "resolution": "按用户的想法"
+      },
+      {
+        "ref": "K10",
+        "verdict": "无关",
+        "note": "增长重心放在机队服务，是另一条路，不构成禁止。"
+      },
+      {
+        "ref": "K11",
+        "verdict": "冲突",
+        "note": "方针不抢平台员工端入口；员工端订阅会碰到这条边界，出入写进风险。",
+        "resolution": "按用户的想法"
+      },
+      {
+        "ref": "K12",
+        "verdict": "无关",
+        "note": "自研只做两处，与订阅渠道无关。"
+      },
+      {
+        "ref": "K13",
+        "verdict": "无关",
+        "note": "收购范围，与本题无关。"
+      },
+      {
+        "ref": "K14",
+        "verdict": "无关",
+        "note": "数据边界由客户 IT 定，针对企业客户环境。"
+      },
+      {
+        "ref": "K15",
+        "verdict": "冲突",
+        "note": "方针只做企业客户、不做员工个人付费订阅；用户坚持探索这条路。",
+        "resolution": "按用户的想法"
+      },
+      {
+        "ref": "K16",
+        "verdict": "无关",
+        "note": "地区优先顺序，用户没说地区。"
+      },
+      {
+        "ref": "K17",
+        "verdict": "无关",
+        "note": "说的是大客户方案不愿为 AI 多付钱，可用作旁证但不是员工个人。"
+      },
+      {
+        "ref": "K18",
+        "verdict": "无关",
+        "note": "讲服务方案续约，与付费方无关。"
+      },
+      {
+        "ref": "K19",
+        "verdict": "一致",
+        "note": "建议要写明和方针哪条一致、哪条冲突，用户这条正好要走这一道。"
+      },
+      {
+        "ref": "K20",
+        "verdict": "一致",
+        "note": "和方针冲突的建议照样可以提，写清理由即可。"
+      },
+      {
+        "ref": "K21",
+        "verdict": "一致",
+        "note": "数据要标出处，员工付费意愿目前没有出处。"
+      }
+    ],
+    "pack": [
+      {
+        "id": "K1",
+        "kind": "directive",
+        "title": "2026-10-16 高层周会（模拟）",
+        "block": "^m1"
+      },
+      {
+        "id": "K2",
+        "kind": "directive",
+        "title": "2026-10-16 高层周会（模拟）",
+        "block": "^m2"
+      },
+      {
+        "id": "K3",
+        "kind": "directive",
+        "title": "2026-10-16 高层周会（模拟）",
+        "block": "^m3"
+      },
+      {
+        "id": "K4",
+        "kind": "directive",
+        "title": "2026-10-16 高层周会（模拟）",
+        "block": "^m4"
+      },
+      {
+        "id": "K5",
+        "kind": "directive",
+        "title": "2026-10-16 高层周会（模拟）",
+        "block": "^m5"
+      },
+      {
+        "id": "K6",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^j1"
+      },
+      {
+        "id": "K7",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^j2"
+      },
+      {
+        "id": "K8",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^j3"
+      },
+      {
+        "id": "K9",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^p1"
+      },
+      {
+        "id": "K10",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^p2"
+      },
+      {
+        "id": "K11",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^p3"
+      },
+      {
+        "id": "K12",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^p3b"
+      },
+      {
+        "id": "K13",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^p4"
+      },
+      {
+        "id": "K14",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^p5"
+      },
+      {
+        "id": "K15",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^p6"
+      },
+      {
+        "id": "K16",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^p7"
+      },
+      {
+        "id": "K17",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^r1"
+      },
+      {
+        "id": "K18",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^r2"
+      },
+      {
+        "id": "K19",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^q1"
+      },
+      {
+        "id": "K20",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^q2"
+      },
+      {
+        "id": "K21",
+        "kind": "policy",
+        "title": "2026财年商用PC业务方针（模拟）",
+        "block": "^q3"
+      },
+      {
+        "id": "K22",
+        "kind": "method",
+        "title": "workplan共创"
+      },
+      {
+        "id": "K23",
+        "kind": "reference",
+        "title": "企业办公电脑采购实战：2026年商用PC选型5步法",
+        "block": "^c1"
+      },
+      {
+        "id": "K24",
+        "kind": "reference",
+        "title": "Lenovo 的 TruScale Device as a Service",
+        "block": "^c4"
+      },
+      {
+        "id": "K25",
+        "kind": "reference",
+        "title": "BCG Finds 80 Percent of Enterprise AI Spending Happens Outsi",
+        "block": "^c1"
+      },
+      {
+        "id": "K26",
+        "kind": "reference",
+        "title": "Grok AIOps Microsoft Marketplace",
+        "block": "^c5"
+      },
+      {
+        "id": "K27",
+        "kind": "reference",
+        "title": "AI Governance for Financial Services Controls for Banks W",
+        "block": "^c6"
+      },
+      {
+        "id": "K28",
+        "kind": "reference",
+        "title": "The Verge 2026-01 戴尔称消费者不为AI买PC",
+        "block": "^c3"
+      },
+      {
+        "id": "K29",
+        "kind": "reference",
+        "title": "2026年全球PC和手机出货量将因内存成本上升而下降",
+        "block": "^c4"
+      },
+      {
+        "id": "K30",
+        "kind": "reference",
+        "title": "Too Many Stakeholders Are Spoiling The AI Broth Key Insight",
+        "block": "^c2"
+      },
+      {
+        "id": "K31",
+        "kind": "reference",
+        "title": "AI vendors are switching from subscriptions to consumption p",
+        "block": "^c1"
+      },
+      {
+        "id": "K32",
+        "kind": "reference",
+        "title": "The LOB Takeover How Finance, Legal, and Ops Are Seizing En",
+        "block": "^c1"
+      },
+      {
+        "id": "K33",
+        "kind": "reference",
+        "title": "EPCGroup 2026-10 Copilot定价与授权",
+        "block": "^c1"
+      },
+      {
+        "id": "K34",
+        "kind": "reference",
+        "title": "PC shipments are falling, but manufacturers are making more",
+        "block": "^c1"
+      },
+      {
+        "id": "K35",
+        "kind": "reference",
+        "title": "AI Mandate Security Checklist 6 Steps to Lock Down Data"
+      },
+      {
+        "id": "K36",
+        "kind": "reference",
+        "title": "人工智能在金融领域的2025年法规解读与风险管理可行性分析报告.docx - 建立供应商“准入-监控-退出”全流程管控",
+        "block": "^c5"
+      },
+      {
+        "id": "K37",
+        "kind": "reference",
+        "title": "Total Economic Impact™ Study Finds Organizations Can Achieve",
+        "block": "^c1"
+      },
+      {
+        "id": "K38",
+        "kind": "reference",
+        "title": "Lenovo’s TruScale Device as a Service - TruScale Device as a",
+        "block": "^c1"
+      },
+      {
+        "id": "K39",
+        "kind": "reference",
+        "title": "Simplify device life cycle management",
+        "block": "^c3"
+      },
+      {
+        "id": "K40",
+        "kind": "reference",
+        "title": "APAC enterprises to boost AI spend by 15% in 2026",
+        "block": "^c3"
+      },
+      {
+        "id": "K41",
+        "kind": "reference",
+        "title": "Buyers Are Trading Up 80% More Likely to Buy AI PCs as Trad",
+        "block": "^c5"
+      },
+      {
+        "id": "K42",
+        "kind": "reference",
+        "title": "企业买AI，从“尝鲜”变成“算账” - 以前企业采购人工智能大模型，大多只是抱着试一试的心态：这笔费用归在创新预算里，简",
+        "block": "^c2"
+      }
+    ],
+    "axes": {
+      "chosen": "decision_options",
+      "by": "vote",
+      "votes": [
+        "decision_options",
+        "decision_options",
+        "decision_options"
+      ]
+    },
+    "tree": {
+      "core_question": "联想明年该不该推一条直接卖给员工个人的 AI 订阅？",
+      "decision_options": "推；不推；先小范围试点",
+      "day1_answer": "先小范围试点，不直接全面推：员工个人付费在中国商用市场大概率只在小众高价值岗位成立，直接卖员工会先撞上IT管控和数据边界，联想的胜算在设备端加管控服务而非AI订阅本身。",
+      "split_basis": "按决策选项拆：推看员工付费与落地路径，不推看机会成本，试点看验证力，另设胜算对比最强对手。买方落在付费意愿，监管落在数据边界，技术供给落在价格，我方落在服务收入，对手落在平台厂商。各问不重叠不遗漏；少胜算就答不了凭什么是联想。",
+      "subquestions": [
+        {
+          "question": "员工会不会在已有免费AI工具下，额外为联想个人AI订阅自付？",
+          "hypothesis": {
+            "statement": "在已有免费或公司AI工具时，多数员工不会额外自付买联想个人AI订阅，除非月费≤20元或可报销。",
+            "falsifier": "试点中≥25%目标员工在已有免费AI工具下仍愿自付≥20元/月加购联想个人订阅。",
+            "conditions": [
+              "员工已有免费或公司提供的AI工具",
+              "联想订阅在办公场景有明确增量功能",
+              "不增加账号与IT管理负担"
+            ],
+            "known_by": [],
+            "to_verify": [
+              {
+                "what": "已有免费/公司AI工具时，联想个人订阅的加购付费率与可接受月费",
+                "where": "上网",
+                "support": "公开试点显示≥20%愿以20-30元/月加购",
+                "counter": "公开试点显示<10%加购，或仅在可报销时使用"
+              },
+              {
+                "what": "个人自付与企业报销两种支付方式对加购转化的差异",
+                "where": "上网",
+                "support": "报销使转化率显著高于自付，可支撑定价设计",
+                "counter": "报销也不提升转化，或企业普遍禁止报销个人AI订阅"
+              },
+              {
+                "what": "核实《The Verge 2026-01 戴尔称消费者不为AI买PC》是否说明这一点",
+                "where": "K28",
+                "support": "相关资料（没核实）：原文直接讲到同一个对象、同一件事",
+                "counter": "试点中≥25%目标员工在已有免费AI工具下仍愿自付≥20元/月加购联想个人订阅。"
+              },
+              {
+                "what": "核实《AI vendors are switching from subscriptions to consumption p》是否说明这一点",
+                "where": "K31",
+                "support": "相关资料（没核实）：原文直接讲到同一个对象、同一件事",
+                "counter": "试点中≥25%目标员工在已有免费AI工具下仍愿自付≥20元/月加购联想个人订阅。"
+              }
+            ],
+            "short": "联想订阅加购意愿"
+          }
+        },
+        {
+          "question": "直接卖员工这条路，渠道和付费方走得通吗？",
+          "children": [
+            {
+              "question": "员工个人付费和企业IT管控能同时成立吗？",
+              "hypothesis": {
+                "statement": "员工个人订阅若不能纳入企业IT统一管控，大客户会阻止员工在办公设备上使用，直接卖员工难成立。",
+                "falsifier": "10家目标企业中6家允许员工自装个人AI订阅且不要求IT管控。",
+                "conditions": [
+                  "企业允许个人订阅接入办公设备",
+                  "数据不出企业环境",
+                  "IT可远程关停和审计"
+                ],
+                "known_by": [
+                  "K35"
+                ],
+                "to_verify": [
+                  {
+                    "what": "中国大客户对员工自装AI订阅的管控政策",
+                    "where": "上网",
+                    "support": "访谈显示可白名单放行",
+                    "counter": "访谈显示一律禁止或须统一采购"
+                  },
+                  {
+                    "what": "核实《AI Governance for Financial Services Controls for Banks W》是否说明这一点",
+                    "where": "K27",
+                    "support": "相关资料（没核实）：原文直接讲到同一个对象、同一件事",
+                    "counter": "10家目标企业中6家允许员工自装个人AI订阅且不要求IT管控。"
+                  },
+                  {
+                    "what": "核实《Too Many Stakeholders Are Spoiling The AI Broth Key Insight》是否说明这一点",
+                    "where": "K30",
+                    "support": "相关资料（没核实）：原文直接讲到同一个对象、同一件事",
+                    "counter": "10家目标企业中6家允许员工自装个人AI订阅且不要求IT管控。"
+                  }
+                ],
+                "short": "IT管控冲突"
+              }
+            },
+            {
+              "question": "数据与监管边界允许把员工个人订阅卖进企业环境吗？",
+              "hypothesis": {
+                "statement": "2027年中国监管下，员工个人订阅若涉及员工数据出境或监控，企业不敢放行，直接卖员工会被合规卡住。",
+                "falsifier": "监管明确个人订阅不碰企业数据，且3家标杆客户已合规放行。",
+                "conditions": [
+                  "数据留在境内或客户环境",
+                  "员工知情且可审计",
+                  "不用于员工监控"
+                ],
+                "known_by": [],
+                "to_verify": [
+                  {
+                    "what": "中国对员工个人AI订阅的数据合规要求",
+                    "where": "上网",
+                    "support": "标准合同或沙箱允许",
+                    "counter": "处罚案例或新规禁止"
+                  },
+                  {
+                    "what": "核实《AI Governance for Financial Services Controls for Banks W》是否说明这一点",
+                    "where": "K27",
+                    "support": "相关资料（没核实）：原文直接讲到同一个对象、同一件事",
+                    "counter": "监管明确个人订阅不碰企业数据，且3家标杆客户已合规放行。"
+                  },
+                  {
+                    "what": "核实《AI Mandate Security Checklist 6 Steps to Lock Down Data》是否说明这一点",
+                    "where": "K35",
+                    "support": "相关资料（没核实）：原文直接讲到同一个对象、同一件事",
+                    "counter": "监管明确个人订阅不碰企业数据，且3家标杆客户已合规放行。"
+                  },
+                  {
+                    "what": "核实《人工智能在金融领域的2025年法规解读与风险管理可行性分析报告.docx - 建立供应商“准入-监控-退出”全流程管控》是否说明这一点",
+                    "where": "K36",
+                    "support": "相关资料（没核实）：原文直接讲到同一个对象、同一件事",
+                    "counter": "监管明确个人订阅不碰企业数据，且3家标杆客户已合规放行。"
+                  }
+                ],
+                "short": "数据合规卡点"
+              }
+            }
+          ]
+        },
+        {
+          "question": "小范围试点能不能低成本验证这条路？",
+          "hypothesis": {
+            "statement": "用3-5家客户、2000名员工做3个月试点，足以把个人付费意愿误差压到可决策范围。",
+            "falsifier": "试点各客户付费率差异>3倍，或有效样本<1000，无法外推。",
+            "conditions": [
+              "样本≥2000且跨3行业",
+              "设未推对照组",
+              "试点期≥3个月"
+            ],
+            "known_by": [],
+            "to_verify": [
+              {
+                "what": "试点设计能否区分个人付费与企业报销",
+                "where": "上网",
+                "support": "采购指南有试点框架",
+                "counter": "指南只讲硬件采购"
+              }
+            ],
+            "short": "试点验证力"
+          }
+        },
+        {
+          "question": "凭什么是联想，而不是最强对手？",
+          "children": [
+            {
+              "question": "面对微软等平台厂商，联想设备端加管控有差异化吗？",
+              "hypothesis": {
+                "statement": "面对微软Copilot等平台厂商，联想靠设备端体验加IT集中管控能守住差异化，不靠AI标签溢价。",
+                "falsifier": "客户选型中80%认为平台员工端助手已够用，联想管控不构成选择理由。",
+                "conditions": [
+                  "平台助手不覆盖设备管控",
+                  "客户愿为管控付服务费",
+                  "Qira体验不落后平台"
+                ],
+                "known_by": [
+                  "K33"
+                ],
+                "to_verify": [
+                  {
+                    "what": "中国客户选联想而非微软员工端AI的理由",
+                    "where": "上网",
+                    "support": "招标文件列管控为必需",
+                    "counter": "客户直接选微软不比较硬件"
+                  },
+                  {
+                    "what": "核实《Too Many Stakeholders Are Spoiling The AI Broth Key Insight》是否说明这一点",
+                    "where": "K30",
+                    "support": "相关资料（没核实）：原文直接讲到同一个对象、同一件事",
+                    "counter": "客户选型中80%认为平台员工端助手已够用，联想管控不构成选择理由。"
+                  }
+                ],
+                "short": "联想差异化"
+              }
+            },
+            {
+              "question": "免费AI助手和推理降价会不会把订阅价格压没？",
+              "hypothesis": {
+                "statement": "到2027年，模型推理成本下降和免费AI助手普及会把员工个人订阅价格压到联想难以单独收费。",
+                "falsifier": "主流员工AI订阅价格稳定在≥50元/月且付费率上升。",
+                "conditions": [
+                  "免费版能力不快速追平",
+                  "推理成本不快速下降",
+                  "企业不批量采购替代"
+                ],
+                "known_by": [
+                  "K31"
+                ],
+                "to_verify": [
+                  {
+                    "what": "2027年中国员工AI订阅价格走势",
+                    "where": "上网",
+                    "support": "厂商降价至免费",
+                    "counter": "价格坚挺且付费增长"
+                  },
+                  {
+                    "what": "核实《The Verge 2026-01 戴尔称消费者不为AI买PC》是否说明这一点",
+                    "where": "K28",
+                    "support": "相关资料（没核实）：原文直接讲到同一个对象、同一件事",
+                    "counter": "主流员工AI订阅价格稳定在≥50元/月且付费率上升。"
+                  }
+                ],
+                "short": "免费替代压价"
+              }
+            }
+          ]
+        },
+        {
+          "question": "如果不推，联想会失去什么？",
+          "children": [
+            {
+              "question": "不推员工订阅，企业AI和服务收入补得上吗？",
+              "hypothesis": {
+                "statement": "不推员工个人订阅，联想靠TruScale/DaaS和IT管控服务仍能实现明年商用AI收入目标，机会成本可控。",
+                "falsifier": "测算显示员工订阅可贡献>5亿元收入，而服务收入缺口>3亿元。",
+                "conditions": [
+                  "服务续约率继续高于硬件",
+                  "DaaS客单价提升",
+                  "员工订阅不侵蚀服务"
+                ],
+                "known_by": [
+                  "K24",
+                  "K39"
+                ],
+                "to_verify": [
+                  {
+                    "what": "员工个人AI订阅可寻址收入规模",
+                    "where": "上网",
+                    "support": "可寻址市场<3亿元",
+                    "counter": "可寻址市场>10亿元且增速高"
+                  },
+                  {
+                    "what": "核实《Lenovo’s TruScale Device as a Service - TruScale Device as a》是否说明这一点",
+                    "where": "K38",
+                    "support": "相关资料（没核实）：原文直接讲到同一个对象、同一件事",
+                    "counter": "测算显示员工订阅可贡献>5亿元收入，而服务收入缺口>3亿元。"
+                  }
+                ],
+                "short": "服务收入补位"
+              }
+            },
+            {
+              "question": "员工自用影子AI是否已经大到值得联想直接接住？",
+              "hypothesis": {
+                "statement": "员工自用影子AI已足够普遍，若不推个人订阅，联想会把员工端入口让给平台厂商。",
+                "falsifier": "调研显示目标企业员工自费使用AI比例<10%且不用公司设备。",
+                "conditions": [
+                  "员工已在办公设备自用",
+                  "企业不禁止",
+                  "平台未锁定入口"
+                ],
+                "known_by": [],
+                "to_verify": [
+                  {
+                    "what": "中国员工自费使用AI的比例",
+                    "where": "上网",
+                    "support": "≥30%员工自费使用",
+                    "counter": "<10%且企业统一提供"
+                  },
+                  {
+                    "what": "核实《BCG Finds 80 Percent of Enterprise AI Spending Happens Outsi》是否说明这一点",
+                    "where": "K25",
+                    "support": "相关资料（没核实）：原文直接讲到同一个对象、同一件事",
+                    "counter": "调研显示目标企业员工自费使用AI比例<10%且不用公司设备。"
+                  },
+                  {
+                    "what": "核实《The LOB Takeover How Finance, Legal, and Ops Are Seizing En》是否说明这一点",
+                    "where": "K32",
+                    "support": "相关资料（没核实）：原文直接讲到同一个对象、同一件事",
+                    "counter": "调研显示目标企业员工自费使用AI比例<10%且不用公司设备。"
+                  }
+                ],
+                "short": "影子AI规模"
+              }
+            }
+          ]
+        }
+      ],
+      "key_message": "员工个人AI订阅在中国商用市场不是默认成立，先试点验证付费意愿和IT管控，再决定是否推。",
+      "risks": [
+        "员工个人付费意愿可能只在小众高价值岗位成立",
+        "IT管控可能使个人订阅无法进入办公设备",
+        "数据监管可能直接禁止或抬高合规成本",
+        "需Senior判断是否接受与只做企业客户、不为AI单独报价两条方针冲突做试点"
+      ],
+      "next_actions": [
+        "战略部先做2000人员工付费问卷和10家客户访谈；产品部出IT管控版原型；财务测算可寻址收入；法务核数据边界；两周后VP定试点范围和门槛。"
+      ]
+    },
+    "review": {
+      "rounds": 2,
+      "open": [
+        "Q1：重叠",
+        "Q1：重叠",
+        "Q2-1：重叠",
+        "root：视角缺",
+        "root：视角缺"
+      ]
+    }
+  },
+  "workplan": {
+    "version": 1,
+    "body": "\n# WS-A workplan\n\n## 要回答的问题与要支撑的决策\n核心问题：联想明年该不该推一条直接卖给员工个人的 AI 订阅？\n\n要支撑的决策：战略部 VP 决定明年推不推这款员工个人 AI 订阅：推、不推、还是先小范围试点\n范围和时间：2027 年（明年）；企业员工使用的个人 AI 订阅；地区未明说，先按中国商用市场（推荐，待确认）\n成功的样子：能给出可被推翻的一句判断：员工个人为 AI 单独付费是否成立、直接卖员工这条路成立的条件是什么，VP 据此能定渠道和付费方\n决策的全部选项：推；不推；先小范围试点\n\n## 前提\n- 高层指示（**和用户的方向不一致**，处理：按用户的想法）：[[2026-10-16 高层周会（模拟）#^m1]]：VP：嗯。我先插一句，方向先别飘。重点看 IT 能不能管。为什么？第一，我们卖给企业的东西，决定权在 CIO 和 IT 手里，不在员工手里。员工想要什么…周会说决定权在 CIO 和 IT 手里；用户坚持先看员工这条路，员工已在自用但没有付费证据。\n- 高层指示（一致）：[[2026-10-16 高层周会（模拟）#^m5]]：VP：另外两条小的。W3 那个“价值被谁拿走”，先不展开，等 W2 出结果再定，现在展开容易空对空。还有，结论要写成“联想明年可以做什么”，不要只写市场…结论要写成联想明年可以做什么，用户的订阅想法正是这一类。\n- 公司业务方针（**和用户的方向不一致**，处理：按用户的想法）：[[2026财年商用PC业务方针（模拟）#^p1]]：不拿 AI 当单独的卖点加价。商用产品不以 NPU 算力或\"AI PC\"标签作主卖点，也不为 AI 功能单独报价。主卖点是可管理、安全和服务。方针说不为 AI 单独报价；用户的题目就是把 AI 单独卖，出入写进风险。\n- 公司业务方针（**和用户的方向不一致**，处理：按用户的想法）：[[2026财年商用PC业务方针（模拟）#^p3]]：和操作系统、办公套件平台厂商合作；不做通用大模型，也不和平台去抢员工端 AI 助手的入口。方针不抢平台员工端入口；员工端订阅会碰到这条边界，出入写进风险。\n- 公司业务方针（**和用户的方向不一致**，处理：按用户的想法）：[[2026财年商用PC业务方针（模拟）#^p6]]：只做企业客户。不做卖给员工个人的付费订阅；员工自己买的软件，不算商用收入。方针只做企业客户、不做员工个人付费订阅；用户坚持探索这条路。\n- 公司业务方针（一致）：[[2026财年商用PC业务方针（模拟）#^q1]]：交给管理层的建议，要落到\"明年做什么、不做什么\"。每条建议要写明它和本方针的哪一条一致、和哪一条冲突。建议要写明和方针哪条一致、哪条冲突，用户这条正好要走这一道。\n- 公司业务方针（一致）：[[2026财年商用PC业务方针（模拟）#^q2]]：和本方针冲突的建议照样可以提，但要把理由写清楚。管理层愿意根据证据重新讨论方针。和方针冲突的建议照样可以提，写清理由即可。\n- 公司业务方针（一致）：[[2026财年商用PC业务方针（模拟）#^q3]]：结论用到的数据要标出处。内部访谈和客户反馈得出的结论，要和公开资料分开写。数据要标出处，员工付费意愿目前没有出处。\n\n## Day-1 answer\n（假设，不是结论）先小范围试点，不直接全面推：员工个人付费在中国商用市场大概率只在小众高价值岗位成立，直接卖员工会先撞上IT管控和数据边界，联想的胜算在设备端加管控服务而非AI订阅本身。\n\n## 问题树与假设\n### Q1 员工会不会在已有免费AI工具下，额外为联想个人AI订阅自付？\n**假设 H1**：在已有免费或公司AI工具时，多数员工不会额外自付买联想个人AI订阅，除非月费≤20元或可报销。 [[WS-A-H1 联想订阅加购意愿]]\n\n### Q2 直接卖员工这条路，渠道和付费方走得通吗？\n\n#### Q2-1 员工个人付费和企业IT管控能同时成立吗？\n**假设 H2-1**：员工个人订阅若不能纳入企业IT统一管控，大客户会阻止员工在办公设备上使用，直接卖员工难成立。 [[WS-A-H2 IT管控冲突]]\n\n#### Q2-2 数据与监管边界允许把员工个人订阅卖进企业环境吗？\n**假设 H2-2**：2027年中国监管下，员工个人订阅若涉及员工数据出境或监控，企业不敢放行，直接卖员工会被合规卡住。 [[WS-A-H3 数据合规卡点]]\n\n### Q3 小范围试点能不能低成本验证这条路？\n**假设 H3**：用3-5家客户、2000名员工做3个月试点，足以把个人付费意愿误差压到可决策范围。 [[WS-A-H4 试点验证力]]\n\n### Q4 凭什么是联想，而不是最强对手？\n\n#### Q4-1 面对微软等平台厂商，联想设备端加管控有差异化吗？\n**假设 H4-1**：面对微软Copilot等平台厂商，联想靠设备端体验加IT集中管控能守住差异化，不靠AI标签溢价。 [[WS-A-H5 联想差异化]]\n\n#### Q4-2 免费AI助手和推理降价会不会把订阅价格压没？\n**假设 H4-2**：到2027年，模型推理成本下降和免费AI助手普及会把员工个人订阅价格压到联想难以单独收费。 [[WS-A-H6 免费替代压价]]\n\n### Q5 如果不推，联想会失去什么？\n\n#### Q5-1 不推员工订阅，企业AI和服务收入补得上吗？\n**假设 H5-1**：不推员工个人订阅，联想靠TruScale/DaaS和IT管控服务仍能实现明年商用AI收入目标，机会成本可控。 [[WS-A-H7 服务收入补位]]\n\n#### Q5-2 员工自用影子AI是否已经大到值得联想直接接住？\n**假设 H5-2**：员工自用影子AI已足够普遍，若不推个人订阅，联想会把员工端入口让给平台厂商。 [[WS-A-H8 影子AI规模]]\n\n## MECE 和充分必要的自检\n怎么拆的：按决策的选项拆。\n按决策选项拆：推看员工付费与落地路径，不推看机会成本，试点看验证力，另设胜算对比最强对手。买方落在付费意愿，监管落在数据边界，技术供给落在价格，我方落在服务收入，对手落在平台厂商。各问不重叠不遗漏；少胜算就答不了凭什么是联想。\n\n## 每个假设怎么验证\n### H1\n\n必须成立的条件：（1）员工已有免费或公司提供的AI工具；（2）联想订阅在办公场景有明确增量功能；（3）不增加账号与IT管理负担\n看到什么就算它错了：试点中≥25%目标员工在已有免费AI工具下仍愿自付≥20元/月加购联想个人订阅。\n\n已经知道的（有资料撑着，不用再查）：\n- 参考库里还没有直接撑它的资料\n\n还要去证实的：\n- 已有免费/公司AI工具时，联想个人订阅的加购付费率与可接受月费。去哪里查：上网查。什么能证明：公开试点显示≥20%愿以20-30元/月加购。反证去哪里找：公开试点显示<10%加购，或仅在可报销时使用。\n- 个人自付与企业报销两种支付方式对加购转化的差异。去哪里查：上网查。什么能证明：报销使转化率显著高于自付，可支撑定价设计。反证去哪里找：报销也不提升转化，或企业普遍禁止报销个人AI订阅。\n- 核实《The Verge 2026-01 戴尔称消费者不为AI买PC》是否说明这一点。去哪里查：读 [[The Verge 2026-01 戴尔称消费者不为AI买PC#^c3]]。什么能证明：相关资料（没核实）：原文直接讲到同一个对象、同一件事。反证去哪里找：试点中≥25%目标员工在已有免费AI工具下仍愿自付≥20元/月加购联想个人订阅。。\n- 核实《AI vendors are switching from subscriptions to consumption p》是否说明这一点。去哪里查：读 [[AI vendors are switching from subscriptions to consumption p#^c1]]。什么能证明：相关资料（没核实）：原文直接讲到同一个对象、同一件事。反证去哪里找：试点中≥25%目标员工在已有免费AI工具下仍愿自付≥20元/月加购联想个人订阅。。\n\n### H2-1\n\n必须成立的条件：（1）企业允许个人订阅接入办公设备；（2）数据不出企业环境；（3）IT可远程关停和审计\n看到什么就算它错了：10家目标企业中6家允许员工自装个人AI订阅且不要求IT管控。\n\n已经知道的（有资料撑着，不用再查）：\n- [[AI Mandate Security Checklist 6 Steps to Lock Down Data]]：来源：https://www.herdsecurity.io/blog/ai-mandate-security-checklist（2026-10-25 抓取；…\n\n还要去证实的：\n- 中国大客户对员工自装AI订阅的管控政策。去哪里查：上网查。什么能证明：访谈显示可白名单放行。反证去哪里找：访谈显示一律禁止或须统一采购。\n- 核实《AI Governance for Financial Services Controls for Banks W》是否说明这一点。去哪里查：读 [[AI Governance for Financial Services Controls for Banks W#^c6]]。什么能证明：相关资料（没核实）：原文直接讲到同一个对象、同一件事。反证去哪里找：10家目标企业中6家允许员工自装个人AI订阅且不要求IT管控。。\n- 核实《Too Many Stakeholders Are Spoiling The AI Broth Key Insight》是否说明这一点。去哪里查：读 [[Too Many Stakeholders Are Spoiling The AI Broth Key Insight#^c2]]。什么能证明：相关资料（没核实）：原文直接讲到同一个对象、同一件事。反证去哪里找：10家目标企业中6家允许员工自装个人AI订阅且不要求IT管控。。\n\n### H2-2\n\n必须成立的条件：（1）数据留在境内或客户环境；（2）员工知情且可审计；（3）不用于员工监控\n看到什么就算它错了：监管明确个人订阅不碰企业数据，且3家标杆客户已合规放行。\n\n已经知道的（有资料撑着，不用再查）：\n- 参考库里还没有直接撑它的资料\n\n还要去证实的：\n- 中国对员工个人AI订阅的数据合规要求。去哪里查：上网查。什么能证明：标准合同或沙箱允许。反证去哪里找：处罚案例或新规禁止。\n- 核实《AI Governance for Financial Services Controls for Banks W》是否说明这一点。去哪里查：读 [[AI Governance for Financial Services Controls for Banks W#^c6]]。什么能证明：相关资料（没核实）：原文直接讲到同一个对象、同一件事。反证去哪里找：监管明确个人订阅不碰企业数据，且3家标杆客户已合规放行。。\n- 核实《AI Mandate Security Checklist 6 Steps to Lock Down Data》是否说明这一点。去哪里查：读 [[AI Mandate Security Checklist 6 Steps to Lock Down Data]]。什么能证明：相关资料（没核实）：原文直接讲到同一个对象、同一件事。反证去哪里找：监管明确个人订阅不碰企业数据，且3家标杆客户已合规放行。。\n- 核实《人工智能在金融领域的2025年法规解读与风险管理可行性分析报告.docx - 建立供应商“准入-监控-退出”全流程管控》是否说明这一点。去哪里查：读 [[人工智能在金融领域的2025年法规解读与风险管理可行性分析报告.docx - 建立供应商“准入-监控-退出”全流程管控#^c5]]。什么能证明：相关资料（没核实）：原文直接讲到同一个对象、同一件事。反证去哪里找：监管明确个人订阅不碰企业数据，且3家标杆客户已合规放行。。\n\n### H3\n\n必须成立的条件：（1）样本≥2000且跨3行业；（2）设未推对照组；（3）试点期≥3个月\n看到什么就算它错了：试点各客户付费率差异>3倍，或有效样本<1000，无法外推。\n\n已经知道的（有资料撑着，不用再查）：\n- 参考库里还没有直接撑它的资料\n\n还要去证实的：\n- 试点设计能否区分个人付费与企业报销。去哪里查：上网查。什么能证明：采购指南有试点框架。反证去哪里找：指南只讲硬件采购。\n\n### H4-1\n\n必须成立的条件：（1）平台助手不覆盖设备管控；（2）客户愿为管控付服务费；（3）Qira体验不落后平台\n看到什么就算它错了：客户选型中80%认为平台员工端助手已够用，联想管控不构成选择理由。\n\n已经知道的（有资料撑着，不用再查）：\n- [[EPCGroup 2026-10 Copilot定价与授权#^c1]]：来源：https://www.epcgroup.net/microsoft-365-copilot-pricing-licensing-enterprise-g…\n\n还要去证实的：\n- 中国客户选联想而非微软员工端AI的理由。去哪里查：上网查。什么能证明：招标文件列管控为必需。反证去哪里找：客户直接选微软不比较硬件。\n- 核实《Too Many Stakeholders Are Spoiling The AI Broth Key Insight》是否说明这一点。去哪里查：读 [[Too Many Stakeholders Are Spoiling The AI Broth Key Insight#^c2]]。什么能证明：相关资料（没核实）：原文直接讲到同一个对象、同一件事。反证去哪里找：客户选型中80%认为平台员工端助手已够用，联想管控不构成选择理由。。\n\n### H4-2\n\n必须成立的条件：（1）免费版能力不快速追平；（2）推理成本不快速下降；（3）企业不批量采购替代\n看到什么就算它错了：主流员工AI订阅价格稳定在≥50元/月且付费率上升。\n\n已经知道的（有资料撑着，不用再查）：\n- [[AI vendors are switching from subscriptions to consumption p#^c1]]：来源：https://thenextweb.com/news/ai-pricing-shift-cloud-costs-local-ai-pcs（2026-10…\n\n还要去证实的：\n- 2027年中国员工AI订阅价格走势。去哪里查：上网查。什么能证明：厂商降价至免费。反证去哪里找：价格坚挺且付费增长。\n- 核实《The Verge 2026-01 戴尔称消费者不为AI买PC》是否说明这一点。去哪里查：读 [[The Verge 2026-01 戴尔称消费者不为AI买PC#^c3]]。什么能证明：相关资料（没核实）：原文直接讲到同一个对象、同一件事。反证去哪里找：主流员工AI订阅价格稳定在≥50元/月且付费率上升。。\n\n### H5-1\n\n必须成立的条件：（1）服务续约率继续高于硬件；（2）DaaS客单价提升；（3）员工订阅不侵蚀服务\n看到什么就算它错了：测算显示员工订阅可贡献>5亿元收入，而服务收入缺口>3亿元。\n\n已经知道的（有资料撑着，不用再查）：\n- [[Lenovo 的 TruScale Device as a Service#^c4]]：来源：https://www.lenovo.com/hk/zh/daas/#1（2026-10-24 抓取；A 级：域名 lenovo.com 属于厂商官方发布…\n- [[Simplify device life cycle management#^c3]]：来源：https://china.unisys.com/solutions/dws/digital-workplace-services/device-subs…\n\n还要去证实的：\n- 员工个人AI订阅可寻址收入规模。去哪里查：上网查。什么能证明：可寻址市场<3亿元。反证去哪里找：可寻址市场>10亿元且增速高。\n- 核实《Lenovo’s TruScale Device as a Service - TruScale Device as a》是否说明这一点。去哪里查：读 [[Lenovo’s TruScale Device as a Service - TruScale Device as a#^c1]]。什么能证明：相关资料（没核实）：原文直接讲到同一个对象、同一件事。反证去哪里找：测算显示员工订阅可贡献>5亿元收入，而服务收入缺口>3亿元。。\n\n### H5-2\n\n必须成立的条件：（1）员工已在办公设备自用；（2）企业不禁止；（3）平台未锁定入口\n看到什么就算它错了：调研显示目标企业员工自费使用AI比例<10%且不用公司设备。\n\n已经知道的（有资料撑着，不用再查）：\n- 参考库里还没有直接撑它的资料\n\n还要去证实的：\n- 中国员工自费使用AI的比例。去哪里查：上网查。什么能证明：≥30%员工自费使用。反证去哪里找：<10%且企业统一提供。\n- 核实《BCG Finds 80 Percent of Enterprise AI Spending Happens Outsi》是否说明这一点。去哪里查：读 [[BCG Finds 80 Percent of Enterprise AI Spending Happens Outsi#^c1]]。什么能证明：相关资料（没核实）：原文直接讲到同一个对象、同一件事。反证去哪里找：调研显示目标企业员工自费使用AI比例<10%且不用公司设备。。\n- 核实《The LOB Takeover How Finance, Legal, and Ops Are Seizing En》是否说明这一点。去哪里查：读 [[The LOB Takeover How Finance, Legal, and Ops Are Seizing En#^c1]]。什么能证明：相关资料（没核实）：原文直接讲到同一个对象、同一件事。反证去哪里找：调研显示目标企业员工自费使用AI比例<10%且不用公司设备。。\n\n## 金字塔骨架\nkey message：员工个人AI订阅在中国商用市场不是默认成立，先试点验证付费意愿和IT管控，再决定是否推。\n结构：核心问题的回答由Q1、Q2、Q3、Q4、Q5的回答组装，每个回答落在它的假设和证据上。\n\n## 风险和待确认\n- 员工个人付费意愿可能只在小众高价值岗位成立\n- IT管控可能使个人订阅无法进入办公设备\n- 数据监管可能直接禁止或抬高合规成本\n- 需Senior判断是否接受与只做企业客户、不为AI单独报价两条方针冲突做试点\n- 评审后还有这些地方可能没改好，建议你看一下：3 处拆分可能有重叠（先看「员工会不会在已有免费AI工具下，额外为联想个人AI订阅自付」和「员工个人付费和企业IT管控能同时成立吗」）；2 处可能缺一个团队要求的视角。评审的原话留在系统记录里。\n\n## next action\n- 战略部先做2000人员工付费问卷和10家客户访谈；产品部出IT管控版原型；财务测算可寻址收入；法务核数据边界；两周后VP定试点范围和门槛。\n"
+  },
+  "checks": [
+    {
+      "name": "对话里没有内部文件名、路径、工具名",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "对话里没有 markdown",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "正文里最多一个问句",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "对话字数：超限的不超过 10%",
+      "pass": true,
+      "detail": "0/16 句超限"
+    },
+    {
+      "name": "不以夸奖开头",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "不列能力清单",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "不替用户宣布提交或批准",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "书名号成对",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "不出现 A1 这类代号",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "句子完整（不停在半句上）",
+      "pass": true,
+      "detail": "全部通过"
+    },
+    {
+      "name": "提问之前先查了资料",
+      "pass": true,
+      "detail": "frame_topic → frame_topic"
+    },
+    {
+      "name": "问题数不超过 5",
+      "pass": true,
+      "detail": "3 个"
+    },
+    {
+      "name": "提到了《…》这份资料的标题",
+      "pass": true,
+      "detail": "高层周会"
+    },
+    {
+      "name": "点出了一个疑点",
+      "pass": true,
+      "detail": "出入"
+    },
+    {
+      "name": "4 个槽都填满了",
+      "pass": true,
+      "detail": "全部填了"
+    },
+    {
+      "name": "每条指示、决定、方针都标了",
+      "pass": true,
+      "detail": "都标了"
+    },
+    {
+      "name": "冲突都有处理结果",
+      "pass": true,
+      "detail": "都有"
+    },
+    {
+      "name": "子问题都挂了证伪条件",
+      "pass": true,
+      "detail": "都挂了"
+    },
+    {
+      "name": "扎根：至少一个 known_by",
+      "pass": true,
+      "detail": "4 个子问题有 known_by"
+    },
+    {
+      "name": "有选定的拆法",
+      "pass": true,
+      "detail": "decision_options"
+    },
+    {
+      "name": "冲突标对了",
+      "pass": true,
+      "detail": "两处都标了"
+    }
+  ]
+}
